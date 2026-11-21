@@ -37,3 +37,7 @@ e2e/device-report.json
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ---- 发布产物 -------------------------------------------------------------
+# `git bundle` 和打包 zip 落在这里，它们本身不该再被仓库跟踪。
+dist/
