@@ -1,0 +1,14 @@
+{
+  "appId": "app.withyou.demo",
+  "appName": "WithYou",
+  "webDir": "www",
+  "android": {
+    "webContentsDebuggingEnabled": true,
+    "allowMixedContent": true
+  },
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

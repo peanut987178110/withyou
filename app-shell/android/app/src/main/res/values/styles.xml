@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- application 主题即「进程起来但 Activity 主题还没生效」那一帧的底色：
+             Android 12+ 的启动画面在 activity 窗口绘制前会用应用主题画背景，白色底会闪白 -->
+        <item name="android:windowBackground">@color/brand_bg</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <!-- 启动页：深色品牌底 + 渐变星球。
+         注意 windowSplashScreenBackground 必须显式写成品牌深色：Theme.SplashScreen 默认取
+         ?android:colorBackground，而 AppCompat Light 主题下它是白色 —— 冷启动那 1~2 秒
+         （尤其是 Chaquopy 起 Python 的这几秒）就会闪一大片白。 -->
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="postSplashScreenTheme">@style/AppTheme.NoActionBar</item>
+        <item name="android:background">@drawable/splash</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>

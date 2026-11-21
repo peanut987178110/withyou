@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+// Chaquopy：把 Python 运行时 + backend 打进 APK，App 在手机本地即可跑完整后端（离线可用）
+apply plugin: 'com.chaquo.python'
+
+android {
+    namespace "app.withyou.demo"
+    compileSdk rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "app.withyou.demo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "2.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 只打 64 位 ARM（主流真机）与 x86_64（模拟器），体积减半
+            abiFilters "arm64-v8a", "x86_64"
+        }
+
+        python {
+            buildPython "python"          // 构建期用本机 Python 跑 pip / 打包字节码
+            version "3.12"
+            // 必须显式指定 3.12：Chaquopy 不指定时会退回 3.8，而后端代码用了
+            // `list[str] | None` 这类 3.9/3.10 才支持的写法（pydantic 解析注解时会求值）。
+            // ⚠️ 3.12 的 buildPython 需与设备 Python 版本一致才能编译 .pyc（否则只打源码，功能不受影响）。
+            // Python 3.12 在 Android 上没有 pydantic-core（Rust）轮子，退回纯 Python 的 pydantic 1.x；
+            // WithYou 后端只用标准库 sqlite3 + dict，不依赖 pydantic 特性，1.x 完全够用。
+            // 注意：后端刻意不用 ORM / pydantic 模型，就是为了能在设备上跑起来。
+            // 必须钉死版本：fastapi ≥ 0.119 彻底移除了 pydantic v1 兼容层，
+            // 而 Android 上只有纯 Python 的 pydantic 1.x 可用（pydantic-core 无 arm/x86 轮子）。
+            // 不钉版本时构建机联网装到最新版，APK 里一 import 就报
+            // ImportError: cannot import name 'IncEx' from 'pydantic.main'。
+            pip {
+                install "fastapi==0.115.6"
+                install "pydantic==1.10.18"
+                install "uvicorn==0.32.1"
+            }
+        }
+
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

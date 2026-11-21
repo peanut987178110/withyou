@@ -1,0 +1,65 @@
+[
+  {
+    "doc_id": "kb_limits_free",
+    "title": "Free and Plus chat limits",
+    "source_type": "Product KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "3",
+    "text": "WithYou Free includes 50 successful AI replies per local day. WithYou Plus includes 300 successful replies per local day. Safety responses, exporting data, deleting data, cancelling a subscription and crisis support never use your reply allowance."
+  },
+  {
+    "doc_id": "kb_subscription_cancel",
+    "title": "Cancelling a subscription",
+    "source_type": "Product KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "2",
+    "text": "Subscriptions are billed by the Apple App Store or Google Play, not by WithYou. To cancel, open your store subscription settings. Cancelling stops the next renewal; access continues until the end of the period you already paid for. Deleting your WithYou account does not cancel a store subscription."
+  },
+  {
+    "doc_id": "kb_memory_controls",
+    "title": "How memory works",
+    "source_type": "Policy KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "4",
+    "text": "Memory has two separate switches. Memory extraction suggests candidate memories from your chats; when it is off, no new candidates are created. Cross-session retrieval decides whether confirmed memories are used in future chats; when it is off, existing memories stay in your memory center but are not retrieved. Every long-term memory is confirmed by you, and you can edit or delete each one."
+  },
+  {
+    "doc_id": "kb_delete_account",
+    "title": "Deleting your account",
+    "source_type": "Policy KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "2",
+    "text": "Deleting your account stops notifications, revokes sessions, and removes your chats, memories, companion and profile. There is no undo. A minimal record of paid transactions is kept where law requires it. Backups expire on a schedule after the request. Apple and Google subscriptions must be cancelled in the store; WithYou cannot cancel them for you."
+  },
+  {
+    "doc_id": "kb_safety_scope",
+    "title": "What WithYou can and cannot do",
+    "source_type": "Policy KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "5",
+    "text": "WithYou offers companionship and everyday reflection. It does not provide diagnosis, treatment or emergency services, and it cannot contact anyone on your behalf. If you may be in danger, contact local emergency services or a trusted person nearby. Regional crisis lines are listed in the app."
+  },
+  {
+    "doc_id": "kb_rewards_rules",
+    "title": "XP, Lumen and levels",
+    "source_type": "Product KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "3",
+    "text": "XP reflects growth with your companion and can never be bought, sold or transferred. Lumen is a soft currency earned from daily activities and used for everyday wardrobe items in the demo build; it cannot be recharged. Skipping an activity never removes XP or triggers a negative response. Relationship level and relationship type are separate choices."
+  },
+  {
+    "doc_id": "kb_refund",
+    "title": "Refunds",
+    "source_type": "Product KB",
+    "locale": "en",
+    "region": "ALL",
+    "version": "1",
+    "text": "Refunds are handled by the store that processed the purchase. When a refund is approved, paid entitlements and unspent gifted items are withdrawn. XP you already earned through activities is not removed."
+  }
+]

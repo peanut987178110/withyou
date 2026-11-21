@@ -1,0 +1,13 @@
+{
+  "name": "WithYou",
+  "short_name": "WithYou",
+  "description": "An AI companion for everyday conversation and gentle reflection.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbfafc",
+  "theme_color": "#fbfafc",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

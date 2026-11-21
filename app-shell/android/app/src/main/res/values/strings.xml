@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WithYou</string>
+    <string name="title_activity_main">WithYou</string>
+    <string name="package_name">app.withyou.demo</string>
+    <string name="custom_url_scheme">app.withyou.demo</string>
+</resources>
