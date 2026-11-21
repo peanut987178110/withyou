@@ -107,7 +107,7 @@ UI 能被绕过。
 | `e2e/` | 两套端到端测试：浏览器（`run.mjs`）与真机/模拟器（`device.mjs`），外加 i18n 门禁与两个视觉探针（`probe-*.mjs`） |
 | `scripts/` | 一次性检查与内容生成（`placeholder-scan.mjs`、`voice-i18n*.mjs`） |
 | `screenshots/` | 测试过程中自动截的图 |
-| `dist/` | 发布产物，**不入库**：`withyou.bundle`（完整 git 历史）与 `withyou-source.zip`，给"换台电脑上传"用，见其中的 `上传说明.md` |
+| `dist/` | 发布产物，**不入库**：`withyou.bundle`（完整 git 历史）与 `上传说明.md`，给"换台电脑上传"用 |
 | `docs/` | 实施记录（见 `docs/` 下的说明） |
 
 ## 跑起来
