@@ -122,6 +122,15 @@ UI 能被绕过。
 
 ### 手动
 
+先装依赖（Python 3.12；只需一次）：
+
+```bash
+cd F:/withyou
+pip install -r backend/requirements.txt
+```
+
+再起服务：
+
 ```bash
 cd F:/withyou
 python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8765
