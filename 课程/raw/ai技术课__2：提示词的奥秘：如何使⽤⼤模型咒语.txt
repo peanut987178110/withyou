@@ -1,0 +1,1055 @@
+<!-- PAGE 1 -->
+炒 饭 会 大 模 型 基 础 认 知|
+第二节：提示词的奥秘
+如何使⽤⼤模型咒语
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+炒 饭 会 大 模 型 基 础 认 知|
+• 提示词与大模型的关系
+• 5个常用的提示词框架
+• 提示词编写的关键点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+提示词与大模型的关系
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|提示词的和大模型的关系
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|提示词是大模型的钥匙
+• 大模型本身是一个巨大的知识库+模型生成器
+• 但大模型喜欢被动，并不会主动思考和发起任务以及对话
+• 提示词的作用是激活、引导和约束大模型
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|提示词的关键
+• 提示词质量决定大模型输出质量
+• 例如：
+• 提示词输入“北京”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|提示词的关键
+• 提示词质量觉得大模型输出质量
+• 例如：
+• 提示词输入“北京”
+• 提示词输入：你是一个旅游规划师，非常擅长进行旅游出行计划，现在
+做一个北京的3天旅游攻略，适合情侣的，主要以历史景点为主，配合
+每天的特色餐饮，输出包括线路、景点介绍和出行注意事项的计划
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|得到的结果质量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+5个常用的提示词框架
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|核心框架：CRISPE框架
+C - Capacity and 
+Role (能力与角色)
+你希望模型扮演什
+么角色？（专家、
+助手、特定人物等）
+I - Insight (洞察/
+背景)： 
+提供上下文、背景
+信息或关键见解
+S - Statement 
+(任务陈述)
+清晰、具体地说明
+你希望模型完成什
+么任务
+P - Personality 
+(风格/个性)
+期望输出的风格、
+语气、个性或格式
+E - Experiment 
+(实验/迭代)
+鼓励尝试不同的措
+辞或方法（隐含）。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|核心框架：CRISPE框架
+C - Capacity and 
+Role (能力与角色)
+你希望模型扮演什么角
+色？（专家、助手、特
+定人物等）
+你是一位经验丰富的营
+养师
+I - Insight (洞察/
+背景)： 
+提供上下文、背景信息
+或关键见解
+我的客户是一位 45 岁
+的办公室职员，男性，
+有轻度高血压，平时久
+坐，目标是减重 5 公
+斤
+S - Statement 
+(任务陈述)
+清晰、具体地说明你希
+望模型完成什么任务
+为他设计一份为期一周
+的、适合中国饮食习惯
+的早餐和午餐食谱计划
+P - Personality 
+(风格/个性)
+期望输出的风格、语气、
+个性或格式
+计划需要简单易行、食
+材容易购买。使用专业
+但易懂的语言，避免过
+于学术化
+E - Experiment 
+(实验/迭代)
+鼓励尝试不同的措辞或
+方法（隐含）。
+给出3个不同的版本
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|输出
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|版本2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|版本3
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|提升提示词思路的方法
+• 修改部分要素
+• 重新生成
+• 感受其中的变化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|改风格和格式
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果导向：BROKE框架
+背景
+ (Background): 
+提供足够的背景信
+息，使大模型理解
+问题的上下文
+角色 (Role): 
+设定特定的角色，
+根据该角色来生成
+响应
+目
+标 (Objectives):
+明确任务目标，让
+大模型知道需要实
+现什么
+关键结果 (Key 
+Results):
+定义关键的、可衡
+量的结果
+演变 (Evolve): 
+通过试验和调整来
+测试结果，并根据
+需要进行优化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果导向：BROKE框架
+背
+景
+ (Background): 
+提供足够的背景信息，
+使大模型理解问题的上
+下文
+产品思维是一种重要的
+技能，能帮助解决各种
+问题，随着AI时代的到
+来，不断提升产品思维
+的能力至关重要
+角色 (Role): 
+设定特定的角色，根据
+该角色来生成响应
+你是一名资深的产品经
+理导师，能提供使用的
+建议和指导
+目
+标 (Objectives):
+明确任务目标，让大模
+型知道需要实现什么
+了解产品思维和产品设
+计方法
+通过实际项目拆解提升
+产品思维
+关键结果 (Key 
+Results):
+定义关键的、可衡量的
+结果
+完成至少5个AI产品思
+路拆解
+每个项目后获得专业的
+反馈和建议
+演变 (Evolve): 
+通过试验和调整来测试
+结果，并根据需要进行
+优化
+每月评估一次学习进度，
+调整学习计划
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|目标导向：CHAT框架
+角色
+（Character）
+关于用户身份
+和角色的信息
+背景
+（History）
+提供问题相关
+的历史信息和
+背景知识
+目标
+（Ambition)
+希望从大模型
+交互实现的短
+期和长期目标
+任务（Task)
+希望大模型执
+行的具体任务
+或行动
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|目标导向：CHAT框架
+角色
+（Character）
+关于用户身份和角
+色的信息
+我是一名数学老师
+背景
+（History）
+提供问题相关的历
+史信息和背景知识
+需要教授小学一年
+级数学
+目标
+（Ambition)
+希望从大模型交互
+实现的短期和长期
+目标
+需要寻找高质量的
+教学资源
+任务（Task)
+希望大模型执行的
+具体任务或行动
+请提供关于小学数
+学一年的资源或推
+荐，最好是图文并
+茂的
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大赛冠军CO—STAR
+背景
+（Context)
+提供必要的
+背景信息
+目标
+（Objective）
+具体的结果
+和行动
+风格（Style）
+文本语气风
+格
+语气（Tone)
+情感基调
+受众
+（Audience）
+文本的目标
+读者
+响应
+（Response）
+最终输出的
+形式和结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大赛冠军CO—STAR
+背景
+（Context)
+提供必要的背景信息
+我想推广公司的新产品。
+我的公司名为 Alpha，
+新产品名为 Beta，是一
+款AI玩具。 
+目标
+（Objective）
+具体的结果和行动
+帮我创建一条 weibo 帖
+子，目的是吸引人们点
+击产品链接进行购买。
+风格（Style）
+文本语气风格
+参照 apple 等成功公司
+的宣传风格，它们在推
+广类似产品时的文案风
+格
+语气（Tone)
+情感基调
+说服性 ，温柔，热情洋
+溢 
+受众
+（Audience）
+文本的目标读者
+我们公司在 weibo 上的
+主要受众是宝妈。请针
+对该群体在选择儿童智
+能产品时的典型关注点
+来定制帖子。
+响应
+（Response）
+最终输出的形式和结构
+保持 weibo 帖子简洁而
+深具影响力。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|克服困难：SCOPE框架
+情境（Scenario）
+提供了问题或任务
+发生的上下文和背
+景 
+复杂情况
+（Complications）
+进一步描述了问题
+中存在的难点或复
+杂因素
+目标（Objective）
+明确了应该达到的
+目标或预期效果 
+计划（Plan）
+一个或多个具体的
+行动方案，用于解
+决问题或达到目标
+评估
+（Evaluation）
+行动之后，对实施
+效果进行的考核或
+分析
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|克服困难：SCOPE框架
+情境（Scenario）
+提供了问题或任务发生
+的上下文和背景
+我们计划在下个季度推
+出一个新产品
+复杂情况
+（Complications）
+进一步描述了问题中存
+在的难点或复杂因素
+市场上已有多个竞争产
+品，而且我们的预算有
+限
+目标（Objective）
+明确了应该达到的目标
+或预期效果 
+在上市三个月内实现销
+售目标的 80%
+计划（Plan）
+一个或多个具体的行动
+方案，用于解决问题或
+达到目标
+1）进行市场调查以确
+定目标客户 2）设计营
+销活动 3）与销售团队
+密切合作以推动销售
+评估
+（Evaluation）
+行动之后，对实施效果
+进行的考核或分析
+在产品上市后的每个月
+进行销售数据分析，并
+根据结果调整计划
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+提示词编写的关键点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|Google给出的建议
+• 明确意图：始终清楚地传达最重要的内容或信息。
+• 构建提示词：首先定义其角色，提供上下文 / 输入数据，然后给出具体指
+令。
+• 参照例子：为模型提供具体的、多样化的例子，帮助它产生更准确的结果。
+• 限制输出范围：使用限制条件确保模型的输出与指令紧密相关。
+• 任务分解：对于复杂任务，将其分解成一系列更简单的提示词。
+• 质量监控：指导模型在生成响应之前对其进行评估或自检。
+• 逐步思考：针对复杂问题，引导模型按照逐步的逻辑推理输出结果。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|关键
+• 明确自己要什么
+• 目标
+• 输出结果
+• 风格
+• 给出更加详细的背景
+• 上下文
+• 角色
+• 资源特点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|如何提高
+多练习
+保持好奇
+心
+加强对问
+题本质的
+思考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+Thanks for having you all the way
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

@@ -1,0 +1,1168 @@
+<!-- PAGE 1 -->
+AI产品的
+流程分解与
+工作流构建
+开篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+理解了大模型的核心价值
+才能获得核心价值
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+APB
+第四次工业革命
+• 21世纪
+• 美国、中国引领
+• 智能时代
+• 核心发明：人工智能
+• 周边能力：5G、IOT、大数据、数字化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+APB
+正在和即将的关键变化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+APB
+底层逻辑
+• 创作和决策两个关键性人类脑力劳动，AI可以开始替代
+• 在基础、常规、复杂度较低的脑力劳动方向，极大提高生产力水平
+• 例如：
+• 客服的应答
+• 常规合同的审阅
+• 发票审阅
+• 基础设计
+• 基础数据分析
+• ……
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+APB
+广泛使用场景的价值
+• 产业链足够广阔，有足够多的岗位机会
+• 对个人来讲有两种核心机会进入行业
+• 直接进入新兴行业
+• 例如：互联网、移动互联网
+• 做传统行业的新技术转型
+• 例如：
+• 贸易+互联网=电商
+• 企业服务+互联网=SaaS
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+APB
+而且在具体行业落地中也会有很多场景机会
+在电商产业链上有很多场
+景可以进行AI化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+APB
+就以这个商汤的案例，复刻一下AI产品构建流程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+APB
+AI产品构建的核心框架-五层结构
+用户层
+应用层
+模型层
+数据层
+算法算力层
+逻辑 角色 任务目标
+UE、UI
+简洁提问
+专业提示词
+检索增强
+RAG
+易读知识库
+结构化数据
+垂直大模型
+通用大模型
+丰富可靠的数据湖
+算法 算力
+用户需要的答案
+专业回答
+接口调用
+MCP
+Function call
+动作驱动
+驱动动作结果
+产品经理
+UI、UE
+提示词工程师
+（产品经理部分兼任）
+研发主导，产品辅助
+大模型厂商、算法工程师
+大模型厂商+大数据提供
+方+客户
+AI科学家、芯片厂商
+良好的用户体验
+1：提示词结构化便于开发
+2：提示词技巧提高回答确定性可控性
+1：知识库导入、分块、向量化处理，
+建索引、检索
+2：RAG能力评测
+提升模型泛化能力或者垂直能力
+准确性、易用性、成本控制
+提供数据
+构建大模型易读的公、私数据系统
+提升算法算力水平
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+APB
+先从应用层构建
+用户层
+应用层
+模型层
+数据层
+算法算力层
+逻辑 角色 任务目标
+UE、UI
+简洁提问
+专业提示词
+检索增强
+RAG
+易读知识库
+结构化数据
+垂直大模型
+通用大模型
+丰富可靠的数据湖
+算法 算力
+用户需要的答案
+专业回答
+接口调用
+MCP
+Function call
+动作驱动
+驱动动作结果
+产品经理
+UI、UE
+提示词工程师
+（产品经理部分兼任）
+研发主导，产品辅助
+大模型厂商、算法工程师
+大模型厂商+大数据提供
+方+客户
+AI科学家、芯片厂商
+良好的用户体验
+1：提示词结构化便于开发
+2：提示词技巧提高回答确定性可控性
+1：知识库导入、分块、向量化处理，
+建索引、检索
+2：RAG能力评测
+提升模型泛化能力或者垂直能力
+准确性、易用性、成本控制
+提供数据
+构建大模型易读的公、私数据系统
+提升算法算力水平
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+APB
+核心处理设计的步骤
+流程 角色 结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+核心处理设计的步骤
+流程 角色 结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+流程
+• 大模型产品的常规方式
+• 复刻人的决策方式
+• 复刻人的组织流程
+• 因此
+• 首先梳理原有业务，人工处理的方式和逻辑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+这个步骤的关键
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+大模型产品的本质
+• 机械时代
+• 把人工流程，人手工艺，复刻到机器上
+• 提升效率和和精度
+• AI时代
+• 把人工流程，人脑工艺，复刻到智能体
+• 提升效率和和精度
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+案例
+• 商品自动选品发微博
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+APB
+大致流程如下
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+我们思考下，人工的话一般几个分工，什么流程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+人工流程
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+流程分析的价值
+• 流程通过工作流复刻
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+APB
+模型选择
+提示词
+模型选择
+工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+所以，工作流是什么
+• 标准说法：工作流（Workflow）是一套流程化的系统，包含多
+个步骤，可以调用不同的大模型，API，用于回答问题或完成某
+项任务
+• 通俗理解
+• 工作流就是一个流水线，把各种工具（比如大模型、接口、脚本）等按
+照一定的顺序连接起来，完成一个复杂任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+工作流和智能体的区别
+• 智能体（Agent)像一个助理，或者像一个人
+• 更加灵活的选择适合的流水线或者自己手工操作这些工具完成目标
+• 工作流（workflow）更像一条生产线
+• 一丝不苟的按照既定的流程完成工作
+• 所以
+• 智能体更灵活，而工作流更有确定性
+• 工作流的优势在于可以方便的集成整合各种能力
+• 而智能体可以灵活的调用工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+简单来说
+• 智能体是LLM面向对象最终的产品
+• 工作流是智能体中完成某一工序的流水线
+• 类似：
+• 微信是个智能体
+• 扫描二维码识别是一个工作流
+• 搜索公众号文章是一个工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+人工流程和工作流组件的关系
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+看新闻：
+新闻抓取器 分析：大模型
+每条：循环
+商品库：RAG
+创作：大模型
+视频：拆分更细
+的工作流
+多工作：分支流
+程
+发布：发布插件、
+RPA
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+大致看一下在Coze中的体现
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+人工流程和工作流组件的关系
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+看新闻：
+新闻抓取器
+分析：大模型
+每条：循环
+商品库：RAG
+创作：大模型
+视频：拆分更细
+的工作流
+多工作：分支流
+程
+发布：发布插件、
+RPA
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+APB
+新闻抓取器
+• 从搜狐上抓取热点新闻
+• 返回新闻列表
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+运行结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+人工流程和工作流组件的关系
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+看新闻：
+新闻抓取器 分析：大模型
+每条：循环
+商品库：RAG
+创作：大模型
+视频：拆分更细
+的工作流
+多工作：分支流
+程
+发布：发布插件、
+RPA
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+构建一个循环
+• 有多少条新闻，干多少次活
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+APB
+人工流程和工作流组件的关系
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+看新闻：
+新闻抓取器 分析：大模型
+每条：循环
+商品库：RAG
+创作：大模型
+视频：拆分更细
+的工作流
+多工作：分支流
+程
+发布：发布插件、
+RPA
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+APB
+核心处理设计的步骤
+流程 角色 结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 36 -->
+APB
+角色
+• 用Prompt复刻在这个位置上的人
+• 他的
+• 人设
+• 能力
+• 工作流程
+• 风格
+• ……
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 37 -->
+APB
+核心框架：CRISPE框架
+C&R - Capacity 
+and Role (能力与
+角色)
+你希望模型扮演什
+么角色？（专家、
+助手、特定人物等）
+I - Insight (洞察/
+背景)： 
+提供上下文、背景
+信息或关键见解
+S- Statement (任
+务陈述)
+清晰、具体地说明
+你希望模型完成什
+么任务
+P - Personality 
+(风格/个性)
+期望输出的风格、
+语气、个性或格式
+E - Experiment 
+(实验/迭代)
+鼓励尝试不同的措
+辞或方法（隐含）。
+R - Response (响
+应格式)：
+指定期望的输出格
+式（列表、表格、
+代码、JSON、
+Markdown 等）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 38 -->
+APB
+商品匹配专家
+• 看新闻，分析出需要什么样的
+商品进行匹配
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 39 -->
+APB
+Prompt
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 40 -->
+APB
+反馈结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 41 -->
+APB
+人工流程和工作流组件的关系
+看热点新闻 每条新闻分析，从商品库找到适合的商品
+根据热点和新闻撰
+写适合平台的文案
+根据热点和新闻制
+作适合平台的视频
+发布内容
+看新闻：
+新闻抓取器 分析：大模型
+每条：循环
+商品库：RAG
+创作：大模型
+视频：拆分更细
+的工作流
+多工作：分

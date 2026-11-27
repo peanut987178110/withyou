@@ -1,0 +1,1078 @@
+<!-- PAGE 1 -->
+Skill模式的解析
+Skill设计
+和Agent的关系
+实践篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+APB
+公司的活动有两个核心维度
+活动 优惠券
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+APB
+升级完成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+APB
+RAG的原理
+是什么
+开卷考试 = 先检索、再作答(RAG=检索增强生成)
+怎么工作
+建库(切块→向量化→存库)+ 问答(检索→拼接→生成)
+底层原理
+Embedding 把文字变向量,意思近=数字近
+和 LLM 关系
+Embedding 找资料(眼睛),LLM 写答案(嘴)
+适用边界
+知识多变要溯源就上 RAG;少稳要算数则不必
+质量关键
+答得准不准,押在「检索捞得准不准」上
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+APB
+提升 RAG 准确率:沿着链路逐环节「做准」
+数据 → 切片 → 召回 → TopK → 生成 → 评估,每一环都有专门的优化手段。
+数据清洗
+脏数据是头号杀手
+→
+切片分块
+切得好不好定召回
+→
+召回
+混合/改写/Rerank
+→
+TopK
+召回几条最合适
+→
+生成优化
+让模型老实用资料
+→
+评估
+怎么衡量准不准
+「召回」是其中技术性最强、提升空间最大的环节 —— 会重点展开混合检索、Query 改写、Rerank。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+A I · 产 品 · 商 业
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+小赵执行力不错 挺好的，和这次大促协同做的
+很好
+我们看看这次的数据反馈
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+小赵，你来一下
+现在大家都在搞Skill，老李，
+小赵，你们调研下，看看咱们
+怎么升级系统
+好的钱总 好的吧
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+APB
+你的反应
+• 为啥老板总是这样
+• 外面有个新的概念，也不管合不合
+适，就要调研
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+APB
+有人拍了拍你肩膀
+• 小赵啊
+• 在这个AI大潮的过程中，焦虑的
+并不止于打工人
+• 老板们更加焦虑，生怕自己落后
+于时代
+• 但这也是我们的一个机会
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+APB
+一段对话
+这为啥是机会，这不就是你说
+的拿着锤子找钉子么
+是，但skill确实是个有用的东西，
+而且
+而且什么
+想不想看看汇报方案怎么做很
+极致么？
+哦？
+我有点事，先忙一下，你先了
+解下skill的基本原理
+好的吧
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+什么是Skill
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+什么是Skill
+Skill 是一段「随取随用的专业知识包」——
+平时「睡」在文件系统里，只在相关任务触发时，才被加载进 Agent 的上下文。
+
+平时
+静静躺在文件夹里，不占上下文
+⚡
+触发
+任务匹配到描述，被唤醒
+
+注入
+操作手册进入上下文，指导执行
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+一个 Skill 拆开看，就是这三层
+①
+触发描述   description
+写清楚「什么情况下该用我」。本质是给 Agent 的路由信号 —— 它决定 Skill 能不能被正确唤醒。最被低估、最影响成败的一层。
+②
+主体规程   SKILL.md
+具体「怎么做对」。步骤、约束、坑在哪、怎么验证。重点写反直觉、试错才知道的部分。
+③
+附带资源   scripts / templates
+能固化的都固化：脚本、模板、参考文件、示例代码。让 Agent 少现写、少出错。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+Skills解决了什么
+• 让大模型记住怎么做某一件事情这个需求
+• 变成了一个标准化的文件结构
+• 三个核心
+• 用一个文件夹封装一个“技能”
+• 用markdown描述这个“技能”的调用方式
+• 用YAML头+索引，让大模型知道什么时候调用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+Skills的实现机制
+• Skills的机制：
+• 在一个文件夹里
+• 放多个目录结构
+• 以及具体的skill文件
+• 按需求调用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+APB
+Skill.md的格式
+• ---
+• name: data-analysis
+• description: 分析数据集并生成报告，支持 CSV/Excel 格式。
+• ---
+• # 数据分析 Skill
+• ## 使用场景
+• ...
+• ## 执行流程
+• ...
+YAML头部
+MD正文
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+大模型调用的机制
+• ---
+• name: data-analysis
+• description: 分析数据集并生成报告，支持 CSV/Excel 格式。
+• ---
+• # 数据分析 Skill
+• ## 使用场景
+• ...
+• ## 执行流程
+• ...
+初始化的时候，读取所有skill
+的YAML
+在发现需要使用的时候
+发现需要使用的时候再调用
+正文
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+然后你会发现
+• 这样去学习，有点抽象
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+有人拍了拍你肩膀
+• 来
+• 我给你讲一种方式
+• 用AI快速学AI
+• 然后还能有很好的汇报效果的方
+法
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+02Pa r t  Tw o
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+学习AI的一个困难
+• 有些概念是比较抽象的
+• 如果没有实践平台，没有技术背景的同学理解起来有困难的
+• 比较好的方式是
+• 技术
+• 场景
+• 实践
+• 三位一体
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+而
+• COZE的skill做的并不太适合学习研究
+• 我们刚好顺说做一个实验平台
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+先看效果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+核心功能-运行实验室
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+有一个翻译的skill
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+同时也有其他的
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+APB
+到运行实验室，作自动匹配
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+就可以可视化的看到完整的执行过程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+每一步的解释：第一步：初始化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+第二步：扫描目录
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+APB
+第三部：解析YAML头
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+APB
+第四步：接收Prompt-初始化完成，开始使用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 36 -->
+APB
+第五步：skill匹配
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 37 -->
+APB
+到运行实验室，作自动匹配
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 38 -->
+APB
+第六步：选择Skill
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 39 -->
+APB
+第七步-加载Skill内容
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 40 -->
+APB
+Skill的内容
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 41 -->
+APB
+第八步：执行
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 42 -->
+APB
+完整的解释说明
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 43 -->
+APB
+是不是能更直观的看到运行过程
+• 就比较容易理解这个技术的原理了
+• 好的，我们说说这个怎么做出来
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+Neur

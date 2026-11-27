@@ -5,13 +5,15 @@ the same way whether the caller is the app, a test, or the trigger engine.
 """
 from __future__ import annotations
 
+import base64
+import binascii
 import json
 from typing import Any
 
 from fastapi import APIRouter, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 
-from .. import content, voice
+from .. import audio_store, content, voice, voice_engine
 from ..core import ApiError, connect, is_plus, require_user
 from .common import body, idem, ok
 
@@ -109,9 +111,11 @@ async def start_call(request: Request):
     with connect() as conn:
         session = voice.create_session(conn, user, direction="outbound")
         quota = voice.quota_payload(conn, user, is_plus(user))
-        opener = voice._opener_for({"id": session["id"], "trigger_id": None}, user)
+        opener, used = voice._opener_for(
+            conn, {"id": session["id"], "trigger_id": None}, user,
+            voice._companion(conn, user))
         settings = voice.settings_row(conn, user["id"])
-    return ok(request, {"session": session, "opener": opener,
+    return ok(request, {"session": session, "opener": opener, "memory_used": used,
                         "quota": quota,
                         "soft_cap_seconds": voice.soft_cap_for(settings),
                         "minor_mode": settings["minor_mode"],
@@ -257,11 +261,167 @@ async def delete_note(request: Request, note_id: str):
 
 @router.get("/voice-notes/{note_id}/audio")
 async def note_audio(request: Request, note_id: str):
-    """Playback. Kept separate from the list so a thread of notes stays light."""
+    """Playback. Kept separate from the list so a thread of notes stays light.
+
+    Two encodings come out of this route: new notes stream the bytes straight
+    from disk, old ones still carry a data URL. The client is told which it got
+    so it does not have to guess from the body's shape.
+    """
     user = require_user(request)
     with connect() as conn:
         data = voice.note_audio(conn, user, note_id)
-    return ok(request, data)
+    if data.get("encoding") == "binary":
+        return Response(content=data["audio_bytes"], media_type=data["mime"],
+                        headers={"Cache-Control": "private, max-age=3600",
+                                 "X-Content-Type-Options": "nosniff"})
+    return ok(request, {k: v for k, v in data.items() if k != "audio_bytes"})
+
+
+@router.post("/voice-notes/blob", status_code=201)
+async def create_note_blob(request: Request):
+    """T4 upload for real recordings: raw bytes, not base64.
+
+    The JSON route takes a data URL, which is 33% overhead on a five-minute
+    clip and forces the whole thing through `JSON.parse`. This one takes the
+    recording as an octet stream with metadata in the query string.
+    """
+    user = require_user(request)
+    q = request.query_params
+    duration_ms = int(q.get("duration_ms") or 0)
+    if duration_ms <= 0 or duration_ms > 300000:
+        raise ApiError(400, "VALIDATION_ERROR", "Voice notes must be between 1s and 5 minutes.")
+    data = await request.body()
+    if not data:
+        raise ApiError(400, "VALIDATION_ERROR", "The recording was empty.")
+    if len(data) > audio_store.MAX_BYTES:
+        raise ApiError(413, "AUDIO_TOO_LARGE", "That recording is too large to keep.")
+    mime = (request.headers.get("content-type") or "audio/webm").split(";")[0]
+    peaks: list[float] = []
+    raw_peaks = q.get("peaks") or ""
+    if raw_peaks:
+        try:
+            peaks = [float(x) for x in raw_peaks.split(",") if x][:64]
+        except ValueError:
+            peaks = []
+
+    with connect() as conn:
+        conversation_id = q.get("conversation_id")
+        conv = conn.execute("SELECT * FROM conversations WHERE id=? AND user_id=?",
+                            (conversation_id, user["id"])).fetchone()
+        if not conv:
+            raise ApiError(404, "NOT_FOUND", "Conversation not found.")
+        stored = audio_store.save(user["id"], data, mime)
+        payload = {
+            "conversation_id": conversation_id,
+            "duration_ms": duration_ms,
+            "mime": mime,
+            "transcript": q.get("transcript") or "",
+            "peaks": peaks,
+        }
+        note = voice.create_note(conn, user, payload)
+        # create_note would normally store the base64 itself; here the bytes are
+        # already on disk, so point the row at the key we just wrote.
+        conn.execute(
+            "UPDATE voice_notes SET audio_key=?, audio_bytes=?, mime=? WHERE id=?",
+            (stored["key"], stored["bytes"], mime, note["id"]))
+        row = conn.execute("SELECT * FROM voice_notes WHERE id=?", (note["id"],)).fetchone()
+        note = voice.note_json(dict(row))
+
+        reply = None
+        text = (note.get("transcript") or "").strip()
+        if text:
+            from .. import chat_service
+            try:
+                result = chat_service.send_message(
+                    conn, user, note["conversation_id"],
+                    {"content": text, "client_message_id": q.get("client_message_id")},
+                )
+                voice.link_note(conn, user, note["id"], result["user_message_id"])
+                note["message_id"] = result["user_message_id"]
+                reply = result
+            except ApiError:
+                reply = None
+    return ok(request, {"note": note, "reply": reply}, "created", 201)
+
+
+@router.post("/voice/transcribe")
+async def transcribe(request: Request):
+    """Speech to text, or an explicit 501.
+
+    501 rather than an empty string on purpose: a blank transcript looks like
+    "it heard silence" and the UI would quietly send nothing. The client checks
+    `/voice/capabilities` first, and this route is the backstop.
+    """
+    user = require_user(request)
+    payload = await body(request)
+    clip = str(payload.get("audio") or "")
+    if not clip:
+        raise ApiError(400, "VALIDATION_ERROR", "No audio to transcribe.")
+    raw = clip.partition(",")[2] if clip.startswith("data:") else clip
+    try:
+        data = base64.b64decode(raw, validate=False)
+    except (binascii.Error, ValueError):
+        raise ApiError(400, "VALIDATION_ERROR", "Audio payload is not valid base64.")
+    try:
+        text = voice_engine.transcribe(data, str(payload.get("mime") or "audio/webm"),
+                                       str(payload.get("locale") or user.get("locale") or "en"))
+    except voice_engine.VoiceEngineUnavailable:
+        raise ApiError(501, "ASR_UNAVAILABLE",
+                       "Speech recognition is not configured on this deployment.")
+    except voice_engine.VoiceEngineError:
+        raise ApiError(502, "ASR_FAILED", "Speech recognition failed. Try again.",
+                       retryable=True)
+    return ok(request, {"text": text, "locale": payload.get("locale") or user.get("locale")})
+
+
+@router.post("/voice/tts")
+async def synthesize(request: Request):
+    """Text to speech. Returns audio bytes, the one non-enveloped response.
+
+    Everything else in this API answers with `{code, message, data}`. Audio
+    cannot: wrapping a WAV in JSON would mean base64 on every utterance. The
+    exception is recorded in the interface doc; failures still use the envelope,
+    so a client can tell "here is sound" from "here is why you got none" by the
+    content type.
+    """
+    user = require_user(request)
+    payload = await body(request)
+    text = str(payload.get("text") or "").strip()
+    if not text:
+        raise ApiError(400, "VALIDATION_ERROR", "Nothing to say.")
+    if len(text) > voice_engine.MAX_TTS_CHARS:
+        text = text[:voice_engine.MAX_TTS_CHARS]
+    with connect() as conn:
+        companion = voice._companion(conn, user)
+        raw_profile = companion["voice_profile"] if "voice_profile" in companion.keys() else None
+        profile = voice_engine.normalise_profile(
+            voice._load_json(raw_profile),
+            json.loads(companion["traits"] or "[]"), user.get("locale") or "en")
+    voice_id = str(payload.get("voice_id") or profile["voice_id"])
+    rate = payload.get("rate", profile["rate"])
+    pitch = payload.get("pitch", profile["pitch"])
+    try:
+        data, mime = voice_engine.synthesize(text, voice_id, float(rate), float(pitch))
+    except voice_engine.VoiceEngineUnavailable:
+        raise ApiError(501, "TTS_UNAVAILABLE", "Speech synthesis is turned off.")
+    except (voice_engine.VoiceEngineError, ValueError, TypeError):
+        raise ApiError(502, "TTS_FAILED", "Speech synthesis failed.", retryable=True)
+    return Response(content=data, media_type=mime,
+                    headers={"Cache-Control": "no-store",
+                             "X-Content-Type-Options": "nosniff"})
+
+
+@router.get("/voice/capabilities")
+async def capabilities(request: Request):
+    """What this deployment can actually do, so the UI stops guessing.
+
+    The phone needs to know three things before a call: can the server make
+    sound, can anything understand speech, and how big a clip may be. Answering
+    them here is what lets the client show an honest fallback instead of a
+    waveform animating over nothing.
+    """
+    require_user(request)
+    return ok(request, voice_engine.capabilities())
 
 
 # --------------------------------------------------------------- voicemails

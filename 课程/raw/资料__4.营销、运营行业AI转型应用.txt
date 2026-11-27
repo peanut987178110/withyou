@@ -1,0 +1,1118 @@
+<!-- PAGE 1 -->
+营销、运营行业
+技术拆解及
+产品设计
+应用篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+APB
+在企业场景中利用LLM构建效率提升的方法
+确定业
+务场景
+技术可
+行性初
+步评估
+流程梳
+理
+构建工
+作流
+测试上
+线
+内部推
+广
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+APB
+构建一个象限
+能力表现：生成内容
+包括文字、图片
+音频、视频等
+对话底层能力：理解、推理
+审核
+数据分析解读
+销售助手
+客服
+营销系统
+脚本评估
+简历评估
+合同生成
+标书评估
+数字化面试
+企业知识库
+决策辅助
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+APB
+两个大的分类
+侧重
+内容
+创作
+能力
+侧重
+对话
+交互
+能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+APB
+分析标书的构成
+标书
+商务部
+分
+技术部
+分
+其他部
+分
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+APB
+逻辑结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+APB
+详细拆解一下标书生成部分的工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+APB
+两种长文的拆解逻辑
+• 对于标书、论文、报告等严谨文章来说
+• 采用“大纲-详细”的方式
+• 树状结构
+• 注意：文章要求要一直传递给每一个详细写作agent
+• 长期记忆
+• 对于网文、小说等创意型文章来说
+• 采用持续生成确认的方式
+• 流体接哦顾
+• 注意：文章需要在开始的时候给出设定作为长期记忆
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+APB
+总共4大类，13小类
+政务服务 社会治理
+机关办公 辅助决策
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+APB
+MarTech
+• Martech = Marketing Technology，营销技术
+• 用技术手段提升营销效率、用户转化、客户运营、数据分析和
+增长决策的系统集合
+• 把“营销经验”变成“数据驱动 + 自动化 + 智能化”的系统
+能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+传统的营销活动
+• 投广告 
+• 做活动 
+• 发短信/公众号/邮件 
+• 销售跟进 
+• 人工看报表 
+• 凭经验判断用户需求
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+问题
+传统营销问题 具体表现
+用户数据分散 广告平台、官网、小程序、CRM、客服、线下门店数据不通
+投放粗放 不知道哪个渠道、哪个人群、哪个内容真正带来转化
+用户运营低效 所有人收到一样的内容，无法千人千面
+线索质量不稳定 销售拿到很多无效线索
+决策滞后 报表靠人工整理，发现问题已经晚了
+复购难 成交后缺少生命周期运营
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+MarTech的核心价值
+• 用技术把用户看清楚，把触达做精准，把转化链路做自动化，
+把营销结果做可衡量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+解决的五层核心问题
+获客
+数据采
+集和用
+户识别
+用户分
+层和标
+签
+自动化
+触达
+效果分
+析和增
+长优化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+解决的五层核心问题
+获客
+数据采
+集和用
+户识别
+用户分
+层和标
+签
+自动化
+触达
+效果分
+析和增
+长优化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+APB
+获客-解决用户从哪来的问题
+• 三个核心问题
+投给谁
+投什么哪个渠道承接
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+常用工具
+工具类型 典型工具/渠道 作用
+广告投放平台 巨量引擎、腾讯广告、百度营销、Google Ads、Meta Ads 获取付费流量
+搜索营销工具 SEO、SEM、关键词工具 捕获主动搜索需求
+内容平台 小红书、抖音、快手、B站、公众号、知乎 内容种草、品牌曝光
+落地页工具 建站工具、表单工具、H5、低代码页面 承接转化
+线索收集工具 表单、企微活码、预约工具、在线咨询 获取联系方式或咨询意向
+活动工具 直播、裂变、优惠券、报名系统 制造转化场景
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+典型问题
+• 只看线索量，不看线索质量
+• 渠道ROI算不清
+• 渠道流量和ROI的完整链路跟踪
+• 内容和人群不匹配
+• 一套文案打所有人群
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+AI能做什么
+AI 能力 具体应用
+人群洞察 根据历史成交数据分析高价值客户特征
+渠道策略生成 根据目标客户和预算推荐渠道组合
+广告素材生成 生成广告标题、短视频脚本、海报文案、直播话术
+关键词扩展 自动生成 SEO/SEM 关键词、长尾词、竞品词
+落地页优化 生成不同人群版本的落地页文案
+投放诊断 分析 CTR、CVR、CPA、ROI 异常原因
+竞品内容分析 总结竞品主打卖点、内容风格、用户反馈
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+APB
+案例：筷子科技
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+价值提升
+降本增效
+简单重复性工作的人力替代
+价值提升
+通过数据反馈闭环提升核心效果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+元素逻辑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+核心能力
+• 多模态处理能力
+• 产品经理在这里操作的一个技巧
+• 找comfyUI的工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+ComfyUI
+• 目前多模态领域上最强大和灵活的工作流系统
+• 不过对于产品而言
+• 不需要对ComfyUI有过多理解，这个属于设计师+工程师解决的
+问题
+• 但产品经理可以从ComfyUI资源站找到很多产品思路
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+资源站
+• https://openart.ai/workflows/home
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+例如
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+APB
+工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+细节部分
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+产品经理要做的
+• 经常看“技术上能做到什么”
+• 深入理解“产品上市场需要什么”
+• 两者结合
+• 设计产品
+• 调动技术进行开发
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+这个框架下的核心功能
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+APB
+在这个基础上如何进行进一步升级
+• 顺理成章的在2024年之后开始进行AIGC的升级
+• 从人机协同模式，进化到AIGC模式
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+APB
+产品界面
+素材制作管理
+投放管理
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 36 -->
+APB
+多场景AI文本
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 37 -->
+APB
+无代码AI营销平台
+用AI建议编辑网页，提高转化率
+转化率预测
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 38 -->
+APB
+Mutiny
+• 专注帮助公司提升转化率的数
+字营销工具
+• 动态顶置网站的文字、视觉和
+交互，匹配访问者的个人资料
+• 2021年9月接入了GPT3
+• 尝试用生成式AI帮助用户生成
+图片、视频
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 39 -->
+APB
+公司情况
+• 2018年在旧金山成立
+• 团队
+• 联合创始人：
+• Jaleh Rezaei，前Vmware产品营销总监，Y Combinator、google顾问
+• Nikhil Mathew 音乐协作工具LiveGit 联合创始人
+• 融资：
+• 4轮，总计7162万美元，估值6亿美元
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 40 -->
+APB
+融资历程
+融资轮次 时间 融资金额 投资方
+B轮 2022.04.20 5000万美元 老虎、Insight等
+A轮 2021.09.15 1850万美元 Sequoia、Y、Uncork
+等
+Pre-A轮 2018.09.15 300万美元 Uncork、Liquid2、
+Cowboy
+种子轮 2018.08.27 12万美元 Y
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 41 -->
+APB
+AI营销内容生成工具
+• 学习客户企业的“数据”，将企
+业的风格、logo等信息导入
+Typeface供学习
+• Typeface输出更个性化、满足企
+业实际需求的内容
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 42 -->
+APB
+公司情况
+• 2022年成立于旧金山
+• 团队
+• 创始人：Abhay Parasnis，Adobe前CTO，曾任微软技术高管
+• 融资：
+• 2轮，1.65亿美元
+• 估值10亿美元
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 43 -->
+APB
+融资历程
+融资轮次 时间 融资金额 投资方
+B轮 2023.06.30 1亿美元 Salesforce、M12、
+lightspeed、google
+A轮 2023.02.27 65000万美元 Lightspeed、google、
+M12、Menlo
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+Neu

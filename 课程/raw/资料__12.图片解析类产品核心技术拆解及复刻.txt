@@ -1,0 +1,1055 @@
+<!-- PAGE 1 -->
+图片解析和教育智能体
+产品核心技术拆解和
+产品设计
+应用篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+APB
+但在大模型产品构建中，可以跳出这个模式
+• 由于大模型产品目前处于蓝海状态
+• 可以采用更为宽口径的方式进行方向选择
+广义痛点 定位人群 梳理需求 构建产品
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+APB
+定位人群
+• 情感
+• 健康
+• 照护
+• 闺蜜型
+• 情侣型
+• 宠物型
+• 二次元
+• 情侣型
+• 玩伴
+• 陪学
+• 照护
+老人 女人
+男人孩子
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+APB
+记忆分层架构
+L3:碎片记忆
+L2:概要记忆
+L1:核心画像
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+APB
+整体结构图
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+APB
+老年人对AI接受低的底层原因
+• 一种新产品在市场推广的过程中，按照用户的接受程度，会分
+为几类
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+APB
+陪伴照护需要的工作拆解
+沟通对话
+个性化
+情感陪护-安
+慰、鼓励、陪
+伴
+知识性：生活、
+营养、资讯、
+医疗
+监督
+用药提醒
+理疗锻炼监督
+检测
+生命体征
+健康状态
+实体感受
+触感
+身体辅助
+实体照护
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+APB
+选择银发经济的定位
+保（保障）
+不是民营企业能做的
+不要做
+医（医疗）
+对高端用户提供医疗
+服务
+需要背景和资质
+养（养老）
+重资产
+慎重介入
+娱（娱乐）
+选择有消费力的人群
+好生意
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+APB
+出海项目-Gauth
+• 字节跳动海外拍题产品
+• 实现数理化多科目拍题、辅导
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+APB
+主要特点
+• 学科丰富，覆盖面广
+• 数学、金融、生物、协作、文学、社科等
+• 对标
+• 谷歌旗下Photomath主打代数、算数、微积分
+• 作业帮海外QuestionAI，数学、微积分、生物
+• 真人+AI
+• AI免费，引流（每天11次免费）带来了病毒传播
+• 无限次AI解题，优先真人老师帮助付费
+• 阅读11.99美元，年度99.99美元
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+效果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+日活稳定增长
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+搜题和错题本的价值
+• 搜题和错题本既是学生的普遍需求
+• 又可以借助这两个场景进行用户信息的收集
+• 基于错题了解用户对哪些知识点掌握有问题
+• 并可以衍生很多新场景
+• 解题
+• 教师辅助
+• 出题
+• 出卷子
+• toC toB都有机会
+• 又是技术和数据竞争的核心点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+讲一个错题的工作流构建
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+作用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+APB
+主要思路
+初始输入：
+错题图片+学员名称
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+主要思路
+图片解析成文字
+需要注意：
+真实场景这个环节要求非常高
+因为手写、公式、几何题目、图示都是难点
+这里简化输出思路
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+主要思路
+用大模型能力分析错题原因
+并将结果放到多维表格中
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+prompt
+• # 角色
+• 你是一名初中数学老师，能够从学生的错题中精准识别归纳整理错题类型以及涉
+及的知识点，并依据这些知识点出题。
+• ## 技能
+• ### 技能 1: 归纳错题类型和知识点
+• 1. 针对用户提供的错题，分析其属于以下哪种常见错题类型：
+•     - **概念理解错误**：对数学、科学等学科中的基本概念、定义、定理等理
+解不透彻，导致运用错误。例如在数学中，将“奇数”和“质数”的概念混淆，
+认为所有奇数都是质数。
+•     - **公式运用错误**：没有准确掌握公式的适用条件、推导过程或记忆不准
+确，从而在解题时用错公式。比如在计算三角形面积时，忘记乘以二分之一。
+•     - **计算错误**：较为常见的错误类型，涵盖数字看错、符号写错、加减法
+进退位错误、乘除法口诀记错、小数点位置错误等。例如，做小数加法时没有将
+小数点对齐。
+•     - **审题错误**：没有仔细阅读题目，遗漏关键信息，误解题意，致使答案
+错误。如语文阅读题中，要求找出文中描写春天的句子，却找成了描写夏天的句
+子。
+•     - **思维逻辑错误**：解决问题时思路不清晰，推理过程不合理，因果关系
+错误等。比如在数学的逻辑推理题中，无法正确分析条件之间的关系，得出错误
+结论。
+•     - **粗心大意错误**：答题时不认真、不细心，出现一些低级错误。如在英
+语单词拼写时，少写或多写字母；写作文时，出现错别字或漏字现象。
+•     - **知识漏洞错误**：由于对某些知识点没有掌握或掌握不熟练，导致在相
+关题目上出错。例如在学习乘法口诀时，对某几句口诀不熟悉，影响乘法计算的
+准确性。
+• 2. 同时，详细归纳该错题所涉及的具体知识点。
+• ### 技能 2: 识别整理错题知识点
+• 根据{{input}}整理：错题学科、错题题目类型、知识点、知识点解析；
+• 错题学科存储在变量xueke；
+• 题目类型存储在变量type；
+• 知识点存储在变量knowledge；
+• 学生姓名为{{stu_name}}；
+• 知识点解析与学习技巧存储在变量content，知识点解析字数控制在80字左右;
+• ### 技能3：构建多维表格标准格式
+• 将输出内容格式整理为object类型：
+• 格式严格按照[{"fields":{"姓名":"stu_name","错题学科":"学科","错题类型
+":"type","错题知识点":"knowledge","知识点解析":"content"}}]
+• 参考范例：
+•   fields= 
+•   [
+•        {
+•         "fields": {
+•         
+•                           }
+•        }
+•     ]
+• ## 限制
+• - 仅围绕初中数学相关错题处理展开讨论，拒绝回答无关话题。
+• - 所输出内容需条理清晰，符合正常逻辑表达习惯。 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+APB
+注意
+• 这里是一个单科错题解析
+• 如果要做全科，结构需要做调整
+• 在前置需要先分析是哪个学科
+• 然后根据不同学科分到不同的LLM模块进行解读
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+主要思路
+两个交互
+是否需要出题
+出题数量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+主要思路
+学生卷子生成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+主要思路
+家长、老师
+答案+解析内容生成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+主要思路
+完成输出
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+实际运作优化点
+• 全科
+• 解析+多智能体
+• 图像解析优化
+• 题库
+• RAG
+• 基于用户信息构建个性化错题本
+• 长期记忆+数据库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+启发
+• 大模型的一个重要能力在于多模态的理解
+• 图片的理解
+• 语音语义的理解
+• 视频的拆分和理解
+• 这是和传统程序很大的差异
+• 传统程序处理文字的能力ok
+• 对多模态理解能力差
+• 这就带来了很多机会
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+APB
+再看一个案例
+• 从一个单点，用ai能力，做出新奇体验的产品
+• CapWords
+• 2025年Apple 设计大奖
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+功能流程
+拍照，大模型把图片识别出物品，物品翻译成目标语言，做例句，有TTS
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+周边功能
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+噜咔博士
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+APB
+核心卖点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+APB
+Cal AI
+• 拍照，图像识别，计算卡路里，制定个性化减肥计划
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 36 -->
+APB
+这个核心功能有多简单呢？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 37 -->
+APB
+大致效果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 38 -->
+APB
+效果，这个app收入超过了800w美元
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 39 -->
+APB
+Cal ai
+AI能力 已存在产品 寻找未被满足需求 升级改造 新产品
+图片识别
+LLM基础能
+力
+热量记录软
+件
+原有热量记录软
+件需要用户多步
+骤操作，繁琐
+用户留存率低
+改变用户记录方式
+拍照自动识别
+配合周边功能
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 40 -->
+APB
+另外一些的产品思路
+• 拍图做饭
+• 打开冰箱，拍一张剩余食材图片
+• 识别食材
+• 设计符合用户口味要求的详细菜谱
+• 无障碍辅助
+• 视力障碍人士，通过手机摄像头感知周围
+• 例如：模型实时通过语音描述：“你面前有一扇半开的门，前面5米处有一把
+椅子”
+• 帮助阅读药瓶上的标签和剂量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFl

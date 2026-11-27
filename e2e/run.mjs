@@ -308,8 +308,18 @@ async function gotoSignedOut(page) {
 
 /* ------------------------------------------------------------------ main */
 
-const browser = await chromium.launch();
-const context = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
+// A fake microphone so the recorder can actually be exercised. Chromium feeds
+// it a synthetic tone, which is enough to prove capture → upload → playback
+// works end to end; without these flags `getUserMedia` rejects in headless and
+// every voice assertion would be testing the fallback path instead.
+const browser = await chromium.launch({
+  args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'],
+});
+const context = await browser.newContext({
+  viewport: { width: 390, height: 844 },
+  deviceScaleFactor: 2,
+  permissions: ['microphone'],
+});
 const page = await context.newPage();
 watch(page);
 
@@ -581,8 +591,88 @@ try {
   const rules = await page.$$eval('.voice-rules li', (n) => n.length);
   log(rules === 4, 'the four call rules are on the screen, not just in the API', { rules });
 
+  /* ---- the voice picker actually changes the account ------------------- */
+  // A picker that only re-highlights a row is a control with no effect. This
+  // picks a different voice and reads it back from the API.
+  const voicePick = await page.evaluate(async () => {
+    const rows = [...document.querySelectorAll('[data-voice]')];
+    if (rows.length < 2) return { rows: rows.length, changed: false };
+    const current = rows.find((r) => r.getAttribute('aria-pressed') === 'true');
+    const target = rows.find((r) => r !== current) || rows[1];
+    const wanted = target.getAttribute('data-voice');
+    target.click();
+    await new Promise((r) => setTimeout(r, 1200));
+    const me = await fetch('/api/v1/companions', {
+      headers: { Authorization: 'Bearer ' + localStorage.getItem('wy_token') },
+    }).then((r) => r.json());
+    const comp = (me.data.items || [])[0] || {};
+    const profile = comp.voice_profile || {};
+    return {
+      rows: rows.length,
+      wanted,
+      saved: profile.voice_id,
+      pressed: (target.getAttribute('aria-pressed') === 'true'),
+    };
+  });
+  log(voicePick.rows >= 2 && voicePick.saved === voicePick.wanted,
+    'picking a voice saves it to the account', voicePick);
+
+  /* ---- T4: a real recording, from the microphone to the bubble -------- */
+  // The old build's note was a duration plus a typed guess; this exercises the
+  // whole path — capture, upload as bytes, stored peaks, playback endpoint.
+  await goto(page, 'chat', '#composer');
+  const noteRun = await page.evaluate(async () => {
+    const mic = document.querySelector('#composer-mic');
+    if (!mic) return { started: false, why: 'no mic button' };
+    mic.click();
+    await new Promise((r) => setTimeout(r, 1500));
+    const armed = mic.getAttribute('aria-pressed') === 'true';
+    mic.click();
+    await new Promise((r) => setTimeout(r, 900));
+    const sheet = document.querySelector('.sheet-backdrop');
+    const input = document.querySelector('#note-transcript');
+    if (input) {
+      input.value = 'I recorded this out loud';
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    const send = sheet
+      ? [...sheet.querySelectorAll('.btn')].find((b) => /send/i.test(b.textContent))
+      : null;
+    if (send) send.click();
+    await new Promise((r) => setTimeout(r, 3000));
+    return { started: true, armed, askedTranscript: !!input };
+  });
+  log(noteRun.started && noteRun.armed, 'the mic opens and records for real', noteRun);
+
+  const noteBubble = await page.evaluate(() => {
+    const bubble = document.querySelector('.voice-note');
+    if (!bubble) return null;
+    return {
+      bars: bubble.querySelectorAll('.peaks i').length,
+      duration: (bubble.querySelector('.dur') || {}).textContent || '',
+    };
+  });
+  log(!!noteBubble && noteBubble.bars >= 3,
+    'the note bubble draws a waveform from the recording', noteBubble);
+
+  const noteAudio = await page.evaluate(async () => {
+    const list = await fetch('/api/v1/voice-notes', {
+      headers: { Authorization: 'Bearer ' + localStorage.getItem('wy_token') },
+    }).then((r) => r.json());
+    const note = (list.data.items || [])[0];
+    if (!note) return { bytes: 0 };
+    const res = await fetch(`/api/v1/voice-notes/${note.id}/audio`, {
+      headers: { Authorization: 'Bearer ' + localStorage.getItem('wy_token') },
+    });
+    const buf = await res.arrayBuffer();
+    return { bytes: buf.byteLength, type: res.headers.get('content-type'), peaks: (note.peaks || []).length };
+  });
+  log(noteAudio.bytes > 600, 'the recording is stored and can be streamed back', noteAudio);
+
   // Toggle one setting and read it straight back from the server: the toggle
   // is the only control whose effect is otherwise invisible.
+  // (Back to the voice page first — the note test above left us in the chat.)
+  await goto(page, 'voice', '.voice-quota');
   const capToggle = await page.$('[data-vtoggle="captions_enabled"]');
   if (capToggle) {
     const was = await page.getAttribute('[data-vtoggle="captions_enabled"]', 'aria-checked');
@@ -612,6 +702,24 @@ try {
   const opener = await page.textContent('#call-line');
   log(opener && opener.trim().length > 12, 'the companion speaks first, with something specific',
     { opener: (opener || '').slice(0, 60) });
+
+  // The call now has a real microphone and a real speaker, so the screen has a
+  // phase. `speaking` while audio plays, `listening` when the floor is free.
+  await page.waitForFunction(() => {
+    const el = document.getElementById('call-screen');
+    return el && ['listening', 'speaking', 'thinking'].includes(el.dataset.phase);
+  }, { timeout: 12000 }).catch(() => {});
+  const callPhase = await page.evaluate(() => {
+    const el = document.getElementById('call-screen');
+    return {
+      phase: el && el.dataset.phase,
+      mic: el && el.dataset.mic,
+      engine: el && el.dataset.engine,
+    };
+  });
+  log(callPhase.phase === 'listening' || callPhase.phase === 'speaking',
+    'the call runs a real phase machine', callPhase);
+  log(callPhase.mic === 'on', 'the call opens the microphone', callPhase);
 
   // The header says "Calling…" while the dial is in flight and must switch to
   // the live label once the server answers — it used to stay on "Calling…"

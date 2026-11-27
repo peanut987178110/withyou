@@ -5,6 +5,7 @@ import { toast } from './dom.js';
 import { state, renderApp, go, loadSession, loadMeta, resetState } from './state.js';
 import { t, paintBootText } from './i18n.js';
 import { adoptAccountLocale } from './language.js';
+import { loadCapabilities } from './audio.js';
 import './screens/auth.js';
 import './screens/home.js';
 import { resetChatState } from './screens/chat.js';
@@ -87,6 +88,11 @@ async function boot() {
   // already known by now, so the first thing the user sees should be in it.
   paintBootText();
   await loadMeta().catch(() => null);
+  // What this deployment can do with sound is needed by both the call screen
+  // and the voice picker. Only ask once there is a session: on a logged-out
+  // first run the endpoint answers 401, and that shows up as a failed request
+  // that looks like a bug in every report it lands in.
+  if (getToken()) loadCapabilities().catch(() => null);
 
   let me = null;
   if (getToken()) {

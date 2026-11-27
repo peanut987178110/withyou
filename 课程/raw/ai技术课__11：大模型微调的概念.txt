@@ -1,0 +1,447 @@
+<!-- PAGE 1 -->
+炒 饭 会 大 模 型 基 础 认 知|
+第十一节：大模型微调的概念
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+炒 饭 会 大 模 型 基 础 认 知|
+• 模型微调的概念
+• 模型微调的场景需求
+• 模型微调的方法
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+模型微调的概念
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型微调的定义
+• 大模型微调：
+• 利用特定领域的数据集对已预训练的大模型进行进一步训练的过程
+• 旨在优化模型在特定任务上的性能
+• 使模型能够更好地适应和完成特定领域的任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|模型微调的目的和原因
+• 核心目的：
+• 微调的核心让大模型在特定领域有定制化的能力和表现
+• 通用大模型的主要目的在于“通用”，但在特定领域一定是需要提升的
+• 通过微调，可以使模型更好地适应特定领域的需求和特征。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|打个比方
+• LLM是个全科的大学毕业生
+• 什么都懂
+• 但同时什么也不足够专
+• 那么，肯定在专业领域上，比不上
+• 医学研究生
+• 建筑研究生
+• 数学研究生
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|所以，需要进行
+• 领域知识学习
+• 通过引入特定领域的数据集进行微调
+• 大模型可以学习该领域的知识和语言模式
+• 这有助于模型在特定任务上取得更好的性能
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|打个比方
+• 培养研究生的方法：
+• 给本科生（LLM)大量专业资料
+• 大量专业练习
+• 让ta成为专业领域的人士
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+微调模型的场景需求
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|微调的需求
+• 为什么要用微调
+• 而不是用提示词工程
+• 或者RAG来解决问题？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|几个原因带来了微调需求
+输出准确
+性
+Prompt工
+程的限制
+成本的长
+期平衡 数据安全
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|输出准确性
+• 很多论文的实验结果，表明微调过的模型比不微调的模型在企
+业专属数据集的测试当中，准确率会有 10% 左右的提升
+• 在商业领域10%会有至关重要的决定性结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|Prompt工程的限制
+• Prompt+RAG固然能解决一部分问题
+• 但是prompt窗口是有长度限制的
+• 越长的Prompt，大模型的推理成本越高，因为推理成本是跟
+Prompt长度的平方正向相关的
+• Prompt太长会因超过限制而被截断，进而导致大模型的输出质
+量打折
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|成本问题
+• 当业务量小的时候，通用大模
+型有明显优势
+• 尽管每次使用的token成本高，
+但没有前置成本
+• 但当业务量足够大，累计的
+tokens额外费用超过了前置成
+本累计，就是另外一个情况了
+成本
+Tokens
+通用大模型
+私有模型
+A-point
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|安全问题
+• 如果数据是不能传递给第三方大模型服务的
+• 那么搭建自己的大模型微调的必要性就更高了
+• 通常开源的大模型都是需要用自有数据进行微调，才能够满足
+业务的需求，这时候也需要对大模型进行微调
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+模型微调的方法
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|可以在硅基流动上做一些实验
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|新建微调任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|上传文件
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|几种微调的技术路线
+• 监督式微调SFT(Supervised Fine Tuning)
+• 用人工标注的数据，用传统机器学习中监督学习的方法，对大模型进行微调
+• 基于人类反馈的强化学习微调RLHF(Reinforcement Learning with Human 
+Feedback)
+• 把人类的反馈，通过强化学习的方式，引入到对大模型的微调中去，让大模型生成的结果，
+更加符合人类的一些期望
+• 基于AI反馈的强化学习微调RLAIF(Reinforcement Learning with AI Feedback)
+• 这个原理大致跟RLHF类似，但反馈的来源是AI
+• 收集人类反馈，相对来说成本会比较高
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|几种流行的方案
+• Prompt Tuning
+• 基座模型(Foundation Model)的参数不变，为每个特定任务，训练一个少量
+参数的小模型，在具体执行特定任务的时候按需调用
+• Prefix Tuning
+• Prefix Tuning的出发点，跟Prompt Tuning的是类似
+• Prompt Tuning是在Embedding环节，往输入序列X前面加特定的Token
+• 而Prefix Tuning是在Transformer的Encoder和Decoder的网络中都加了一些
+特定的前缀
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|几种流行的方案
+• LoRA
+• 背后有一个假设：我们现在看到的这些大语言模型，它们都是被过度参
+数化的。而过度参数化的大模型背后，都有一个低维的本质模型
+• 大模型中有其中一部分参数，是非常重要的，是影响大模型生成结果的
+关键参数，这部分关键参数就是上面提到的低维的本质模型
+• 冻结预训练好的模型权重参数，然后在每个Transformer块里注入可训
+练的层，由于不需要对模型的权重参数重新计算梯度，所以，大大减少
+了需要训练的计算量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+Thanks for having you all the way
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

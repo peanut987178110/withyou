@@ -26,6 +26,19 @@ import { html, raw, icon, toast, openSheet, confirmSheet, clockTime, timeAgo } f
 import { state, route, go, loadSession, mountGuard, parseHash, renderApp } from '../state.js';
 import { topbar, loadingBlock } from '../ui.js';
 import { t, tf } from '../i18n.js';
+import {
+  openMic,
+  recorderFor,
+  createMonitor,
+  speak,
+  stopSpeaking,
+  transcribe,
+  blobToBase64,
+  caps as audioCaps,
+  loadCapabilities,
+  speakingMode,
+  recordingSupported,
+} from '../audio.js';
 
 function companionName() {
   return state.companion ? state.companion.name : t('chat.companionFallback');
@@ -50,6 +63,13 @@ route('voice', async () => {
   const data = await api.get('/voice');
   const q = data.quota;
   const s = data.settings;
+  // The voice list comes from the capabilities probe. Boot fires it, but this
+  // screen may be the first thing opened on a cold start, so wait if needed —
+  // an empty picker looks like "no voices exist" rather than "still loading".
+  if (!audioCaps.loaded) await loadCapabilities();
+  // Kept on the shared state so the call screen can honour the captions
+  // default without fetching again; it used to be read there and never set.
+  state.voiceSettings = s;
   const name = companionName();
   const calls = data.calls || [];
   const voicemails = data.voicemails || [];
@@ -83,6 +103,19 @@ route('voice', async () => {
         <span>${data.authorization.ai_may_call
           ? t('voice.unlockYes', { name })
           : t('voice.unlockNo', { name })}</span>
+      </div>
+
+      <div class="section-head mt-16"><h2>${t('voice.voiceTitle', { name })}</h2></div>
+      <p class="sub">${t('voice.voiceSub')}</p>
+      <div class="voice-list" id="voice-list">
+        ${(audioCaps.tts.voices || []).map((v) => html`
+          <div class="voice-option" role="button" tabindex="0" data-voice="${v.id}"
+            aria-pressed="${v.id === voiceProfile().voice_id ? 'true' : 'false'}"
+            aria-label="${escapeText(v.label)}">
+            <span class="name">${escapeText(v.label)}</span>
+            <span class="tags">${(v.tags || []).slice(0, 2).join(' · ')}</span>
+            <button class="audition" type="button" data-audition="${v.id}">${t('voice.audition')}</button>
+          </div>`)}
       </div>
 
       <div class="settings-group mt-16">
@@ -178,6 +211,54 @@ function quotaBar(kind, label, left, total) {
 
 function mountVoiceSettings(root) {
   const stillHere = mountGuard();
+
+  // --- the voice itself -------------------------------------------------
+  // Audition and selection are separate gestures: hearing a voice must not
+  // commit to it, or trying three in a row would rewrite the profile twice.
+  root.querySelectorAll('[data-audition]').forEach((btn) => {
+    btn.addEventListener('click', async (ev) => {
+      ev.stopPropagation();
+      const id = btn.getAttribute('data-audition');
+      const voice = (audioCaps.tts.voices || []).find((v) => v.id === id);
+      btn.disabled = true;
+      try {
+        await speak(t('voice.auditionLine', { name: companionName() }), {
+          voiceId: id,
+          rate: voice && voice.rate ? voice.rate : 1,
+          pitch: 1,
+          locale: state.locale,
+        });
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  });
+
+  root.querySelectorAll('[data-voice]').forEach((row) => {
+    const choose = async () => {
+      if (!state.companion) return;
+      const id = row.getAttribute('data-voice');
+      const profile = { ...voiceProfile(), voice_id: id };
+      try {
+        const res = await api.patch(`/companions/${state.companion.id}`, {
+          voice_profile: profile,
+          version: state.companion.version,
+        });
+        state.companion = res.companion || { ...state.companion, voice_profile: profile };
+        root.querySelectorAll('[data-voice]').forEach((x) => {
+          x.setAttribute('aria-pressed', String(x.getAttribute('data-voice') === id));
+        });
+        toast(t('voice.voiceSaved'), 'good');
+      } catch (err) {
+        toast(err.display || err.message || t('voice.voiceFail'), 'error');
+        if (!stillHere()) return;
+      }
+    };
+    row.addEventListener('click', choose);
+    row.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); choose(); }
+    });
+  });
 
   root.querySelectorAll('[data-vtoggle]').forEach((sw) => {
     sw.addEventListener('click', async () => {
@@ -296,8 +377,21 @@ export function startNewCall() {
 
 function stopCall() {
   if (!call) return;
-  call.tickers.forEach((id) => clearInterval(id));
+  call.tickers.forEach((id) => {
+    try { clearInterval(id); } catch (e) { /* gone */ }
+    try { clearTimeout(id); } catch (e) { /* gone */ }
+  });
   call.tickers = [];
+  clearSilenceTimers();
+  // Tear the audio down with the call. A monitor left running keeps the mic
+  // indicator on and the device awake after the call has ended.
+  if (call.segment) { try { call.segment.cancel(); } catch (e) { /* gone */ } call.segment = null; }
+  if (call.monitor) { try { call.monitor.stop(); } catch (e) { /* gone */ } call.monitor = null; }
+  if (call.stream) {
+    try { call.stream.getTracks().forEach((tr) => tr.stop()); } catch (e) { /* gone */ }
+    call.stream = null;
+  }
+  try { stopSpeaking(); } catch (e) { /* nothing playing */ }
 }
 
 route('call', async () => {
@@ -306,8 +400,14 @@ route('call', async () => {
   const view = call || { status: 'idle' };
   const ended = view.status === 'ended';
 
+  const phase = ended ? 'ended'
+    : view.status === 'ringing' ? 'ringing'
+      : (view.phase || 'listening');
+
   return html`
-  <div class="screen call-screen">
+  <div class="screen call-screen" id="call-screen"
+    data-phase="${phase}" data-mic="${view.mic || 'unknown'}"
+    data-engine="${speakingMode()}">
     <div class="call-top">
       <span id="call-top-label">${ended ? t('call.endedTop') : view.status === 'ringing' ? t('call.ringingTop') : t('call.live')}</span>
       <span class="call-elapsed" id="call-elapsed">${view.status === 'ended' ? mmss(view.duration || 0) : '0:00'}</span>
@@ -323,7 +423,9 @@ route('call', async () => {
       <h2>${name}</h2>
       <p id="call-status">${ended
         ? t('call.endedBody', { duration: mmss(view.duration || 0), billed: minutesLabel(view.billed || 0) })
-        : view.status === 'ringing' ? t('call.ringing', { name }) : t('call.liveSub')}</p>
+        : view.status === 'ringing' ? t('call.ringing', { name }) : t(`call.phase.${phase}`, { name })}</p>
+
+      ${!ended ? html`<p class="call-notice" id="call-notice" ${view.notice ? '' : 'hidden'}>${escapeText(view.notice || '')}</p>` : ''}
 
       <div class="call-line" id="call-line" aria-live="polite">${escapeText(view.line || '')}</div>
 
@@ -385,8 +487,25 @@ function paintCall() {
       : call.status === 'ringing' ? t('call.ringingTop') : t('call.live');
   }
   if (elapsed) elapsed.textContent = mmss(call.status === 'ended' ? call.duration : callElapsed());
-  if (wave) wave.classList.toggle('silent', Boolean(call.muted));
+  if (wave) {
+    wave.classList.toggle('silent', Boolean(call.muted));
+    wave.classList.toggle('speaking', call.phase === 'speaking');
+    wave.classList.toggle('thinking', call.phase === 'thinking');
+  }
+  const screen = document.getElementById('call-screen');
+  if (screen && call.status !== 'ended') {
+    screen.dataset.phase = call.phase || 'listening';
+    screen.dataset.mic = call.mic || 'unknown';
+  }
+  const notice = document.getElementById('call-notice');
+  if (notice) {
+    notice.textContent = call.notice || '';
+    notice.hidden = !call.notice;
+  }
   if (status && call.status === 'active' && call.warning) status.textContent = call.warning;
+  else if (status && call.status === 'active' && call.phase && !call.warning) {
+    status.textContent = t(`call.phase.${call.phase}`, { name: companionName() });
+  }
   if (caps) {
     caps.hidden = !call.captions;
     if (call.captions) {
@@ -436,6 +555,12 @@ function mountCall(root) {
       muteBtn.setAttribute('aria-pressed', String(call.muted));
       muteBtn.setAttribute('aria-label', call.muted ? t('call.unmute') : t('call.mute'));
       toast(call.muted ? t('call.toastMute') : t('call.toastUnmute'));
+      // Mute has to reach the actual track. A boolean that only changes a CSS
+      // class looks muted and keeps recording, which is the worst of both.
+      if (call.stream) {
+        call.stream.getAudioTracks().forEach((tr) => { tr.enabled = !call.muted; });
+      }
+      if (call.monitor) call.monitor.setMuted(call.muted);
       paintCall();
     });
   }
@@ -476,25 +601,27 @@ function mountCall(root) {
 
 async function beginCall(root) {
   call = {
-    status: 'ringing', line: '', log: [], muted: false,
+    status: 'ringing', phase: 'ringing', line: '', log: [], muted: false,
     captions: Boolean(state.voiceSettings && state.voiceSettings.captions_enabled),
     tickers: [], startedAt: null, duration: 0, billed: 0, warning: null,
+    mic: 'unknown', notice: '', interrupted: false,
   };
   paintCall();
   try {
     const res = await api.post('/calls', {});
     call.id = res.session.id;
     call.status = 'active';
+    call.phase = 'listening';
     call.startedAt = Date.now();
     call.line = res.opener;
     call.log.push({ role: 'assistant', content: res.opener });
     call.softCap = res.soft_cap_seconds || 600;
     call.quota = res.quota;
-    if (root.querySelector('#call-status')) {
-      root.querySelector('#call-status').textContent = t('call.liveSub');
-    }
     paintCall();
     startTickers();
+    // The line is spoken before anything else: a call where the companion's
+    // first words are silent for a second and a half reads as a dropped call.
+    connectAudio().then(() => speakLine(res.opener));
   } catch (err) {
     call = null;
     // 402 = no minutes; 403 = calling is off. Both need an explanation and a
@@ -508,6 +635,132 @@ async function beginCall(root) {
       ],
     });
   }
+}
+
+/** Where the companion's voice settings live, resolved once per mount. */
+function voiceProfile() {
+  const raw = state.companion && state.companion.voice_profile;
+  const profile = typeof raw === 'string' ? safeJson(raw) : raw;
+  return {
+    voice_id: (profile && profile.voice_id) || undefined,
+    rate: (profile && profile.rate) || 1,
+    pitch: (profile && profile.pitch) || 1,
+  };
+}
+
+function safeJson(raw) {
+  try { return JSON.parse(raw); } catch (e) { return null; }
+}
+
+/**
+ * Open the microphone and start watching it.
+ *
+ * Failure is a state, not an exception: without a mic the call still works as
+ * a listening line (you type, they speak), and the screen says which of the
+ * two you are in rather than showing a mute-looking waveform.
+ */
+async function connectAudio() {
+  if (!call) return;
+  if (!recordingSupported()) {
+    call.mic = 'none';
+    call.notice = t('call.micNone', { name: companionName() });
+    paintCall();
+    return;
+  }
+  const stream = await openMic();
+  if (!stream) {
+    call.mic = 'denied';
+    call.notice = t('call.micDenied', { name: companionName() });
+    paintCall();
+    return;
+  }
+  if (!call) { stream.getTracks().forEach((tr) => tr.stop()); return; }
+  call.stream = stream;
+  call.mic = 'on';
+  paintCall();
+  call.monitor = createMonitor(stream, {
+    onSpeechStart: () => onUserSpeaks(),
+    onSpeechEnd: () => finishSegment(),
+    onLevel: (level) => {
+      const wave = document.getElementById('call-wave');
+      if (wave && !call.muted) wave.classList.toggle('loud', level > 0.09);
+    },
+  });
+}
+
+/** The user started talking — either interrupting, or starting a turn. */
+function onUserSpeaks() {
+  if (!call || call.muted || call.status !== 'active') return;
+  if (call.phase === 'speaking') {
+    // Barge-in. The companion promised it stops the moment you speak; that is
+    // only true if the speaker is actually cancelled.
+    bargeIn();
+  }
+  if (call.phase === 'listening' && !call.segment && call.stream) {
+    clearSilenceTimers();
+    call.segment = recorderFor(call.stream);
+  }
+}
+
+/** The user stopped talking: transcribe, then answer. */
+async function finishSegment() {
+  if (!call || !call.segment) return;
+  const rec = call.segment;
+  call.segment = null;
+  const clip = await rec.stop().catch(() => null);
+  if (!call || call.status !== 'active') return;
+  if (!clip || clip.ms < 400 || !clip.blob.size) return;
+
+  call.phase = 'thinking';
+  paintCall();
+  const text = await transcribe(clip.blob, { mime: clip.mime, locale: state.locale });
+  if (!call || call.status !== 'active') return;
+
+  if (text === null || !text) {
+    // Nothing here can listen. Keep the clip on the turn so the words are not
+    // lost, and say plainly that they have to type this one.
+    call.unsaid = clip;
+    call.notice = t('call.heardNothing');
+    call.phase = 'listening';
+    paintCall();
+    scheduleSilence();
+    return;
+  }
+  call.notice = '';
+  await sendTurn(text, clip);
+}
+
+function bargeIn() {
+  if (!call) return;
+  stopSpeaking();
+  call.interrupted = true;
+  call.phase = 'listening';
+  paintCall();
+}
+
+/** Say a line, then hand the floor back. */
+async function speakLine(text) {
+  if (!call || call.status !== 'active' || !text) return;
+  if (speakingMode() === 'silent') {
+    // Nothing can make sound. Keep the caption and move on; the screen already
+    // carries the notice set at connect time.
+    if (!call.notice) { call.notice = t('call.silentEngine'); paintCall(); }
+    return;
+  }
+  const profile = voiceProfile();
+  call.phase = 'speaking';
+  paintCall();
+  const result = await speak(text, {
+    voiceId: profile.voice_id,
+    rate: profile.rate,
+    pitch: profile.pitch,
+    locale: state.locale,
+  });
+  if (!call || call.status !== 'active') return;
+  if (result.interrupted) return;      // bargeIn already moved the phase
+  call.phase = 'listening';
+  paintCall();
+  scheduleSilence();
 }
 
 function startTickers() {
@@ -528,19 +781,30 @@ function startTickers() {
   scheduleSilence();
 }
 
+function clearSilenceTimers() {
+  if (!call) return;
+  if (call.silenceTimer) {
+    try { clearTimeout(call.silenceTimer); } catch (e) { /* gone */ }
+  }
+  call.silenceTimer = 0;
+}
+
 function scheduleSilence() {
   if (!call) return;
-  if (call.silenceTimer) clearTimeout(call.silenceTimer);
+  clearSilenceTimers();
   const rungs = [[8000, 3000], [20000, 8000], [35000, 15000]];
-  rungs.forEach(([delay, rung]) => {
-    call.tickers.push(setTimeout(() => {
-      if (!call || call.status !== 'active' || call.pending) return;
-      if (call.lastSpokeAt && call.lastSpokeAt > Date.now() - delay + 1200) return;
-      if (call.rungSent && call.rungSent >= rung) return;
-      call.rungSent = rung;
-      sayTurn('', rung);
-    }, delay));
-  });
+  const timer = setTimeout(() => {
+    if (!call || call.status !== 'active') return;
+    if (call.phase !== 'listening' || call.pending || call.segment) return;
+    if (call.lastSpokeAt && call.lastSpokeAt > Date.now() - 6800) return;
+    if (call.rungSent && call.rungSent >= 15000) return;
+    const rung = (call.rungSent || 0) >= 8000 ? 15000 : (call.rungSent || 0) >= 3000 ? 8000 : 3000;
+    call.rungSent = rung;
+    sayTurn('', rung);
+  }, (call.rungSent || 0) >= 8000 ? 15000 : 12000);
+  call.silenceTimer = timer;
+  call.tickers.push(timer);
+  void rungs;
 }
 
 async function checkWarning() {
@@ -557,35 +821,93 @@ async function checkWarning() {
   } catch (e) { /* a warning is best-effort; end_call still bills correctly */ }
 }
 
-async function sayTurn(text, silenceMs) {
+/**
+ * One turn: send what the user said (plus their clip), get the reply, say it.
+ *
+ * `voice` turns the text back into sound before the floor is handed back, so
+ * the phase machine reflects what is actually happening — `speaking` while the
+ * audio plays, `listening` only once it has finished or been interrupted.
+ */
+async function sendTurn(text, clip) {
   if (!call || !call.id || call.status !== 'active') return;
   call.pending = true;
+  call.phase = 'thinking';
   const at = callElapsed() * 1000;
   if (text) {
     call.log.push({ role: 'user', content: text });
     call.line = '';
     paintCall();
   }
+  const payload = {
+    text,
+    at_ms: at,
+    silence_ms: 0,
+    elapsed_seconds: callElapsed(),
+    interrupted: Boolean(call.interrupted),
+  };
+  if (clip && clip.blob && clip.blob.size) {
+    try {
+      payload.audio = await blobToBase64(clip.blob);
+      payload.mime = clip.mime || 'audio/webm';
+      payload.duration_ms = clip.ms || 0;
+    } catch (e) { /* the words matter more than the clip */ }
+  }
+  call.interrupted = false;
   try {
-    const res = await api.post(`/calls/${call.id}/turns`, {
-      text,
-      at_ms: at,
-      silence_ms: silenceMs || 0,
-      elapsed_seconds: callElapsed(),
-    });
+    const res = await api.post(`/calls/${call.id}/turns`, payload);
     call.pending = false;
     call.lastSpokeAt = Date.now();
     call.line = res.reply;
     call.log.push({ role: 'assistant', content: res.reply, kind: res.blocked ? 'safety' : undefined });
-    if (res.blocked) call.status = 'active';
+    if (res.memory_used && res.memory_used.length) {
+      call.memoryUsed = res.memory_used;
+    }
     paintCall();
-    if (!text) return;
-    scheduleSilence();
+    if (res.blocked) { call.phase = 'listening'; paintCall(); return; }
+    if (!text) {
+      // A nudge is spoken too — it is the companion noticing the silence.
+      await speakLine(res.reply);
+      return;
+    }
+    await speakLine(res.reply);
   } catch (err) {
     call.pending = false;
+    call.phase = 'listening';
+    paintCall();
     if (err.status === 409) return finishCall('ai_ended', { silent: true });
     toast(err.display || err.message || t('call.turnFail'), 'error');
+    scheduleSilence();
   }
+}
+
+/** Kept for the typed fallback (no microphone, or a device without ASR). */
+async function sayTurn(text, silenceMs) {
+  if (!call || !call.id || call.status !== 'active') return;
+  if (!text) {
+    if (call.pending) return;
+    call.pending = true;
+    try {
+      const res = await api.post(`/calls/${call.id}/turns`, {
+        text: '',
+        at_ms: callElapsed() * 1000,
+        silence_ms: silenceMs || 0,
+        elapsed_seconds: callElapsed(),
+      });
+      call.pending = false;
+      call.line = res.reply;
+      call.log.push({ role: 'assistant', content: res.reply, kind: 'nudge' });
+      paintCall();
+      await speakLine(res.reply);
+    } catch (err) {
+      call.pending = false;
+      if (err.status === 409) return finishCall('ai_ended', { silent: true });
+    }
+    return;
+  }
+  const clip = call.unsaid || null;
+  call.unsaid = null;
+  call.notice = '';
+  await sendTurn(text, clip);
 }
 
 async function finishCall(reason, opts) {

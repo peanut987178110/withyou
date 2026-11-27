@@ -1,0 +1,423 @@
+<!-- PAGE 1 -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+实操带练
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+ 
+  
+ 
+ 
+ 
+长文本生成：不是写得长
+• 核心价值：把复杂信息组织成正式文档
+• 重点能力：读资料、提规则、搭结构、分块生成、文档交付
+• 典型产物：标书、方案、报告、制度、讲义、白皮书
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+ 
+  
+ 
+ 
+ 
+循环：逐项执行同一套逻辑
+• 适合：同类任务、多个对象、逐项处理
+• 例子：逐章生成、逐项评分响应、逐个文件摘要
+• 优势：聚焦、可控、易定位问题
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+ 
+  
+ 
+ 
+ 
+循环注意事项
+• 输入必须是数组
+• 循环次数要匹配任务规模
+• 长循环要给用户过程反馈
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+ 
+  
+ 
+ 
+ 
+批处理：一次处理一批轻任务
+• 适合：对象多、单项轻、规则统一
+• 例子：批量分类、打标签、提关键词、短句改写
+• 风险：漏项难定位，长内容容易超上下文
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+完整链路：理解 → 规划 → 生产 → 交付
+• 节点按业务责任排列：先降低理解不确定性，再降低结构不确定性，最后才投入高成本生成。
+开始
+ 读取文件
+ 提取约束
+ 一级框架
+ 循环 1
+ 创建文档
+ 循环 2
+ 结束
+二级框架 LLM 进度输出 详细扩写 写入文档
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+这是一条长内容生产线
+• 理解层：文件 → 可用文本 → 采购内容与评分标准
+• 规划层：一级框架控制范围，二级框架控制章节结构
+• 生产层：逐章节生成，缩小每次模型的注意力范围
+• 交付层：边生成边写入，结果进入可协作的工作载体
+• 核心原则：先规划，后生产；先验证，后放大
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+开始：先定义输入合同
+• 输入：yaoqiu（字符串，必填）+ zbwj（文档，必填）
+• 产品责任：定义用户必须交什么，系统承诺处理什么
+• 为什么要两个输入：文件提供事实约束，要求控制本次任务范围
+• 当前缺口：没有企业资质、产品参数、案例证据和禁编造清单
+• 检查点：字段含义、类型、必填状态、缺失材料处理方式
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+读取招标文件：先完成数据形态转换
+• 输入：开始节点 zbwj → 插件参数 url
+• 输出：data（后续模型真正读取的文本）
+• 产品责任：把文件对象转成模型上下文，不负责业务理解
+• 风险：扫描 PDF、表格错序、空文本、超长文件、失败不重试
+• 检查点：先看 code / msg / data，再调下游 Prompt
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+提取约束：先回答“必须写什么、如何得分”
+• 输入：文件解析后的 data
+• 输出：neirong（采购内容）+ pingfen（评分标准）
+• 采购内容控制完整性，评分标准控制写作优先级
+• 不是摘要：要形成下游可反复引用的约束集合
+• 生产升级：结构化数组 + 编号 + 页码 + 原文证据 + 分值
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+一级框架：先决定“整份方案写哪几大部分”
+• 输入：yaoqiu + neirong + pingfen
+• 输出：字符串数组 output，为后续循环提供任务清单
+• 产品责任：控制范围、顺序和评分点落位，不写正文
+• 为什么必须是数组：一个元素对应循环中的一项任务
+• 生产升级：目录—采购要求—评分项映射 + 人工确认
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+二级框架循环：把数组变成可重复任务
+• 输入：一级框架数组 150581.output
+• 每轮：取出一个一级标题，交给内部微缩工作流处理
+• 价值：缩小注意力范围、定位到具体章节、支持局部重跑
+• 为什么用循环：每个元素执行相同逻辑，且单项内容较长
+• 边界测试：空数组 / 1 项 / 少于 10 项 / 10 项 / 超过 10 项
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+二级框架 LLM：每轮只扩当前标题
+• 输入：one_leve + nr + pf
+• 输出：当前一级标题对应的二级框架文本
+• 关键限制：只扩当前部分，不额外补其他章节
+• 原因：循环里“主动补全”会造成重复、编号冲突和越界
+• 模型配置：GLM-4.7；备选豆包·2.0·pro；结论需靠评测
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+输出：让长流程的过程可见
+• 产品责任：告诉用户“系统还在运行，当前做到哪里”
+• 价值：减少重复点击、误关页面和“是不是卡住了”的焦虑
+• 当前绑定：output 实际引用循环当前输入，即一级标题
+• 命名风险：容易被误解为上一个 LLM 的完整输出
+• 生产升级：显示当前章节、完成数 / 总数、取消和重试入口
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+创建飞书文档：先建立交付容器
+• 插件：飞书云文档 create_document
+• 当前标题：固定为“标书”；输出 data.token / data.url
+• 设计价值：生成与存储分离，先有容器，再持续落盘
+• 为什么放在框架之后：结构先稳定，再启动高成本正文生成
+• 风险：授权、固定标题、失败不重试、权限与目录未配置
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+详细内容循环：逐章生成，逐章落盘
+• 输入：二级框架列表 167311.output
+• 每轮：详细扩写 → 写入文档 → 下一项
+• 价值：降低单次上下文压力，失败可定位到具体章节
+• 顺序循环：避免多个章节同时写同一文档造成顺序冲突
+• 关键缺口：yaoqiu 没有继续传入详细写作节点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+详细扩写 LLM：字数不是质量标准
+• 输入：当前二级框架 + nr + pf；输出：章节正文
+• 配置：GLM-4.7，maxTokens 131072，要求每部分不少于 20000 字
+• 风险：重复、空泛、无依据事实、成本与等待时间失控
+• 真正质量：采购覆盖、评分响应、事实来源、前后一致、格式合规
+• 生产升级：按章节设篇幅 + 事实库 + 逐章质检 + 人工确认
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+写入文档：生成成功不等于交付成功
+• 输入：194842.output + 创建文档节点的 data.url
+• 插件字段：document_id；实际需要 URL、token 还是 ID 必须在线验证
+• 价值：每轮完成即追加，保留已经生成的章节
+• 风险：失败不重试、重跑重复追加、没有章节写入状态
+• 生产升级：章节唯一 ID + 幂等写入 + 断点续跑 + 重复检测
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+结束：返回链接，不代表质量合格
+• 当前返回：创建文档节点 data.url
+• 技术含义：流程到达结束节点，并返回交付入口
+• 不能证明：每章都写入成功、内容覆盖完整、事实准确、格式合规
+• 正式结果应包含：状态、链接、完成章节、失败章节、待人工确认项
+• 边界：技术成功 ≠ 业务验收通过
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+谢谢你，再见
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

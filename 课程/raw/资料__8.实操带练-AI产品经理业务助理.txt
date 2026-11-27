@@ -1,0 +1,680 @@
+<!-- PAGE 1 -->
+AI 产品经理业务助理
+把“会聊天”变成“会交付”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+解决什么
+• 搭出一个能识别任务、判断风险、补问信息并生成业务成果的工作流
+• 用代表性输入跑通正常与异常路径
+• 把自己的工作流连接到自己的 Demo，看到真实结果
+主路径：自己的工作流 → 自己的 Demo → 真实结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+为什么不能做成一个万能输入框
+• 用户输入相似，但真正要的交付物不同
+• 风险等级不同，处理顺序不同
+• 信息不完整时，应该追问，而不是猜
+• 一个提示词硬扛所有任务，结果不可控
+万能输入框省的是页面，欠的是判断与兜底
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+四类任务对应四种交付物
+分析类
+• 需求分析 → 问题、用户、场景、优先级
+• 竞品分析 → 对象、维度、差异、启示
+方案类
+• AI 方案设计 → 流程、能力、边界、指
+标
+• PRD 草稿 → 目标、范围、流程、验收
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+三条输入，先由你来路由
+• ① 帮我分析企业知识库问答产品的需求
+• ② 给我写一个完整的支付系统 PRD
+• ③ 我想做一个能自动决定贷款额度的工具
+先判断任务类型、信息完整性和风险，再决定是否生成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+这套产品的四个设计原则
+• 1. 先判断，后生成
+• 2. 高风险先拦截
+• 3. 信息不足只追问关键缺口
+• 4. 不同任务走不同生成职责
+判断层负责选路，生成层负责交付
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+本课会用到的六类节点
+节点类型 本课职责 代表节点
+开始 接收任务与背景 100001
+知识库 补充判断依据 186295
+大模型 识别、生成、审校 100003 / 100007…
+条件 风险与完整性分流 100004
+路由 四类任务分发 100006
+输出/结束 返回不同结果并收口 100016 / 100017 / 900001
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+大模型节点和条件节点不能互相替代
+大模型节点
+• 理解自然语言
+• 产出结构化判断
+• 生成业务内容
+• 适合处理模糊与复杂信息
+条件节点
+• 按字段做确定性分流
+• 结果可预测、可检查
+• 适合执行明确业务规则
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+工作流真正流动的是变量
+• USER_INPUT → 用户原始任务
+• project_context → 可选项目背景
+• intent / sufficient / risk_level → 判断结果
+• safe_response_requir → 是否需要安全回复
+• final_result → 最终业务成果
+连线只是道路，变量才是道路上运送的货物
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+完整工作流全貌
+• 开始 → 知识库检索 → 意图识别与完整性检查
+•  ├ 高风险 → 高风险回复生成 → 安全回复
+•  ├ 信息不足 → 追问缺失信息
+•  └ 正常 → 任务路由 → 四类生成节点
+• 四类生成 → 风险审校与最终整理 → 业务结果输出 → 结束
+• 未知任务 → 未知任务引导 → 未知任务结果输出 → 结束
+先看全貌，再按真实顺序逐个搭建
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+先用三条输入走一遍地图
+• 正常完整任务 → 四类业务主流程
+• 信息不完整任务 → 追问缺失信息
+• 高风险任务 → 安全回复
+• 无法识别任务 → 未知任务引导
+先预测路径，再运行验证
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+开始节点——只保留一个任务来源
+• 必需输入：USER_INPUT
+• 可选输入：project_context
+• 检查：下游所有判断都引用同一个原始任务来源
+入口越清晰，后面的变量越不容易乱
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+知识库检索——先让判断有资料来源
+• TopK：5｜重排：开启｜改写：开启
+• 最低相关度：0.35｜对话历史：3
+• 输出要进入意图与完整性判断，而不是直接替用户下结论
+知识库提供证据，不替代业务判断
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+意图识别——把自然语言变成可执行字段
+• 温度 0.2｜Top P 0.7｜最大输出 4096｜历史 6
+• 至少输出：intent、sufficient、risk_level、missing_info、reasoning_summary
+下一步不读长篇解释，只读这些可执行字段
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+输出字段一个字符都不能错
+• 重点核对：
+• intent
+• sufficient
+• risk_level
+• safe_response_requir
+• missing_info
+• reasoning_summary
+• 注意：工作流现有字段就是 safe_response_requir
+变量名不是文案，拼写差一个字符就等于另一个变量
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+高风险必须先被拦住
+高风险条件
+• risk_level = high
+• 并且
+• safe_response_requir = true
+• → 进入高风险回复链路
+其他情况
+• sufficient = false
+• → 追问缺失信息
+• 默认 → 正常任务路由
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+任务路由——四个枚举值对应四个出口
+枚举值 任务 对应生成节点 交付物
+requirement_analysis 需求分析 100007 需求分析稿
+solution_design AI 方案 100008 方案设计稿
+prd_draft PRD 草稿 100009 PRD 草案
+competitor_analysis 竞品分析 100010 竞品分析稿
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+信息不足时，只问会改变方案的问题
+• 追问优先级：
+• 1. 缺失后会改变任务方向
+• 2. 缺失后无法确定交付物
+• 3. 缺失后无法判断边界或验收
+• 一次只问最关键的少量问题
+不是知道得越多越好，而是只补会改变方案的信息
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+重点搭建需求分析节点
+• 最大输出 4096｜历史 8
+• 输入：原始任务 + 项目背景 + 判断结果
+• 输出：用户、场景、问题、目标、范围、优先级、风险与待确认项
+生成节点的职责边界要由交付物决定
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+三个分支
+业务含义 核对
+需求分析 是否聚焦问题与优先级
+AI 方案设计 是否说明流程、能力和边界
+PRD 草稿 是否覆盖范围、流程和验收
+竞品分析 是否有维度、差异与启示
+轻量生成模型 最大输出 4096｜历史 8
+进入最终审校 不直接返回用户
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+最终审校不是润色节点
+• 它要检查：
+• 是否回答了原任务
+• 事实与假设是否分开
+• 结构是否完整
+• 风险边界是否明确
+• 是否保留待确认项
+• 然后统一整理为最终业务结果
+审校的目标是降低错误，不是让文字更好听
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+局部运行前的六步检查
+检查 看什么 通过标准
+1 节点 名称与编号 与资料一致
+2 输入 来源与类型 引用上游正确字段
+3 输出 变量名 逐字一致
+4 条件 字段与运算 命中预期出口
+5 连线 上下游关系 无断线、无错口
+6 结果 输出节点 不同路径各有结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+先跑正常主流程
+• 代表输入：
+• “请帮我分析一个面向连锁餐饮门店的 AI 排班助手需求，目标是降低店长排班时间。”
+• 观察顺序：意图 → 完整性 → 风险 → 路由 → 生成 → 审校 → 输出
+先证明主路能交付，再测试异常与边界
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+三类异常路径并行测试
+测试路径 代表输入 应命中 应看到
+正常 完整的需求分析任务 需求分析 业务结果
+高风险 自动决定贷款额度 高风险链路 安全回复
+信息不足 帮我写个 PRD 追问链路 关键缺口
+未知任务 帮我订明天机票 unknown 能力范围引导
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+按顺序定位一次真实错误
+• 1. 先看实际走到了哪个节点
+• 2. 再看该节点收到的输入
+• 3. 再看输出字段是否生成
+• 4. 再看条件是否读取了同一个字段
+• 5. 最后检查连线与输出节点
+• 每次只改一个变量，再重新运行
+不要凭感觉乱改提示词，先找到第一个偏离预期的位置
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+后台能力为什么还需要产品页面
+工作流后台
+• 方便搭建、调试、查看变量
+• 面向制作者
+• 强调过程可见
+产品 Demo
+• 方便用户输入、等待、理解结果
+• 面向使用者
+• 强调任务完成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+完整提示词
+• 操作顺序：
+• 1. 打开提前提供的完整提示词
+• 2. 整段复制到你使用的生成工具
+• 3. 等待页面生成
+• 4. 先看任务入口、状态反馈和结果区
+• 本环节不讲页面制作细节
+课堂重点仍是：让前台正确使用你刚搭好的工作流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+两分钟判断它是不是可用 Demo
+• 只检查四件事：
+• 用户知道从哪里开始
+• 用户知道要输入什么
+• 运行时有明确反馈
+• 成功、失败、异常结果都能看懂
+• 不追求视觉精装修
+可用 Demo 的最低标准：用户能独立完成一次任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+用自己的 Demo 连接自己的工作流
+• Demo 输入 → 发送到自己的工作流
+• 工作流运行 → 返回自己的真实结果
+• Demo 结果区 → 展示业务结果或异常提示
+• 用同一条代表性输入对照后台结果
+页面不是展示壳，而是工作流的真实使用入口
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+能跑就验证，没生成完就保留任务
+• 已经生成：现场完成一次真实连接与结果核对
+• 尚未生成：记录连接位置与验证输入，课后继续
+• 课堂不等待所有页面生成完，主线仍以工作流跑通为准
+共享成功标准：工作流已通过代表性测试
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+这套方法怎样进入日常工作
+• 需求阶段：用结构化分析快速形成第一版
+• 方案阶段：把能力、流程、边界和指标放进同一框架
+• 文档阶段：先生成草稿，再由人确认事实与取舍
+• 评审阶段：用异常路径和待确认项暴露风险
+• 复盘阶段：沉淀 badcase，回到变量、规则和提示词优化
+AI 负责加速草稿，人负责判断与签字
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+生产版要加什么
+生产要求 课堂版现状 上线前要补
+身份权限 未展开 登录、角色、数据范围
+安全合规 高风险拦截 敏感数据、审核、留痕
+稳定性 代表性测试 超时、重试、降级、监控
+质量 人工看结果 评测集、badcase、版本对比
+成本 课堂参数 模型分层、限额、用量监控
+运营 单次 Demo 反馈、迭代、责任人
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+谢谢你
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

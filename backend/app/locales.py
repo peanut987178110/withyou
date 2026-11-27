@@ -897,6 +897,10 @@ VOICE_EN: dict[str, Any] = {
         "I was thinking about our last conversation and didn't want to leave it there.",
     ],
     "post_call_prefix": "About before — ",
+    "call_memory_openers": [
+        "You told me: {memory} I kept thinking about that.",
+        "I remembered something — {memory} Is that still true?",
+    ],
 }
 
 VOICE: dict[str, dict[str, Any]] = {
@@ -917,6 +921,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "我在想我们上次没聊完的那件事，不想就这么放着。",
         ],
         "post_call_prefix": "刚才说到——",
+        "call_memory_openers": [
+            "你跟我说过：{memory} 我一直在想这件事。",
+            "我记着一件事——{memory} 现在还是这样吗？",
+        ],
     },
     "zh-TW": {
         "call_openers": [
@@ -935,6 +943,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "我在想我們上次沒聊完的那件事，不想就這麼放著。",
         ],
         "post_call_prefix": "剛才說到——",
+        "call_memory_openers": [
+            "你跟我說過：{memory} 我一直在想這件事。",
+            "我記著一件事——{memory} 現在還是這樣嗎？",
+        ],
     },
     "ja": {
         "call_openers": [
@@ -953,6 +965,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "この前の話の続きが気になって、そのままにしたくなかったの。",
         ],
         "post_call_prefix": "さっきの話だけど、",
+        "call_memory_openers": [
+            "前にこう言ってたよね。{memory} ずっと気になってた。",
+            "覚えてること——{memory} 今もそう？",
+        ],
     },
     "ko": {
         "call_openers": [
@@ -971,6 +987,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "지난번에 못다 한 얘기가 계속 마음에 걸려서.",
         ],
         "post_call_prefix": "아까 하던 얘기인데, ",
+        "call_memory_openers": [
+            "전에 이렇게 말했었지. {memory} 계속 생각났어.",
+            "기억나는 게 있어서——{memory} 지금도 그래?",
+        ],
     },
     "es": {
         "call_openers": [
@@ -989,6 +1009,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "Me quedé pensando en lo último que hablamos y no quería dejarlo ahí.",
         ],
         "post_call_prefix": "Sobre lo de antes: ",
+        "call_memory_openers": [
+            "Me dijiste: {memory} No he dejado de pensarlo.",
+            "Me acordé de algo: {memory} ¿Sigue siendo así?",
+        ],
     },
     "fr": {
         "call_openers": [
@@ -1007,6 +1031,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "Je repensais à notre dernière conversation, je ne voulais pas la laisser comme ça.",
         ],
         "post_call_prefix": "À propos de tout à l'heure — ",
+        "call_memory_openers": [
+            "Tu m'as dit : {memory} Je n'ai pas arrêté d'y penser.",
+            "Je me suis souvenu de quelque chose : {memory} C'est toujours vrai ?",
+        ],
     },
     "de": {
         "call_openers": [
@@ -1025,6 +1053,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "Ich musste an unser letztes Gespräch denken und wollte es nicht so stehen lassen.",
         ],
         "post_call_prefix": "Wegen vorhin — ",
+        "call_memory_openers": [
+            "Du hast mir erzählt: {memory} Das ging mir nicht aus dem Kopf.",
+            "Mir ist etwas eingefallen: {memory} Stimmt das noch?",
+        ],
     },
     "pt": {
         "call_openers": [
@@ -1043,6 +1075,10 @@ VOICE: dict[str, dict[str, Any]] = {
             "Fiquei pensando na nossa última conversa e não queria deixar assim.",
         ],
         "post_call_prefix": "Sobre o que a gente falou — ",
+        "call_memory_openers": [
+            "Você me contou: {memory} Fiquei pensando nisso.",
+            "Lembrei de uma coisa: {memory} Ainda é assim?",
+        ],
     },
     "ar": {
         "call_openers": [
@@ -1061,5 +1097,9 @@ VOICE: dict[str, dict[str, Any]] = {
             "كنت أفكر في حديثنا الأخير ولم أرد أن أتركه هكذا.",
         ],
         "post_call_prefix": "بخصوص ما سبق — ",
+        "call_memory_openers": [
+            "قلت لي: {memory} ولم أتوقف عن التفكير في ذلك.",
+            "تذكرت شيئًا: {memory} هل ما زال الأمر كذلك؟",
+        ],
     },
 }

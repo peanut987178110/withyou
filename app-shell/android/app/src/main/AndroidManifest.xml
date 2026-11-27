@@ -40,4 +40,10 @@
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Voice notes and live calls. Capacitor's WebChromeClient already asks
+         for this at runtime when the page calls getUserMedia, but an
+         undeclared permission can never be granted, so on a device the
+         recorder silently failed and fell back to "not available". -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 </manifest>

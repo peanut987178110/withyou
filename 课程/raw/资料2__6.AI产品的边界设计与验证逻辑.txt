@@ -1,0 +1,1029 @@
+<!-- PAGE 1 -->
+AI产品的边界设计
+与
+验证逻辑
+基础篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+APB
+连接的逻辑
+前端 demo
+vibe coding 做的界面
+用户在这里输入
+轻量后端
+中转 + 藏密钥
+(可选但推荐)
+Coze 工作流
+第一节搭的逻辑
+真正在思考
+用户提问 带密钥调用
+回复原路返回,显示在对话界面
+核心:Coze 当后端,前端只管收发消息和显示 —— 逻辑一行都不用重写。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+APB
+1：把coze 工作流发布成API
+让第一节的工作流对外提供一个能被调用的地址。
+1
+ 发布工作流 / Bot 在 Coze 里把工作流发布,开启 API 调用方式
+2
+ 拿到调用地址 得到一个 API endpoint(一个 https 网址)
+3
+ 拿到访问密钥 生成 API Token,这是调用的「钥匙」,要保密
+4
+ 记下入参出参 看文档:要传什么字段、返回什么格式
+发布后,你的工作流就从「只能在 Coze 里点」变成「任何程序都能调用」。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+APB
+效果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+APB
+UE升级成了vibe coding Demo
+• UE的核心目标是让目标用户和技术理解产品设计
+• 样式
+• 交互
+• 每个页面有什么
+• Vibe coding demo更好
+• 带功能
+• 而且速度更快
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+APB
+流程图变成了工作流
+• 流程图的目标
+• 将业务流程抽象化
+• 变成产品对执行流程的设计
+• 而工作流更好
+• 流程更清晰
+• 产品经理初步验证结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+APB
+产品改造一条龙
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+APB
+产品经理的工作范式
+需求分析
+目标用户
+产品定位
+痛点需求
+市场分析
+容量
+竞争
+确认AI范式
+对话
+角色
+创作工具
+嵌入式
+copilot
+任务代理
+答案引擎
+知识库
+……
+测算商业效
+果（高阶）
+定价
+ROI
+增长
+Demo
+Vibe 
+coding
+Workflow
+Skill
+文档（如果
+有需要）
+PRD
+MVP 汇报
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+APB
+AI 是概率系统,没有天然边界
+AI 的本质是「预测下一个最可能的词」—— 它没有「知道 / 不知道」的开关。
+传统程序有明确的「执行 / 报错」分界,AI 没有
+它总能生成一个「看起来合理」的输出,无论这个问题它是否真的会 —— 编造和正确,在它内部没有本质区别。
+不会「留白」
+没有「这题不会我跳过」的机制
+不会「自知」
+意识不到自己在编
+边界靠设计
+边界必须在产品层设计
+因为模型自己给不出边界,边界就只能由「产品」来加
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+APB
+例如
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+四种典型事故
+这四类事故,几乎覆盖了 AI 产品「翻车」的所有场景。
+编造事实
+没有的事,说得有鼻子有眼(幻觉)
+越权承诺
+该免责的给了确定结论,惹上责任
+触碰红线
+生成了不该生成的违规/有害内容
+答非所问
+该转人工/该拒绝时,硬答一个
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+边界不是限制,是信任的基础
+一个「知道自己不知道」的 AI,比一个「什么都敢答」的 AI 可信得多。
+可预期
+用户知道它的能力范围,不会被坑
+会退让
+不确定时诚实说,而不是硬编
+守底线
+该免责免责,该转人工转人工
+可解释
+为什么拒绝、为什么这样答,讲得清
+承认「我不能」不会让用户失望 —— 假装「我能」然后翻车,才会彻底失去信任。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+产品经理设计边界的价值
+商业
+边界
+结构
+功能
+简单搭起来，跑通基础流程和
+Demo
+用rag、function call等结构连接系
+统
+边界控制，达到真实上线标准
+能产生收益和持续回报
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+设计边界:PM 的核心职责
+边界不是算法问题,是产品问题 —— 它取决于业务、风险和用户,而这些是 PM 的职责
+定该做什么
+明确产品的能力和职责范围
+定不该做什么
+划出红线和禁区
+定收放平衡
+哪个维度严、哪个维度松
+定验证标准
+什么算守住、什么算失守
+算法负责「让模型更强」,PM 负责「让它在该停的地方停下来」—— 后者更难,也更关键。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+一个关键的思维转变
+从「怎么让 AI 多做」,转向「怎么让 AI 在对的地方少做、不做」。
+能力思维(不够)
+只想着扩展能力
+觉得答得越多越好
+把「拒绝」当成失败
+忽视做错的代价
+边界思维(成熟)
+先想清能力的边缘
+知道有些答案不该给
+把「恰当拒绝」当成能力
+算清做错的代价
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+02Pa r t  Tw o
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+三个方向的差异
+• 法律AI
+• 文案AI
+• 写作AI
+• 差异是什么？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+三者的差别
+法律
+严格收敛
+严谨为先
+文案
+新闻事实
+锁死
+创意维度
+打开
+写作
+发散开放
+创意为先
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+法律 AI:四维边界
+严格收敛型 —— 四个维度全都偏「紧」,尤其职责和安全。
+能力 答法律常识、解释概念;不做案情判断
+职责 只提供参考,绝不给确定的诉讼/定性建议
+安全 不编造法条、不泄露、涉紧急情况转人工
+体验 每次都清晰免责,引导咨询专业律师
+法律 AI 的原则:宁可少答、宁可让用户去找律师,也绝不给一个「听起来很确定」的错答案。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+APB
+文案 AI:四维边界(双轨)
+基于新闻+商品库生成文案 —— 事实维度锁死,创意维度全开,一半一半。
+能力 事实层:准确复述新闻/商品;创意层:发散表达
+职责 不虚标商品功效、不歪曲新闻;可自由发挥角度
+安全 不编造事实、不夸大宣传、不违反广告法
+体验 事实错→退回重写;创意够不够→鼓励再发散
+同一维度里也能拆两轨:能力/安全维度里,「事实」这条轨锁死,「表达」那条轨全开。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+写作 Agent:四维边界
+发散开放型 —— 大部分维度都「放」,只在安全和「别跑题」上守。
+能力 几乎不设限,鼓励各种文体、风格、脑洞
+职责 是创作工具,不对内容真实性负责(明示)
+安全 守住违法有害底线;不生成侵权抄袭
+体验 少打断、少拒绝;只在跑偏时轻提示
+写作 Agent 的边界哲学:除了安全底线,尽量别挡路 —— 错杀一个好创意,也是一种失败。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+四维边界:一张表看差异
+同样四个维度,三个产品的「松紧」完全不同
+维度 法律 AI 文案 AI 写作 Agent
+能力 紧(只答常识) 事实紧/表达松 松(几乎不限)
+职责 很紧(只参考) 中(不歪曲) 松(仅创作工具)
+安全 紧 紧(广告法) 中(守底线)
+体验 严谨免责 事实拦/创意放 少打断
+横着看是三个产品,竖着看是四个旋钮 —— 每个产品都是一组独特的旋钮组合。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+怎么判断某个维度「该收还是该放」
+四个问题,帮你为每个维度定松紧。
+答错代价大吗
+代价大 → 收紧
+有责任风险吗
+有责任 → 收紧
+靠创意取胜吗
+靠创意 → 放开
+可以低成本纠错吗
+能纠错 → 可放松
+把这四问套到每个维度上,你的「调音台」旋钮就一个个都有了明确的位置。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+边界画好了,写在哪里
+边界不能只在脑子里 —— 要落成可执行、可验证的具体规则。
+写进 PRD
+把四维边界作为需求明确写下来
+落到 Prompt
+系统提示里明确「该做/不该做」
+做成拦截规则
+高危场景用规则兜底,不全靠模型
+变成测试用例
+每条边界都要有对应的验证用例
+最后一条最关键:边界必须变成测试用例
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+法律 AI:严格收敛型边界设计
+核心策略:能力尽量往「常识科普」收,绝不踏进「个案判断」。
+可以做
+解释法律概念、普及常识、说明一般流程
+谨慎做
+涉及个案时,只给一般性参考 + 强免责
+绝不做
+判断案情输赢、给确定诉讼策略、编造法条
+转出去
+紧急/高风险 → 引导找律师或相关机构
+法律 AI 的设计心法:把自己定位成「法律科普助手」定位决定边界。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+法律 AI:硬边界 + 软边界怎么配
+严格型产品,更依赖硬边界来兜底,但体验层仍要软。
+硬边界(规则拦)
+检测到「诉讼策略/输赢判断」类意图 → 拦
+检测到编造法条风险 → 强制引用来源或不答
+紧急关键词 → 直接转真人/机构
+软边界(Prompt 引)
+语气专业、严谨、不武断
+主动加免责、建议咨询律师
+把「不确定」说得让人安心
+法律这种高危场景,关键红线一定要硬拦 —— 不能只靠 Prompt「请不要给诉讼建议」这句软话。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+APB
+法律 AI:一次典型交互的边界处理
+用户问 「我这个合同纠纷,起诉能赢吗?」
+识别 触发职责边界:个案输赢判断 = 禁区
+处理 不给「能赢/不能赢」,转为解释相关法律要点
+回应 「输赢取决于证据和具体情节,我不能预判。但可以帮你理解这类纠纷通常看哪些要点…」
+兜底 「涉及你的具体权益,建议咨询执业律师。」+ 免责
+注意:它没有粗暴拒绝,而是「不预判输赢 + 给有用的知识 + 引导找律师」
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+文案 AI:双轨边界设计
+基于新闻+商品库生成文案 —— 把边界拆成「事实轨」和「创意轨」两条独立的线。
+事实轨(锁死)
+新闻内容:不增不减不歪曲
+商品参数:严格来自商品库
+功效宣传:不夸大、合广告法
+来源可追溯,能核对
+创意轨(全开)
+表达角度:天马行空
+情绪、风格:大胆尝试
+结构、钩子:鼓励新颖
+越发散越好
+这就是「调音台」的极致:同一个产品里,一条轨拧到最紧,另一条拧到最松 —— 互不干扰。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+文案 AI:两条轨怎么在技术上分开
+双轨不只是理念 —— 要在流程上真的把「事实」和「创意」拆成两步。
+① 锁事实 先从新闻源/商品库取出准确事实,固定住
+② 放创意 让模型基于「已锁定的事实」自由发挥表达
+③ 校事实 生成后,回头核对事实有没有被改动
+④ 评创意 再看创意够不够、有没有同质化
+关键设计:「先锁事实、再放创意、生成后再核事实」—— 让创意的发散,永远踩在事实的地基上。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+文案 AI:两轨越界的不同处理
+事实轨越界和创意轨「不够」,处理方式完全相反。
+事实轨越界 → 拦
+编了新闻里没有的信息 → 退回重写
+虚标商品参数/功效 → 拦截
+这是硬边界,零容忍
+创意轨不够 → 推
+太平庸、同质化 → 提示再发散
+不够抓人 → 鼓励换角度
+这是「反向边界」:嫌它太保守
+最反直觉的一点:创意轨的「边界」是嫌它太保守 —— 边界不总是「往回收」,也可以是「往外推」。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+APB
+写作 Agent:发散开放型边界设计
+核心策略:把「不打扰创作」当第一优先,边界只守两条底线。
+底线一:安全
+违法有害、侵权抄袭 —— 硬守
+底线二:别跑题
+以「创意」之名严重偏离用户意图 —— 轻提示
+其余全放
+文体、风格、脑洞、尺度 —— 尽量不设限
+少打断
+能不拒绝就不拒绝,给创作留空间
+写作 Agent 的设计信条:「宁可放过,不可错杀」—— 因为错杀一个好创意的代价,比放松更大。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+APB
+写作 Agent:「别跑题」这条软边界怎么把握
+发散≠瞎跑 —— 要区分「有创意的发挥」和「偏离了用户真实意图」。
+健康的发散
+换新颖角度写用户要的主题
+风格大胆但主题没跑
+超出预期的惊喜
+这是想要的,别拦
+跑偏了
+写着写着换了主题
+忽略了用户的核心要求
+「自由」到答非所问
+轻提示:是不是要拉回来?
+「别跑题」用轻提示而非硬拦 —— 因为判断「是创意还是跑偏」很主观,硬拦容易错杀。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+Neur

@@ -1,0 +1,996 @@
+<!-- PAGE 1 -->
+Vibe Coding
+AI时代
+产品入门
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+这一段文字
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+先一起做一个小东西
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+优势
+• 核心并不只是“降本”
+• 而是
+• 产品确认时间变得非常短
+• 甚至可以在和客户沟通过程中修改
+• 产品经理的掌控度变得很高
+• 做出demo不需要UE、UI等参与
+• 对产品经理的潜在要求发生改变
+• 不再需要ps、fimga
+• 但需要有美感
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+在vibe coding的时代
+• 想法、思路变得无比宝贵
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+本节课
+•Vibe Coding提示词的基础结构
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+• 基础的几个要素
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+目标
+• 描述要做什么，要构建什么
+• 不用技术术语
+• 用自然语言描述功能或者产品形态
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做个新案例
+• 提示词：
+• 做一个喝水提醒 App 的手机主页
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+视觉风格
+• 目标是做什么
+• 视觉风格是产品要长什么样子
+• 用感性语言传达期望的设计风格
+• 比如：
+• 极简主义，像notion
+• 暗色系，赛博朋克风
+• 温暖柔和，像一本手账
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 极简主义
+• 大量留白、单色调、无装饰、内容优先 配色： 黑 / 白 / 
+灰，最多一个点缀色 
+• iA Writer、Linear、Apple 官网
+• 提示词：极简、大量留白、像高端杂志、只用黑白灰、
+Playfair衬线字体、无圆角、无阴影、无颜色装饰
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 玻璃态
+• 核心特征： 磨砂玻璃半透明、渐变底色、白色细描
+边、背景模糊
+• macOS Big Sur、iOS 控制中心
+• 提示词："磨砂玻璃质感、深紫渐变背景、半透明
+卡片、rgba白色描边、柔和光晕叠层"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 新拟物 Neumorphism
+• 双向阴影（一亮一暗）、元素从背景凸起、
+纯色调、触感真实 
+• 提示词："新拟物风格、浅灰背景、双向投
+影、无边框、像软橡皮泥被按压的质感"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 赛博朋克 Cyberpunk
+• 霓虹发光、纯黑底色、等宽字体、网格纹理、双色对撞 
+• 赛博朋克2077 UI、黑客主题工具
+• 提示词：“赛博朋克、纯黑背景、霓虹绿发光文字、热
+粉色描边、等宽字体、网格底纹"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 布鲁塔主义
+• 粗黑边框、偏移实色阴影、强对比配色、刻意的"未完成感" 高
+对比（黑 + 亮黄 / 白 + 纯红） 
+• Bloomberg Terminal、Cargo、早期网络 
+• 提示词：布鲁塔主义、亮黄背景、3px粗黑边框、8px偏移实色
+阴影、Bebas字体、无圆角、无渐变、原始粗粝
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 千禧年风格
+• 糖果渐变、圆润元素、粉紫霓虹
+• Tumblr、MySpace、千禧年游戏 UI 
+• 提示词：Y2K复古、粉紫糖果渐变、像旧
+版Windows窗口标题栏、闪亮、圆润、有
+点可爱有点混乱
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常见的设计风格
+• 暗黑奢华 
+• 近黑底色、金色克制点缀、衬线字体、极度留白、仪式
+感
+• Rolls-Royce、A.P.C、高端手表品牌
+• 提示词：暗黑奢华、深黑背景、金色细节点缀、Playfair
+衬线字体、极度克制、仪式感、像高端腕表官网
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+感觉和风格的关系
+想传达的感觉 推荐风格
+专业、可信、内容为王 极简主义
+现代感、层次、科技感 玻璃态
+柔软、温暖、亲近感 新拟物 / 有机
+炫酷、未来、黑客 赛博朋克
+态度、个性、反主流 布鲁塔主义
+怀旧、可爱、社交属性 Y2K 复古
+高级感、稀缺、距离感 暗黑奢华
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做个新案例
+• 提示词：
+• 做一个喝水提醒 App 的手机主页
+• 暗黑奢华、深黑背景、金色细节点缀、
+Playfair衬线字体、极度克制、仪式感、
+像高端腕表官网
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+技术偏好
+• 指定框架或者语言偏好
+• 例如
+• "用 React + Tailwind”
+• "纯 HTML/CSS 就好”
+• 没关系，如果不知道怎么写
+• 就空着，让大模型自己决定怎么做
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+核心功能
+• 列出必须实现的2-5个关键功能
+• 不要做过度细化
+• 也不要写大量功能
+• 例如
+• 能添加/删除习惯
+• 每天打卡
+• 看到本周完成率
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+注意
+• Vibe coding不要一次性给出大量功能
+• 同时
+• 在初期不要做的功能
+• 注册登录
+• 商业化
+• 常规的辅助功能
+• 为什么
+• 产品初期demo的关键是验证你的特质性功能是
+否符合用户需求
+• 而不是常规功能使用是否丝滑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做个新案例
+• 提示词：
+• 做一个喝水提醒 App 的手机主页
+• 暗黑奢华、深黑背景、金色细节点缀、
+Playfair衬线字体、极度克制、仪式感、
+像高端腕表官网
+• 页面只需要：今日喝水进度、一个"喝了一
+杯"的按钮、 一句鼓励的话。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+约束条件
+• 限制范围，防止 AI 过度发挥
+• 例如
+• 不需要后端，数据存本地就行
+• 单页面，不要路由
+• 做一个番茄钟工具。风格要像苹果产品，
+极简、留白多、有仪式感。用纯 
+HTML/CSS/JS，不依赖任何库。功能只需
+要：25分钟计时、休息5分钟、响铃提醒。
+不需要任何设置页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做个新案例
+• 提示词：
+• 做一个喝水提醒 App 的手机主页
+• 暗黑奢华、深黑背景、金色细节点缀、
+Playfair衬线字体、极度克制、仪式感、
+像高端腕表官网
+• 页面只需要：今日喝水进度、一个"喝了一
+杯"的按钮、 一句鼓励的话。
+• 不需要图表，不需要历史记录，不需要任
+何设置。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+思考
+• 用这个结构做一个你自己场景的产品
+demo
+• 例如：
+• 做一个个人时间管理的初版demo
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+参考
+• 做一个个人时间管理 App 的主页。
+• 风格像 Notion 和手账本的中间地带，
+• 米白底色、温暖、安静，看着不焦虑。
+• 页面只需要：今天的日期和一句话目标、
+• 当前在做的事情、今天剩余的几个待办。
+• 不需要统计图表，不需要番茄钟，
+• 不需要任何项目管理功能。
+• 就是今天，就是现在，就是这一件事。
+• 用纯 HTML/CSS/JS，单文件。
+知

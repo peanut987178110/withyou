@@ -1,0 +1,567 @@
+<!-- PAGE 1 -->
+炒 饭 会 大 模 型 基 础 认 知|
+第七节：知识库的处理RAG
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+炒 饭 会 大 模 型 基 础 认 知|
+• RAG的概念和适用场景
+• 使用Rag管理个人知识库
+• Rag构建的逻辑和条件
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+RAG的概念和适用场景
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|让大家更加容易理解一些
+• 做一个智能电商客服机器人，需要怎么做？
+• 电商客服几个核心场景
+• 商品介绍
+• 售后客诉
+• 订单查询
+• 周边功能
+• 情感化
+• 语言风格
+• 长期记忆
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|prompt
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|Prompt能解决什么
+• 智能体
+• 提供的技能
+• 角色特点
+• 核心目标
+• 回答边界
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|但问题是
+• Prompt只能解决大模型在预训练过程
+中已经存在的东西
+• 但是
+• 如果一个问题，在大模型中没有答案会
+怎样
+• 会胡说八道，且态度非常自信
+• 大模型幻觉
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|如何解决幻觉
+• 公司内部的规则
+• 例如：
+• 退换货规定
+• 产品说明
+• 产品详情介绍
+• 等属于公司内部知识的内容，在大模型预训练中不存在的
+• 用RAG解决
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|还有一类
+• 查询订单
+• 你的订单大模型肯定没有预训练
+• 这部分用知识库也不行，因为知识库的更新速度也没有这么快
+• 常规方式就是调用数据库
+• 在大模型应用中采用 function call
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|RAG是什么
+• RAG
+• （Retrieval-Augmented Generation，检索增强生成）
+• 核心工作流程
+• 存储信息：把大量的文档（比如文章、报告）转化成向量，进行存储
+•  匹配问题：当你提出问题时，AI会把问题也变成向量，然后在信息库中找到
+与之最匹配的内容
+• 生成答案：最后，AI把这些匹配的内容和你的问题一起交给大语言模型
+（LLM），生成一个更准确的回答
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|适用场景
+• 例如：
+• 运维智能体
+• 响应应急事件，进而进行故障诊断，然后故障复盘，进而进行经验沉淀
+• 医疗智能体
+• 根据病患的情况，基于病例库，进行反馈
+• 投资分析
+• 利用既往数据和实时手机进行市场研判
+• 本质：
+• 有自己数据资产的，要形成更精准或者更具特色的业务场景
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+使用RAG管理个人知识库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|在这里我们使用到Cherry Studio
+• https://www.cherry-ai.com/index.html
+• 很好用的多服务商的AI工具
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|进入界面
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|配置云端大模型
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|硅基流动
+• https://siliconflow.cn/
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|登录完成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|账户管理-API秘钥
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|回到Cherry
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|添加知识库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|测试下，常规
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|添加知识库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|再测试
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|结果
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|也可以用IMA
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+RAG构造的逻辑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|RAG构建的逻辑
+知识库构
+建
+RAG系统
+构建
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|知识库构建
+文档加载
+将目标文档加载到
+知识库
+文档分割
+由于加载文档可能
+很长超过LLM上下
+文窗口
+需要分割成合适大
+小的块
+文档向量嵌
+入与存储
+将分割后的文本块
+通过Embedding
+模型转换为固定维
+度的向量
+存储到向量数据库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|RAG系统构建
+检索器创建 基于向量数据库
+利用向量相似度
+算法查找与用户
+问题最相似的文
+档片段
+生成器创建
+与Prompt设
+置
+生成器就是我们
+使用的LLM
+构建RAG链
+并生成答案
+将检索器、
+Prompt、LLM串
+联
+构成一个完整的
+RAG链
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+Thanks for having you all the way
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

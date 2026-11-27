@@ -551,6 +551,19 @@ await sleep(400);
 await SHOT('20-call');
 const liveTop = await c.evaluate(`(document.querySelector('#call-top-label')||{}).textContent || ''`);
 check(!/calling/i.test(liveTop), 'the call chrome stops saying "Calling…" once connected', { liveTop });
+/* The call has a real microphone and a real speaker now. `data-mic` is what the
+   screen decided after asking for the device: on an emulator with RECORD_AUDIO
+   granted it must be "on"; "denied"/"none" would be the honest fallback but
+   also means the manifest or the permission bridge regressed. */
+const callAudio = await c.evaluate(`(() => {
+  const el = document.getElementById('call-screen');
+  if (!el) return null;
+  return { phase: el.dataset.phase, mic: el.dataset.mic, engine: el.dataset.engine };
+})()`);
+check(!!callAudio && ['listening', 'speaking', 'thinking'].includes(callAudio.phase),
+  'the call runs the live phase machine on the device', callAudio);
+check(!!callAudio && callAudio.mic === 'on',
+  'the WebView can open the microphone', callAudio);
 await c.evaluate(`(() => { const b = document.querySelector('[data-end]'); if (b) b.click(); })()`);
 /* Hanging up lands on the call's own ended state with a receipt — it no
    longer bounces back to the Space tab. The wide `#call-detail-cta` only

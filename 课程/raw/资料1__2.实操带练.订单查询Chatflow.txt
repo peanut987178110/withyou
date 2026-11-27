@@ -1,0 +1,1103 @@
+<!-- PAGE 1 -->
+订单查询 Chatflow
+实操带练
+有边界、有数据、有分支、有兜底的 AI 客服流程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+要跑通什么
+订单号直查
+用户给出订单号，系统识别
+意图、提取订单号、调用快
+递查询并回复物流状态。
+缺参数追问
+用户只说“我的订单到哪
+了”，系统不能乱猜，要追
+问订单号或手机号。
+手机号多订单
+用户给手机号，系统查订单
+表，拿到订单列表，再进入
+循环逐条处理。
+非订单转人工
+退款、投诉、优惠券、商品
+咨询不走普通物流查询，直
+接兜底转人工。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+四个问题
+目标
+降低订单查询类重复咨询，
+让用户更快拿到状态。
+能力
+识别意图、提取凭证、缺信
+息追问、查询系统、输出结
+果。
+知识
+订单号、手机号、订单表、
+商品名、快递状态必须来自
+数据。
+边界
+退款、投诉、优惠券、复杂
+咨询不自动处理。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+为什么订单查询适合作为客服 MVP
+高频
+发货了吗、到哪了、什么时
+候到，是电商客服常见高频
+问题。
+清晰
+关键字段明确：订单号、手
+机号、快递单号、物流状态。
+可查
+可接订单表、快递插件或订
+单系统，不依赖模型凭空回
+答。
+可兜底
+缺凭证就追问，查不到就核
+实或转人工。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+用户一句话到客服回复的业务链路
+AI 客服不是从回答开始，而是从判断能不能回答开始
+01
+理解意图
+02
+提取参数
+03
+判断信息是否足够
+04
+调用系统
+05
+输出结果或兜底
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+产品方案与边界设计
+进入主流程
+只有普通订单查询进入主流
+程，其他问题转人工。
+补齐凭证
+提取订单号、手机号、商品
+名、查询类型和 
+need_more_info。
+查询能力
+订单号走快递插件，手机号
+走订单表和循环。
+风险边界
+不承诺发货、退款、赔偿；
+没有数据就不编。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+做到什么才算完成
+订单号直查
+用户给订单号，系统能查并
+回复。
+缺参数追问
+用户没给凭证，系统能追问
+订单号或手机号。
+手机号查多订单
+用户给手机号，系统查订单
+表并逐条输出。
+非订单转人工
+能解释为什么转人工，这是
+边界，不是失败。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+开始节点与结束节点
+开始节点
+提供 USER_INPUT、user_id、CONVERSATION_NAME；今天核
+心用 USER_INPUT。
+USER_INPUT
+用户这一轮输入的原始文本，后面意图识别和参数提取都从这里读。
+结束节点
+负责流程闭合；用户看到的内容不一定只来自结束节点。
+常见错误
+只在结束节点找回复，忽略中间输出节点也可以说话。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+意图识别
+回答什么问题
+用户现在到底要办什么事。
+五类意图
+订单查询、退货售后处理、
+商品咨询、优惠券、投诉。
+为什么先识别
+同样出现“订单”，可能是
+查物流，也可能是退款或投
+诉。
+标签要互斥
+不要把退款、投诉、优惠券
+都塞进订单查询。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+订单参数提取
+字段 含义 后续用途
+order_id 订单号或快递编号 直接进入快递查询
+phone_number 下单手机号 进入订单表查询
+product_name 用户提到的商品名 让回复更像人话
+query_type 物流 / 发货 / 到达时间 辅助输出话术
+need_more_info 是否缺少查询凭证 控制追问分支
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+条件分支
+第一层
+need_more_info=false：
+信息足够；true：进入追问。
+第二层
+order_id 存在：走快递插件。
+第三层
+phone_number 为 11 位：
+走数据表查询。
+常见错误
+true/false 接反、空值判断
+混乱、忘记手机号路径。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+问答追问
+追问的价值：把一次不完整输入，变成可继续处理的对话
+01
+用户输入不完整
+02
+系统追问订单号或手机
+号
+03
+用户补充第二轮输入
+04
+再次判断订单号/手机
+号
+05
+继续查询或转人工
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+快递查询插件
+输入
+express_number：订单号
+或快递单号。
+输出
+finalStatus、
+finalStatusDesc、
+statusDetail、
+expressName、
+expressNumber。
+字段选择
+第一版优先用 
+finalStatusDesc 做简洁回
+复。
+安全底线
+插件没返回时不要让模型编
+物流状态。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+数据查询与循环
+手机号不是订单号
+一个手机号可能对应多条订
+单。
+数据查询
+从模拟订单表查出手机号对
+应的订单记录。
+循环节点
+把一组订单逐条拿出来处理。
+循环内判断
+当前订单有 order_id 就查
+快递，没有就输出未发货或
+待核实。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+完整工作流全貌图
+主流程 开始 意图识别 参数提取 条件分支
+订单号 order_id 存在 快递插件 订单状态输出 结束
+缺参数 need_more_info 问答追问 二次判断 继续查询
+手机号 phone_number 查订单表 循环逐条处理 输出/兜底
+边界 非订单意图 投诉/售后 转人工 结束
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+三条必须跑通的主路径
+路径 A 输入订单号 识别订单查询 提取 order_id 查快递 回复状态
+路径 B 没有凭证 追问 补订单号 二次判断 查快递
+路径 C 输入手机号 查订单表 返回列表 循环处理 逐条输出
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+新建
+新建画布
+新建“订单查询客服”，看
+到空白画布和基础开始/结束
+节点。
+准备插件
+确认快递查询插件可用，后
+面能接收订单号并返回物流
+状态。
+准备数据
+建模拟订单表：order_id、
+user_phonenumber、
+item_title。
+准备模型
+确认大模型可用，后续字段
+输出必须保持一致。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+配置并测试意图识别节点
+配置类别
+订单查询、退货售后处理、
+商品咨询、优惠券、投诉。
+路由策略
+只有订单查询进入主流程，
+其他全部转人工。
+局部测试
+订单到哪了 / 我要退款 / 有
+优惠券吗 / 我要投诉。
+完成状态
+普通订单查询进主流程，其
+他问题进入转人工。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+配置订单参数提取节点
+测试输入 预期字段 检查重点
+帮我查一下 SN202606130001 order_id 有值；need_more_info=false 不要输出中文解释
+手机号 13512345678，帮我查订单 phone_number 有值；need_more_info=false 手机号不能被当成订单号
+我的薯片到哪了 product_name 有值；need_more_info=true 商品名不能唯一定位订单
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+配置第一层条件分支
+完成不是节点有连线，而是两类输入能走到不同路径
+01
+读取 
+need_more_info
+02
+false：可以查询
+03
+true：询问更多信息
+04
+正例：订单号直查
+05
+反例：缺参数追问
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+订单号直查路径
+关键点：插件输入必须引用参数提取节点输出的干净 order_id
+01
+可以查询
+02
+order_id 判断
+03
+快递插件
+04
+订单状态输出
+05
+第一个小成功
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+快递插件字段引用
+finalStatus
+状态值，适合内部判断。
+finalStatusDesc
+状态描述，更适合直接写进
+客服回复。
+statusDetail
+物流明细列表，信息多但第
+一版不宜直接全量输出。
+话术边界
+只给查询结果和下一步建议，
+不承诺赔偿、催发货。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+缺参数追问路径
+多轮对话能不能继续，关键看问答节点输出字段
+01
+我的订单到哪了
+02
+need_more_info=tr
+ue
+03
+问答节点追问
+04
+用户补订单号/手机号
+05
+进入二次判断
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+追问后的二次判断
+补订单号
+走快递插件。
+补手机号
+走数据表查询。
+仍无有效信息
+继续提示或转人工，不要无
+限追问。
+常见错误
+追问后还引用第一次参数提
+取的空字段。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+手机号路径与订单表
+为什么复杂
+手机号只是身份线索，不是
+订单本身。
+查询条件
+user_phonenumber = 
+phone_number。
+输出结果
+outputList 是一组记录，不
+是一条记录。
+局部运行
+返回为空时先检查手机号和
+字段名是否一致。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+模拟订单数据字段
+字段 用途 课堂提醒
+order_id 后续调用快递插件 为空表示暂时没有物流单号
+user_phonenumber 按手机号查询订单 字段名必须稳定
+item_title 让回复对应具体商品 避免只说“你的订单”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+循环节点处理多订单
+循环解决的是“一组数据逐条处理”的问题
+01
+输入 outputList
+02
+取当前订单
+03
+判断 input.order_id
+04
+有：查快递
+05
+无：待核实输出
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+循环内有订单号路径
+变量来源不同
+直查路径来自参数提取节点；
+循环内来自当前循环项。
+插件输入
+引用当前订单的 
+input.order_id。
+输出话术
+你的 {{item_title}} 当前物流
+状态是：
+{{finalStatusDesc}}。
+检查重点
+多条已发货订单，应输出多
+条不同商品的物流结果。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+循环内无订单号路径
+不能查快递
+当前订单还没有可查询的物
+流单号。
+不能虚构动作
+系统没有通知仓库，就不要
+说“我通知尽快发货”。
+稳妥话术
+暂未生成物流单号，建议稍
+后再查或联系人工客服确认。
+产品责任
+系统没有做的动作，不要在
+回复里假装已经做了。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+转人工兜底
+非订单查询
+商品咨询、优惠券、退款等。
+投诉情绪
+强烈不满、要求投诉、要求
+人工介入。
+凭证不足
+连续两轮没有提供有效信息。
+外部查询失败
+插件或数据表没查到，且无
+法判断原因。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+完整运行测试
+测试 1 订单号直查 参数提取 快递插件 状态输出
+测试 2 缺参数 追问 补订单号 继续查
+测试 3 手机号 订单表 循环 逐条输出
+测试 4 我要退款 意图识别 转人工 不查物流
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+常见错误定位
+错误类型 表现 定位方法
+意图识别错误 投诉进入普通查询 调整意图标签和测试样例
+参数提取错误 订单号/手机号没提取 看大模型节点输出
+条件分支错误 字段对但走错路 检查 true/false 和空值判断
+插件/数据表问题 路径对但无返回 先看输入是否传进去
+循环变量错误 手机号查到列表但处理失败 检查 outputList 和当前项引用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+工作场景迁移
+预约进度、报名状态、工单进度、售后单进度，都可以用同一套结构拆
+01
+识别意图
+02
+提取参数
+03
+缺参数追问
+04
+查询系统
+05
+输出或转人工
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+面试题：为什么先做订单查询
+高频
+用户经常问发货、物
+流、预计到达。
+规则清晰
+字段明确，不像投诉
+退款需要复杂判断。
+数据明确
+可接订单表和快递接
+口，不靠模型编。
+风险可控
+查不到可以追问或转
+人工。
+可衡量
+看自助解决率、转人
+工率、响应时长、人
+工咨询量。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+面试题：如何评估是否可上线
+流程指标
+意图识别、参数提取、插件
+调用、多轮追问完成率。
+体验指标
+响应时间、回复可读性、是
+否避免重复追问。
+风险指标
+隐私、错误承诺、投诉误判、
+异常兜底。
+业务指标
+自助解决率、人工咨询量下
+降、满意度变化。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3

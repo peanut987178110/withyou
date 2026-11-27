@@ -1,0 +1,941 @@
+<!-- PAGE 1 -->
+Vibe Coding
+复杂提示词和
+需求分析的关系
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+• 基础的几个要素
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+本节课
+•Vibe Coding复杂提示词
+•需求分析
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+Vibe coding提示词结构
+• 基础的几个要素
+目标
+what
+视觉风格
+vibe
+技术偏好
+Stack（可选）
+核心功能
+Features
+约束条件
+Constraints（可选）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+这还不够
+• 同样的目标，用户不同、场景不同
+• 所带来的产品体验需求和感受有差异
+• 另外：
+• 能否更加精准的对动效、交互进行控制
+• 文案风格能否控制
+• 性能和错误处理怎么做
+• 还有
+• 如果有参考产品怎么进行学习
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品层面
+• 用户画像（Who） 描述目标用户的心智模
+型，帮助 AI 做取舍决策。
+• "给不懂技术的独立创作者用，他们怕复杂、怕
+出错"
+• 使用场景（Context of Use） 何时、何地、
+以什么状态使用。
+• "主要在手机上睡前用，单手操作，光线暗"
+• 情绪旅程（Emotional Journey） 用户从
+进入到离开应该经历什么感受。
+• "进来时有点焦虑，用完之后要感觉被整理好了、
+轻松了”
+• 特别适合toC产品逻辑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+例如
+• 我在做什么： 一个极简番茄钟工具，帮助
+人们进入心流状态并保护休息节奏。
+• 目标用户： 独立工作者、写作者、设计
+师——他们有自律意愿但容易分心，已经
+知道番茄工作法是什么，不需要被教育，
+只需要一个安静的工具陪着他们。
+• 使用场景： 打开电脑准备开始工作的时候，
+开一个新标签页，全屏或半屏放在角落。
+环境可能是咖啡馆或深夜的房间。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+增加氛围感觉和情绪目标
+• 整体感觉： 像一根点燃的蜡烛放在桌角—
+—存在感低，但让人安心。不是生产力工
+具的"效率感"，而是冥想 app 的"仪式感"。
+• 进入时： 页面要安静到让人自然放慢呼吸，
+准备好开始 计时中： 感觉时间在缓慢、可
+控地流逝，不焦虑 
+• 结束时： 一个轻微的仪式感时刻，像合上
+书本
+• 注意：特别是C端产品，在功能类似的情
+况下，感受就变得尤为重要
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+交互层面
+• 动效语言（Motion Design） 描述过渡、
+反馈、微动画的节奏感。
+• "所有动画要慢而丝滑，像黄油融化，不要
+任何弹跳"
+• 交互密度（Interaction Density） 点击深
+度、信息层级的期望。
+• "一屏内完成所有操作，零跳转，像计算器
+一样直接"
+• 反馈机制（Feedback） 操作后系统如何
+响应。
+• "每次完成任务要有一个小小的成就感动画，
+但不能打断流程"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+对于番茄钟
+• 动效节奏： 所有过渡 600–800ms，ease-
+out，绝对没有弹跳。数字切换时用淡入淡出，
+不要滚动翻页效果。状态切换（工作→休息）
+时整个背景色有一次极慢的渐变（2秒）。
+• 按钮行为： 只有一个主按钮，状态自动切换文
+字（"开始" / "暂停" / "继续"）。重置是一个
+很小的次级操作，放在角落，不抢注意力。
+• 键盘支持： 空格键控制开始/暂停，R 键重置。
+这是给真正的键盘用户准备的，不需要任何提
+示文字。
+• 声音： 用 Web Audio API 合成，不依赖外部
+音频文件。声音要像一声轻柔的钵响——单音，
+有余韵，2–3秒自然消散。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+一些常见的动效语言
+风格 动效特征 比喻
+极简主义 淡入淡出为主，200–400ms，无弹跳 翻动一页纸
+玻璃态 慢速缩放 + 模糊过渡，600ms 雾气散开
+新拟物 按压下陷 + 弹起，有轻微弹性 按进海绵
+赛博朋克 扫描线闪入，瞬切 + 余晖残影 显示器刷新
+布鲁塔 几乎无动画，或硬切无过渡 盖章
+Y2K复古 夸张弹跳，星星闪烁，速度快 蹦床
+暗黑奢华 极慢淡入，800–1200ms，无任何弹性 丝绒幕布落下
+自然有机 慢而飘逸，像植物摆动，ease-in-out 树叶落水
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+一些常见的交互密度
+风格 信息层级 点击深度
+极简主义 极低，一屏一件事 1–2层
+玻璃态 中，卡片展开式 2–3层
+新拟物 低，所见即所得 1–2层
+赛博朋克 高，密集数据平铺 深层级但不跳转
+布鲁塔 极低，一页全是内容 1层，直接暴力
+Y2K复古 中高，信息热闹堆叠 多层但感觉轻盈
+暗黑奢华 极低，每屏只说一件事 1层，仪式感滚动
+自然有机 低，呼吸感布局 2层，温和引导
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+一些常见的反馈机制
+风格 操作反馈方式
+极简主义 颜色轻微变化，无声，不打断
+玻璃态 卡片轻微发光 + 模糊加深
+新拟物 按钮物理下陷，松手弹回
+赛博朋克 绿色扫描线闪过 + 终端打字音效
+布鲁塔 粗边框颜色反转，粗暴直接
+Y2K复古 星星爆炸 + 跳跃动画，夸张庆祝
+暗黑奢华 金色细线短暂出现后消失，克制优雅
+自然有机 小叶子飘落 or 圆圈涟漪，柔和消散
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+内容层面
+• 文案语气（Tone of Voice） 界面文字的
+人格。
+• "说话像一个温柔但不废话的朋友，不用感叹号，
+不用 emoji"
+• 空状态设计（Empty States） 没有数据时
+页面应该说什么、呈现什么。
+• "第一次打开时不要空白，给一句有点诗意的引
+导语”
+• 这一部分决定了你产品文案的调性和风格
+化
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+番茄钟
+场景 不要 要
+工作阶段标签 FOCUS / 专注模式 工作
+休息阶段标签 BREAK TIME / 去休息吧 休息
+开始按钮 开始计时 / START 开始
+结束提示 时间到！该休息了！ （只有声音，没有文字弹窗）
+语气原则：像一个不说废话的老朋友，不鼓励，不催
+促，就是陪着你。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+一些常见的文案语气
+风格 语气人格 示例
+极简主义 不说废话的陌生人 "已保存"
+玻璃态 酷但友好的设计师 "看起来不错"
+新拟物 温柔的助手 "轻触开始吧"
+赛博朋克 系统日志，冷漠机械 "TASK_COMPLETE // 03:42"
+布鲁塔 直接，不解释 "完成。"
+Y2K复古 活泼网友，爱用感叹号 "太棒了！✨ 搞定！"
+暗黑奢华 沉默的管家 "已为您记录"
+自然有机 温柔朋友，偶尔有点诗意 "今天也好好照顾自己"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+一些常见的空状态设计
+风格 空状态处理方式
+极简主义 一句话 + 一个极简线条图，不煽情
+玻璃态 半透明占位卡片 + 柔和引导文字
+新拟物 凸起的空容器，像一个等待被填满的凹槽
+赛博朋克 终端光标闪烁 + "AWAITING INPUT…"
+布鲁塔 大字直接写"什么都没有"
+Y2K复古 可爱角色 + 气泡对话框引导
+暗黑奢华 只有一条细线和一个日期，等待感是刻意的
+自然有机 一句轻柔的诗意引导语，比如"一切从第一步开始"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+工程层面
+• 性能预期
+• "首屏必须瞬开，不能有任何 loading 状态"
+• 扩展接口
+• 提前埋下以后可能改动的接口。
+• "数据结构设计成以后可以接云同步，但现在只
+用 localStorage"
+• 错误处理风格
+• “出错不要弹 alert，用内生提示，像 Linear 
+那样"
+• 浏览器/设备范围
+• "只支持 Chrome 最新版，不需要兼容 IE 或旧 
+Safari”
+• 如果不会写没关系，会给你讲如何AI生成
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+番茄钟
+• 实现方式： 纯 HTML / CSS / JS，单文件，
+零依赖，零构建工具
+• 兼容性： 只需支持现代 Chrome / Safari，
+不考虑 IE 或移动端
+• 性能： 页面打开即用，没有任何加载状态
+• 可扩展性： 计时时长写成顶部常量
+（WORK_MINUTES / BREAK_MINUTES），
+方便以后自己改，但不暴露给用户
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+参考系
+• 竞品拆解（Not just 'like X'，而是 'X 的哪
+一点’）
+•  模糊的"像 Notion"不如精确的：
+• "导航的层级感学 Notion，但配色和字重学 
+Linear，卡片阴影学 Vercel dashboard"
+• 反向参考
+•  明确说你不想要什么，往往比正向描述更有效。
+• "不要像 Google Forms，不要有明显的表单感，
+不要蓝色系"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+番茄钟
+• 布局克制感学 iA Writer 
+• 数字质感学 Teenage Engineering 的产
+品页 
+• 配色的安静感学 Bear App 
+• 绝对不要像 Toggl / Forest / 任何有进度
+条游戏化设计的番茄钟
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+完整版本的提示词框架
+产品层面
+用户画像|使用场景|情绪旅程
+交互层面
+动效|交互密度|反馈机制
+内容层面
+文案语气|空状态设计
+工程层面
+性能预期|扩展要素|错误处理
+参考系层面
+竞品拆解|反向参考
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+再看个例子
+• 产品： 一个个人财务记录工具
+• 用户： 25–35岁，有一定财务意识但不是专业人士，用手机记录消
+费，怕麻烦
+• 氛围： 高级感但不冷漠——像一本好看的 Moleskine 本子被数字化
+了。米白色背景，衬线字体用于金额，无衬线用于标签。没有鲜艳
+颜色，只有深绿和深棕作为点缀
+• 情绪目标： 记一笔账的感觉要像在日记里写了一句话——轻盈、有
+仪式感、不焦虑
+• 核心功能： 快速添加一笔支出（3秒内完成）、按天查看流水、月
+度总览饼图
+• 交互： 添加时只需金额+分类，备注可选。动画慢而克制，数字变
+化要有滚动效果
+• 文案： 不用"错误"，用"好像哪里不对"；不用"确认删除"，用"移除
+这条记录？"
+• 技术： React 

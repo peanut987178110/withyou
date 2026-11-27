@@ -1,16 +1,29 @@
 /**
- * Voice / call copy for all ten locales, plus the corrections to strings that
- * were written when voice was only a preview.
+ * Voice / call copy for all ten locales — a one-off generator kept for the
+ * record of how the 2.1 voice strings were produced.
  *
- *   node scripts/voice-i18n.mjs
+ *   node scripts/voice-i18n.mjs            # refuses; the dictionaries are now
+ *                                          # the source of truth
+ *   node scripts/voice-i18n.mjs --force    # only if you really mean to rewrite
  *
- * Idempotent: the appended block is delimited, so running twice rewrites it
- * rather than duplicating keys. Order is taken from `en`, and
- * `e2e/i18n-check.mjs` asserts every locale ends up with the same key order.
+ * Since 2.2 the dictionaries in `web/js/i18n/` are edited directly, because
+ * several of the strings below stopped being true: voice is no longer mock
+ * audio, "nothing is recorded" is wrong, and the recorder is a tap, not a hold.
+ * Re-running this file would silently put those lies back, so it refuses
+ * unless asked explicitly.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+if (!process.argv.includes('--force')) {
+  console.error(
+    'voice-i18n.mjs is a historical generator. The 2.2 voice copy is maintained\n'
+    + 'directly in web/js/i18n/*.js — re-running this would restore strings that\n'
+    + 'are no longer true. Pass --force only if that is what you want.',
+  );
+  process.exit(1);
+}
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const I18N = path.join(HERE, '..', 'web', 'js', 'i18n');

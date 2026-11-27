@@ -1,0 +1,1024 @@
+<!-- PAGE 1 -->
+通过工作流搭建
+工作流设计
+构建产品架构
+实践篇
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+BDS
+炒 饭 会AI产品构建的核心框架-五层结构
+用户层
+应用层
+模型层
+数据层
+算法算力层
+逻辑 角色 任务目标
+UE、UI
+简洁提问
+专业提示词
+检索增强
+RAG
+易读知识库
+结构化数据
+垂直大模型
+通用大模型
+丰富可靠的数据湖
+算法 算力
+用户需要的答案
+专业回答
+接口调用
+MCP
+Function call
+动作驱动
+驱动动作结果
+产品经理
+UI、UE
+提示词工程师
+（产品经理部分兼任）
+研发主导，产品辅助
+大模型厂商、算法工程师
+大模型厂商+大数据提供
+方+客户
+AI科学家、芯片厂商
+良好的用户体验
+1：提示词结构化便于开发
+2：提示词技巧提高回答确定性可控性
+1：知识库导入、分块、向量化处理，
+建索引、检索
+2：RAG能力评测
+提升模型泛化能力或者垂直能力
+准确性、易用性、成本控制
+提供数据
+构建大模型易读的公、私数据系统
+提升算法算力水平
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+BDS
+炒 饭 会设计提示词三部曲
+层次 类型 模块
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+BDS
+炒 饭 会System Prompt 与 User Prompt 的分工
+一个定「身份和规则」，一个传「当下的具体任务」。
+System Prompt
+系统级 · 设定身份与规则
+一次设定，全程生效。规定 AI 是谁、遵守什么规则、不能做什
+么。
+「你是零食客服，只依据知识库作答，不编造。」
+User Prompt
+用户级 · 传当下的任务
+每次对话变化。传入用户这一次的具体问题或要处理的内容。
+「这款海苔开封后能放多久？」
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+BDS
+炒 饭 会大模型任务本质四大类
+任何新任务来了，先问它属于「转换 / 理解 / 问答 / 生成」哪一族——prompt 重心、要不要给资料、输出要不要结构化，答案就定了。
+转换类 信息进、信息出
+翻译 · 摘要 · 改写 · 格式转换
+有原文，不该无中生有
+理解类 读懂、给判断
+分类 · 抽取 · 情感 · 打分排序
+输出多为结构化、可枚举
+问答类 基于资料答
+知识库问答 · 文档问答
+答案来源比答案更重要
+生成类 从无到有造
+文案 · 对话 · 代码 · 方案
+重心是风格、约束、创意
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+BDS
+炒 饭 会一个完整 Prompt 的七个模块
+按这套模板拼，就不会漏掉关键部分。
+身份设定
+你是谁
+背景设定
+上下文情境
+目标设定
+要完成什么
+输入示例
+会收到什么样的输入
+输出格式
+结果长什么样
+输入-输出示例
+给个完整范例
+限制条件
+禁止与边界
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+BDS
+炒 饭 会Agent开发的发展历程
+Prompt
+工程
+Context
+工程
+Harness
+工程
+Loop工
+程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+BDS
+炒 饭 会Prompt专业化三阶段
+风格化
+语气、人设、
+格式、输出
+工程级
+结构化拼装、
+推理拆解、稳
+定防护
+验证
+同一 prompt 
+多模型对比，
+挑最优
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+BDS
+炒 饭 会风格化
+把抽象的「我想要这种感觉」拆成可调的具体参数。
+语气
+亲切/专业/俏皮——决定情感色彩
+「亲～」vs「您好，已为您查询」
+人设
+AI 扮演的角色身份
+邻家店员 vs 专业顾问
+详略
+一句话答完还是分点详答
+快速答 vs 展开讲清楚
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+BDS
+炒 饭 会工程级 Prompt 自检（三维）
+拼装
+是否模块化拆分了
+拼装
+会变的部分是否用了变量占位
+拼装
+模板是否能跨场景复用
+推理
+复杂判断是否加了 CoT
+推理
+格式类是否给了 Few-shot 范例
+推理
+复合任务是否做了分解
+防护
+是否声明用户输入只是数据
+防护
+是否做了输出约束
+防护
+是否有兜底/转人工规则
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+A I · 产 品 · 商 业
+CONTENTS
+目录
+01
+02
+03
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+01Pa r t  O n e
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+APB
+经过前两周
+• 你的客服系统磕磕绊绊
+• 但还是上线了
+• 基本达到设计要求
+• 60%以上的查询订单的需求路由到智能部分处理
+• 节省下不少人力
+• 本周的周会
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+APB
+周会
+智能客服这个项目目前什么进
+度
+老板，第一版上线了，已经交
+给客服部门，这版能查订单信
+息了
+对，是上线了，订单能查了
+效果怎么样
+感觉还可以，没有接到投诉，
+我们也在密切关注，但功能很
+少，只能查订单做不了别的，
+很不成熟
+嗯，我们也在看线上log
+目前接口还是太稳定，下个版
+本我们准备自己开发一个
+老板，泉姐，我们第一版定义
+的目标是就是做物流查询，其
+他还是转人工，目标是自助解
+决率60%，目前看已经达成了
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+APB
+周会
+那接下来呢？ 是啊，咱们跟成熟系统差距还挺大，得抓紧 最好能把整体规划出来，技术好整体做架构 客服的工作还有很多，还是要抓紧做啊，如果短时间出不来，我们还是需要招人
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+APB
+你的反应
+• 什么人啊
+• 明明2周就做好了第一期
+• 降了人力
+• 一句夸奖都没有
+• 什么嘛
+• 下一步又要怎么做呢？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+APB
+有人拍了拍你肩膀
+• 小赵啊
+• 两周做到这个地步其实是不错的
+• 不过呢
+• 职场就是这个样子的
+• 没有太多人会衷心的夸奖你
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+APB
+一段对话
+以为能被夸奖一下，甚至加薪
+什么的
+职场别太指望被夸奖，特别是
+只是做出功能，不过我给你点
+个赞
+接下来做什么啊？
+你有什么思路
+继续完善这个功能，把各种订
+单状态处理的再细致一些，然
+后做退换货吧
+这样你可就更得不到机会了
+？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+APB
+职场小课堂
+• 第一个版本为了什么？
+• 稳
+• 订单查询量大，而且非常容易，也没有风
+险
+• 但是，这个工作的“功劳度”不够
+• 如果继续优化这个，从职场的投产比并不
+高
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+APB
+AI在职场的机会
+• 由于所有东西都可以被AI重新做一次
+• 这就有一个机会
+• 在公司里第一个项目可能是被分配的任务
+• 完成这个任务后，有可能出现任务真空
+• 其他人也不知道该做什么了
+• 这个时候就是提出做什么的好机会
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+APB
+做什么
+物流查
+询
+退换货
+处理
+商品推
+荐
+商品介
+绍
+售前沟
+通
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+APB
+物流查询：最容易做出结果的切入点
+AI 改造：接入订单、物流、快递轨迹接口，自动识别订单信息，查询状态并生成解释性回复。
+核心 KPI　自动解决率 · 转人工率 · 平均响应时长 · 重复进线率 · 异常物流识别准确率 · 用户满意度
+业务价值
+高频、标准化、ROI 清晰；显著降低人工咨询量，提升响应速度，减少用户
+焦虑。
+落地难点
+物流状态口径复杂；异常件识别难；多物流公司状态不统一；订单、包裹、售后
+数据可能割裂。
+对 AI 产品经理的价值
+最容易做出结果的切入点；适合证明「AI + 系统接口 + 规则判断」的闭环能
+力，快速拿到降本提效数据。
+对 AI 产品经理的风险
+价值天花板不高，易被认为只是「查单机器人」；只做 FAQ、没有异常识别/主
+动通知/工单联动，含金量偏低。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+APB
+退换货处理：最能体现专业度，也最危险
+AI 改造：判断订单状态、售后政策、商品类目、退换原因、责任归属，引导用户完成售后流程。
+核心 KPI　售后自助完成率 · 售后处理时长 · 平台介入率 · 纠纷率 · 错误承诺率 · 退款换货完成率 · 满意度
+业务价值
+降低售后压力；统一规则口径；减少错误承诺；降低平台介入率和纠纷率。
+落地难点
+规则复杂且动态变化；涉及平台/店铺政策、类目差异、运费责任、凭证审核；
+用户情绪强，容错率低。
+对 AI 产品经理的价值
+体现规则建模、流程设计、风控意识和复杂业务抽象能力；比物流查询更能
+体现专业度。
+对 AI 产品经理的风险
+风险高：AI 误判可能造成资损、投诉、差评、平台处罚；不懂业务边界，易把
+「客服问答」误做成「自动裁决系统」。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+APB
+商品介绍：搭知识库与 RAG 的典型场景
+AI 改造：基于商品知识库、详情页、参数、卖点、FAQ、评价摘要，自动回答商品问题。
+核心 KPI　商品问题自动解决率 · 咨询转化率 · 错误答复率 · 知识库命中率 · 商品信息覆盖率 · 下单率 · 投诉率
+业务价值
+降低客服培训成本；提升商品答复一致性；减少错误介绍；提高咨询后转化
+率。
+落地难点
+商品知识库维护成本高；SKU 多、更新快；卖点需结构化；AI 容易夸大宣传或
+错误承诺。
+对 AI 产品经理的价值
+搭建知识库、RAG、内容结构化能力的典型场景；适合展示「非结构化商品
+信息 → 可问答知识资产」的能力。
+对 AI 产品经理的风险
+易做成低级知识库问答，缺业务深度；知识源不准或更新不及时 PM 会背锅；功
+效/食品/美妆类合规风险更高。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+APB
+售前沟通：最体现业务理解与转化策略
+AI 改造：识别用户意图、预算、顾虑、使用场景，生成追问、异议处理、促单话术和推荐策略。
+核心 KPI　咨询转化率 · 有效询单率 · 平均接待时长 · 催付成功率 · 客单价 · 人工接管成功率 · 满意度 · 差评率
+业务价值
+提升询单转化率；减少漏问、漏推、漏促单；复制优秀客服销售能力；提升
+新人接待质量。
+落地难点
+高度依赖语境、情绪、节奏和信任；AI 容易话术化、机械化、过度推销；用户
+真实需求识别难。
+对 AI 产品经理的价值
+最能体现「业务理解 + 对话设计 + 转化策略」；做得好可从工具型 PM 升级
+为业务增长型 PM。
+对 AI 产品经理的风险
+目标不清会变成「写话术工具」；转化率没提升业务方会认为没价值；过度促销
+造成用户反感、投诉、品牌伤害。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+APB
+商品推荐：从降本型 PM 升级为收入型 PM
+AI 改造：根据用户需求、预算、偏好、购买场景、历史行为、库存和促销信息推荐商品。
+核心 KPI　推荐点击率 · 推荐转化率 · 客单价 · 加购率 · 连带销售率 · 推荐后退款率 · 毛利贡献 · 满意度
+业务价值
+提升转化率、客单价、连带率；让客服从被动答疑转向主动成交；适合做导
+购型 AI Agent。
+落地难点
+强依赖商品标签、库存、价格、促销、用户画像；推荐逻辑易不稳定；可能推荐
+缺货、低毛利或不适合的商品。
+对 AI 产品经理的价值
+最容易体现「增长价值」的方向；从降本型升级为收入型 PM；适合沉淀商品
+标签体系、推荐策略和导购链路方法论。
+对 AI 产品经理的风险
+效果不稳定，易被业务方质疑「推荐不准」；没有数据闭环、只做大模型话术推
+荐，很难证明真实转化贡献。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+APB
+五场景定位图：价值 × 难度/风险
+横轴=落地难度与风险（左低右高），纵轴=对 PM 的价值天花板（下低上高）。
+高价值 · 低难度 高价值 · 高难度
+低价值 · 低难度 低价值 · 高难度
+物流查询
+商品介绍
+商品推荐
+售前沟通
+退换货
+价值 ↑
+难度/风险 →
+落地建议：物流查询起步快速拿结果 → 商品介绍/推荐做增长 → 售前沟通与退换货是高价值深水区，需业务与风控功力。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+APB
+所以
+• 我的建议：
+• 先做商品推荐
+• 既可以降本，更可以增效
+• 而且继续保持agent模式
+• 还可以体现出真实“业绩”
+• 当你能汇报出“你的系统多增加一个月
+50w收入”可以就不一样了
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+02Pa r t  Tw o
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+APB
+最基础的逻辑
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+APB
+需求分析
+• 输出
+• 推荐的商品
+• 可能没有适合的
+• 输入
+• 线索
+• 场景
+• 处理
+• 商品库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+APB
+回答组件
+• 问用户需求
+• 商品和场景
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂

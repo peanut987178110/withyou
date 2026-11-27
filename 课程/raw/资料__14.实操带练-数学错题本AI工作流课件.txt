@@ -1,0 +1,927 @@
+<!-- PAGE 1 -->
+数学错题本 AI 工作台
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+先看最终结果　一张作业如何变成两份材料
+输入
+试卷.png
+① 家长确认页
+逐题核对识别结果
+② 飞书错题记录
+第3题、第6题各一行
+③ 学生练习卷
+围绕错题知识点出题
+④ 老师／家长解析卷
+逐题答案 + 分步解析
+→
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+家长真正痛苦的不是不会拍照
+01
+看老师哪里打了叉 →
+02
+把题目抄出来 →
+03
+判断错在哪个知识点 →
+04
+去练习册／网上找题 →
+05
+核对答案
+前面抄错一个符号，后面知识点判断和练习题就全偏了
+产品经理的常见错误
+用户说「我想要拍照识别」→ 需求写成「增加图片上传功能」——太浅了
+用户要的不是上传成功，而是不用再手工整理、反复找题、来回核答案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+同一份错题数据，三类角色做三种任务
+学生
+做题 · 提交 · 看反馈
+· 不能在答题前看到完整答案
+· 不需要读模型的分析过程
+家长
+上传 · 确认 · 选择练习
+· 要能看懂，不操作复杂后台
+· 对眼前这张作业最有事实判断力
+老师
+复核 · 共性分析 · 布置练习
+· 需要更完整的数据
+· 更高的信息密度
+产品结论：底层同一份结构化数据，界面与操作跟随角色任务变化
+本课体现：家长看可读确认页 · 学生拿无答案试卷 · 老师家长拿解析卷
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+为什么必须让家长确认
+识别
+减号认成加号 → 知识点分析基于错误题干 → 出题基于错误知识点 → 解析认真给出错误答案
+每个节点都「运行成功」，但整条链路是错的——错误静默传导
+人工确认 = 在成本最低的位置阻断错误传播
+家长对这张作业最有事实判断能力
+确认成本太高 = 机械点击「确认」
+所以先做「家长可读确认页」，再收集回复
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+一道错题必须是一条独立记录
+✗ 合并成一行
+知识点：整式化简、一元一次不等式
+错误类型：符号错误、计算错误
+统计哪类错误最多？做不到　只练不等式？要重新拆文本
+✓ 一题一条记录
+第3题 → 整式加减·去括号 → 符号错误
+第6题 → 一元一次不等式 → 计算错误
+可统计 · 可筛选 · 可分别复习
+为什么用 Array<Object>？
+数组 = 零道、一道或多道错题　对象 = 一条独立错题　fields = 飞书表格的一组列
+图片是输入载体，不是数据库的记录单位
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+这条工作流创造了什么价值
+减少整理时间
+拍照替代抄题 →
+数据可用性
+结构化落库 →
+针对性练习
+按知识点出题 →
+复习与教学判断
+长期统计复用
+付费的人、使用的人、做决策的人，可能不是同一个
+学生 = 直接使用者　家长 = 购买与监督　老师／学校 = 规模化决策者
+家长在意省事 · 学生在意题目合适 · 老师在意数据能支撑教学
+保留飞书记录的原因：文档解决一次使用，结构化数据支持长期复用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+今天会用到哪些节点　
+输入与返回
+开始　输出　结束
+理解与生成
+图片识别 LLM　确认页 LLM　错题分析 LLM　试卷 LLM ×2
+用户参与
+确认修正 问答　是否出题 问答　题量选择 问答
+外部交付
+飞书多维表格插件　Word 生成插件 ×2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+开始、输出和结束　控制工作流入口与出口
+开始节点
+定义启动必须收到什么
+sut_name(String)
+image(Image, 必填)
+输出节点
+流程中间的状态反馈
+「正在生成练习，请稍候」
+说完流程继续跑
+结束节点
+返回最终结果并终止
+错题本链接 + 学生文档
++ 解析文档
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+大模型节点　不只生成文字，还要理解图片
+方式一：理解
+识别节点区分题号、题干、黑色作答、红色批改
+每道题输出识别置信度（high/medium/low）
+方式二：生成
+学生卷节点按错题知识点出题
+解析节点对学生卷逐题求解
+稳定工作四项检查
+① 输入接对了吗 ② 提示词讲清任务了吗 ③ 输出格式约束了吗 ④ 结果检查了吗
+易忽略：输入区加了变量 ≠ 提示词用了它。检查提示词引用 + 运行结果体现
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+Array<Object>　一张图片如何装下多道题
+questions : Array<Object>　—　试卷盒子里装多张题目卡片
+数组 = 多道题　·　对象 = 一道题的完整档案　·　字段 = 卡片上的栏目
+questions[]　数组 · 多道题
+└ question_no　题号
+└ question_text　题干原文
+└ student_work　学生作答
+└ marking_result　批改 correct/incorrect/unclear
+└ correct_answer · error_summary　正确答案 · 错误概述
+└ recognition_confiden　识别置信度
+写飞书时再套一层
+records[]  数组
+└ fields  对象
+　└ 五个字段对应飞书五列
+结构跟接口走，不跟感觉走
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+问答节点和插件节点　让用户与外部系统进入流程
+问答节点：流程暂停等回复
+文本回答：回「确认」或输入修正内容
+固定选项：需要／不需要 · 3/6/9/12
+输出 USER_RESPONSE / optionContent
+插件节点：调用外部系统
+飞书多维表格：写入错题记录
+Word 生成：Markdown → docx
+常见问题：授权 · 参数 · 字段映射
+报错先分类：模型问题 · 用户输入问题 · 外部插件问题
+问题类型不同，排查方法完全不同
+节点认完了 → 先看整张地图 → 再从开始节点一步步搭
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+完整工作流全貌　
+开始
+姓名+图片
+识别
+图片→逐题数组
+确认页
+JSON→可读
+确认修正
+问答
+错题分析
+→records
+写入飞书
+插件
+验证连接
+插件哨兵
+是否出题
+问答分支
+题量选择
+3/6/9/12
+状态输出
+正在生成
+学生卷 LLM
+按知识点出题
+学生 Word
+插件 docx
+解析 LLM
+对学生卷求解
+解析 Word
+插件 docx
+结束
+三项返回
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+三次关键的数据形态变化
+① 图片 → questions[]
+人眼能看的作业，变成下游能引用的逐题字段
+② questions → records[].fields
+筛出错题，补上错误类型与知识点
+③ 记录 → 双版本文档
+同一批问题：学生做一版，老师家长核一版
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+步骤 1：配置开始节点
+sut_name　String
+学生姓名；历史拼写少一个 d，原样保留
+image　Image · 必填
+作业图片；类型错了识别节点收不到图
+为什么不改拼写？
+变量名已被下游节点引用
+改一个字母 = 全线断链
+自建工作流启示：变量名先想好再用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+步骤 2：让模型先识别题目边界
+节点：错题图片识别（LLM）　输入：image ← 开始节点
+角色设定：「初中数学作业图片识别与批改结果提取」模块——只干这一件事
+按题号拆题
+每道有题号的题单独一条记录
+黑红分离
+学生黑色书写 ≠ 教师红色批改
+批改三态
+红勾→correct　红叉→incorrect　看不清
+→unclear
+局部不清不判废
+保留可识别部分，标明位置
+不得编造
+图里没有的条件、过程、答案一律不编
+置信度三档
+high / medium / low，供确认环节使用
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+步骤 3：配置多道题结构化输出
+questions : Array<Object>　—— 七个字段，一道题的完整档案
+question_no
+题号
+question_text
+题干原文
+student_work
+学生作答
+marking_result
+批改结果
+correct_answer
+正确答案(图上有才填)
+error_summary
+错误概述
+recognition_confiden
+识别置信度*
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+局部运行　图片是否变成题目数组
+开始节点填：李明 + 李明.png → 选中「错题图片识别」→ 试运行
+① 拆出多道题
+数组里有多个对象
+② 题干完整
+没把两题并成一题
+③ 作答批改分开
+student_work ≠ marking_result
+④ 置信度有值
+high / medium / low
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+步骤 4：把 JSON 改造成家长可读确认页
+节点：家长可读的错题确认页（LLM）
+输入：questions ← 识别节点
+任务：格式转换，不是理解图片
+逐题排版：题号 · 题干 · 孩子写了什么 · 老师判了什么
+重点突出错误和低置信度的题
+这步能不能省？
+直接把 JSON 发给家长 →
+一屏天书 → 机械点「确认」
+确认形同虚设，等于没设
+原始数据给系统看，可读版给人看——可读化是确认机制生效的前提
+检查：输入引用 questions，输出一个字符串
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+步骤 5：接收确认或修正
+问答文案（三段式）
+① 「请核对下面的错题识别结果：」
+② {{output}} —— 引用上一步的可读确认页
+③ 识别无误输入「确认」；题目／作答／批改识别错误，直接输入修正后的完整内容
+文本回答，不是选项
+修正内容千变万化，固定选项框不住
+输出 USER_RESPONSE
+关键变量，下一步马上用
+二选一才用选项，开放修正用文本——问什么、怎么答，取决于业务信息的开放程度
+学员操作：先输「确认」走一遍；再故意改一处内容走一遍，对比 USER_RESPONSE
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+步骤 6：逐题判断错误类型与知识点
+节点：识别错题类型和知识点（LLM）　一次拿三样输入：
+sut_name ← 开始　·　input ← questions　·　confirmation ← USER_RESPONSE
+筛选三类题
+incorrect / unclear需确认 / 批改冲突；判对的不写
+十选一枚举
+error_type 英文枚举，禁「粗心」「基础差」
+知识点合格线
+「去括号与合并同类项」✓　「计算」「几何」✗
+信息不足不猜
+写 insufficient_information，不凭空判断
+信谁？原始识别是参考，家长确认是准绳
+第3题去括号漏变号 → 符号错误；第6题 → 另一知识点。两题两判断两条记录
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+步骤 7：生成 records[].fields　
+records[]　数组 · 多条记录
+└ fields（对象）　一行对一行的列
+　└ student_name　学生姓名
+　└ subject　固定「初中数学」
+　└ error_type　英文枚举值
+　└ knowledge_point　具体知识点（中文）
+　└ knowledge_explanatio*　知识点解释（80-150字）
+✗ records 配成单个对象
+一张图只写一行
+✗ 字段名手打拼错
+下游引用断链
+✗ fields 与飞书列对不上
+写入时内容丢失
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+步骤 8：将错题写入飞书多维表格
+插件：飞书多维表格 · add_records（新增多条记录，单次最多 500 条）
+app_token = 课堂共享错题表链接　·　records ← 引用上一步（是引用，不是复制粘贴）
+运行到写入节点
+从问答节点接着跑
+切到飞书亲眼核对
+不看插件返回就当完
+新增 2 行
+第3题一行，第6题一行
+每行五字段有值
+学科·错误类型·知识点·解释
+返回成功但飞书没新增行？查授权 → 查 app_token → 查 records 结构
+引用 = 数据流是活的：上一步改了，这里自动跟着变
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+步骤 9：验证错题本连接
+插件：飞书多维表格 · 查询表格信息
+只配一个 app_token（同一张表）
+返回 code = 0 → 访问正常
+不写入，只做检查
+都写进去了，还验证什么？
+写入成功只代表这一次成功
+表格以后可能被移动、改名、删除
+哨兵：链路断了立刻知道断在哪段
+带走这个习惯：外部依赖越多，越要在关键依赖后面留检查点
+操作检查：运行该节点，确认返回 code 为 0
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+步骤 10：询问是否需要出题
+问答：「是否需要出试卷？」　选项：需要 / 不需要
+需要 →
+进入题量选择
+继续生成练习和解析
+不需要 →
+直接到结束节点，返回错题本链接
+数据已安全落库
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+步骤 11：选择试卷总题数
+3 6 9 12
+问答：「请选择本次试卷的总题数」　→　输出 optionContent
+为什么用固定选项？
+下游需要可控数量，开放输入会出「来一百道」
+档位本身是产品决策
+给用户的自由度，框在她能理解的范围内
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+步骤 12：输出生成中的状态提示
+「错题已记录。正在生成 {{output}} 道针对性练习，请稍候。」
+{{output}} 引用 optionContent —— 家长选几，提示就说几
+为什么需要它
+模型生成 + 两个插件 ≈ 十几秒，没提示用户以为卡死
+它是路牌，不是终点
+后面还连着 2 个 LLM + 2 个插件
+操作检查：确认输出节点后面还有连线——它是中间提示，不是结束
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+步骤 13：生成学生用试卷
+输入三样：sut_name（卷面写「李明专属」）· records ← 错题分析 · optionContent ← 题量
+角色：命题老师 总题数必须等于所选数量
+题型分配 按总数合理分配选择·填空·解答
+唯一题号 Q01、Q02 … 逐题编号
+题目质量 条件充足，答案唯一且可验算
+学生卷红线 不得泄露答案或解析
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+步骤 14：生成学生 Word
+插件：Word 生成（Markdown → docx）
+formatted_markdown ← 学生卷输出
+title =「易错题试卷」
+to_format = docx
+打开文档三查
+① 排版正常，标题正确
+② 题目完整，数量 = 所选
+③ 没有答案混进去
+✓ 第三项成果到手：学生练习 Word
+课堂示例：6 题围绕整式运算与符号处理，建议时长 15 分钟，无答案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+步骤 15：生成答案并做一致性检查
+输入只有一个：引用学生卷的 output —— 对着已生成的卷子求解
+角色不是「解答老师」，是「试题审校员」：逐题独立求解 + 反向验算
+机制保障　引用学生卷 = 解析的每一题就是学生卷的每一题
+两卷独立生成的后果　题号对不上、题目对不上——只是时间问题
+异常兜底　条件不足／多解／验不过 → 标「题目异常，建议替换」，不伪造答案
+数据

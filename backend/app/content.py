@@ -54,6 +54,34 @@ TRAITS = [
     "Encouraging", "Witty", "Gentle", "Direct", "Dreamy",
 ]
 
+# How a personality sounds. Rate and pitch are multipliers the speaker applies
+# to whatever voice it ends up using, so the pacing survives a change of
+# engine — a Gentle character speaks slowly on the device's voice and slowly on
+# a cloud voice too.
+#
+# `style` is the coarse bucket the client uses to pick a system voice when it is
+# speaking locally, and the bucket the copywriter uses in doc 03.
+VOICE_PRESETS = {
+    "Gentle":      {"rate": 0.92, "pitch": 0.95, "style": "warm"},
+    "Calm":        {"rate": 0.90, "pitch": 0.92, "style": "calm"},
+    "Warm":        {"rate": 0.96, "pitch": 1.00, "style": "warm"},
+    "Grounded":    {"rate": 0.94, "pitch": 0.96, "style": "calm"},
+    "Encouraging": {"rate": 1.00, "pitch": 1.04, "style": "warm"},
+    "Curious":     {"rate": 1.04, "pitch": 1.06, "style": "witty"},
+    "Playful":     {"rate": 1.08, "pitch": 1.12, "style": "playful"},
+    "Witty":       {"rate": 1.06, "pitch": 1.06, "style": "playful"},
+    "Direct":      {"rate": 1.02, "pitch": 0.98, "style": "direct"},
+    "Dreamy":      {"rate": 0.88, "pitch": 1.02, "style": "gentle"},
+}
+
+# trait → preferred gender for the default voice. Not a gender claim about the
+# character; just which of the six voice skins reads closest to the trait.
+_TRAIT_VOICE_GENDER = {
+    "Gentle": "f", "Warm": "f", "Dreamy": "f", "Encouraging": "f",
+    "Calm": "n", "Grounded": "n", "Curious": "n",
+    "Playful": "f", "Witty": "n", "Direct": "m",
+}
+
 DAILY_ACTIVITIES = [
     {
         "id": "daily_mood_v1", "rule_version": "2026-11-18.1", "kind": "mood",

@@ -123,7 +123,8 @@ CREATE TABLE IF NOT EXISTS companions (
   wardrobe_item TEXT NOT NULL DEFAULT 'linen_soft',
   room_id TEXT NOT NULL DEFAULT 'sunlit',
   version INTEGER NOT NULL DEFAULT 1,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  voice_profile TEXT NOT NULL DEFAULT '{}'
 );
 
 CREATE TABLE IF NOT EXISTS conversations (
@@ -351,11 +352,15 @@ CREATE TABLE IF NOT EXISTS call_turns (
   content TEXT NOT NULL DEFAULT '',
   at_ms INTEGER NOT NULL DEFAULT 0,
   kind TEXT NOT NULL DEFAULT 'speech',   -- speech | nudge | system
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  audio_key TEXT,                        -- user clip, when the mic was open
+  duration_ms INTEGER NOT NULL DEFAULT 0,
+  interrupted INTEGER NOT NULL DEFAULT 0,
+  memory_ids TEXT NOT NULL DEFAULT '[]'  -- memories the reply leaned on
 );
 
--- T4 voice notes. `audio` is a data-URI-free base64 payload; real deployments
--- move this to object storage and keep only the key.
+-- T4 voice notes. `audio` is the legacy data-URL payload; new rows store bytes
+-- on disk and keep `audio_key`. Both are readable so nothing had to migrate.
 CREATE TABLE IF NOT EXISTS voice_notes (
   id TEXT PRIMARY KEY,
   user_id TEXT NOT NULL,
@@ -369,7 +374,10 @@ CREATE TABLE IF NOT EXISTS voice_notes (
   trigger_id TEXT,
   created_at TEXT NOT NULL,
   expires_at TEXT,
-  deleted_at TEXT
+  deleted_at TEXT,
+  audio_key TEXT,
+  audio_bytes INTEGER NOT NULL DEFAULT 0,
+  peaks TEXT NOT NULL DEFAULT '[]'
 );
 
 -- AI-initiated call attempts that never connected (T3 voicemail source).
@@ -384,6 +392,7 @@ CREATE TABLE IF NOT EXISTS voicemails (
   status TEXT NOT NULL DEFAULT 'unread',  -- unread | heard | replied | expired
   created_at TEXT NOT NULL,
   expires_at TEXT,
+  audio_key TEXT,
   UNIQUE (user_id, trigger_id)
 );
 
@@ -426,7 +435,37 @@ CREATE INDEX IF NOT EXISTS idx_ledger_user ON wallet_ledger(user_id, created_at)
 def init_db() -> None:
     with connect() as conn:
         conn.executescript(SCHEMA)
+        _migrate(conn)
         conn.execute("PRAGMA journal_mode = WAL")
+
+
+# Columns added after v2.1. `CREATE TABLE IF NOT EXISTS` does nothing to a table
+# that already exists, so an upgraded install needs these applied explicitly —
+# otherwise the new voice code would read a column that isn't there and fail on
+# every request that touches it.
+_MIGRATIONS: dict[str, list[tuple[str, str]]] = {
+    "companions": [("voice_profile", "TEXT NOT NULL DEFAULT '{}'")],
+    "call_turns": [
+        ("audio_key", "TEXT"),
+        ("duration_ms", "INTEGER NOT NULL DEFAULT 0"),
+        ("interrupted", "INTEGER NOT NULL DEFAULT 0"),
+        ("memory_ids", "TEXT NOT NULL DEFAULT '[]'"),
+    ],
+    "voice_notes": [
+        ("audio_key", "TEXT"),
+        ("audio_bytes", "INTEGER NOT NULL DEFAULT 0"),
+        ("peaks", "TEXT NOT NULL DEFAULT '[]'"),
+    ],
+    "voicemails": [("audio_key", "TEXT")],
+}
+
+
+def _migrate(conn: sqlite3.Connection) -> None:
+    for table, columns in _MIGRATIONS.items():
+        existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
+        for name, decl in columns:
+            if name not in existing:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {name} {decl}")
 
 
 def row_dict(row: sqlite3.Row | None) -> dict[str, Any] | None:

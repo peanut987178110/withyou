@@ -84,7 +84,12 @@ def test_t4_cross_account_isolation(client):
 
 
 def test_t4_audio_can_be_played_back(client):
-    """Storing the recording is pointless if the bubble cannot play it back."""
+    """Storing the recording is pointless if the bubble cannot play it back.
+
+    Since v2.2 the route answers with the bytes themselves — new notes live on
+    disk — so the assertion is on the body and the content type rather than on
+    a data URL string.
+    """
     user = headers_for(client)
     note = client.post("/api/v1/voice-notes", headers=user["headers"], json={
         "conversation_id": user["comp"]["conversation_id"],
@@ -92,9 +97,27 @@ def test_t4_audio_can_be_played_back(client):
     }).json()["data"]["note"]
     res = client.get(f"/api/v1/voice-notes/{note['id']}/audio", headers=user["headers"])
     assert res.status_code == 200, res.text
-    data = res.json()["data"]
-    assert data["audio"] == "data:audio/webm;base64,AAAA"
-    assert data["mime"] == "audio/webm"
+    assert res.headers["content-type"].startswith("audio/webm")
+    assert res.content == b"\x00\x00\x00"
+    assert note["has_audio"] is True
+
+
+def test_t4_legacy_data_url_note_still_plays(client):
+    """Rows written before the file store keep their data URL and stay playable.
+
+    The migration was additive on purpose: silently breaking playback for
+    existing notes would be data loss the user never asked for.
+    """
+    user = headers_for(client)
+    note = client.post("/api/v1/voice-notes", headers=user["headers"], json={
+        "conversation_id": user["comp"]["conversation_id"],
+        "duration_ms": 2000, "mime": "audio/webm", "audio": "not-base64-$$$",
+    }).json()["data"]["note"]
+    res = client.get(f"/api/v1/voice-notes/{note['id']}/audio", headers=user["headers"])
+    assert res.status_code == 200, res.text
+    body = res.json()["data"]
+    assert body["audio"] == "not-base64-$$$"
+    assert body["encoding"] == "data-url"
 
 
 def test_t4_audio_is_not_readable_by_another_account(client):

@@ -1,0 +1,953 @@
+<!-- PAGE 1 -->
+实战
+搭建一个产品经理面试
+题库系统（5）
+功能闭环
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+可以的方向
+• CAT（自适应设计）
+• 上节课的雷达图是基于固定 15 题，但用
+户能力差异很大
+• 大牛做了 5 题就答对全部，浪费时间
+• 小白做了 15 题全错，无法精准定位水平
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+本节课
+•功能闭环
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+到这里缺了点什么
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+功能闭环
+• 如果用户花了15分钟答题
+• 付出了努力
+• 结果只看到了结果
+• 这个产品体验是有缺陷的
+• 人的“完型需求”
+• 体验闭环
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做到闭环
+• 弱点诊断
+• 告诉用户具体差在哪
+• 资源推荐
+• 告诉用户该怎么补
+• 复测对比
+• 让用户看到自己在变强
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+重点
+• 弱点诊断
+• 需要让LLM的输出可信
+• 因为这直接关于用户的真实体验和效果
+• 我们之前的功能并没有用到LLM
+• 用到LLM能力是
+• Coding本身
+• 做数据标注
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+对话型prompt和工程型prompt
+• 对话型Prompt
+• 日常写的提示词
+• 例如：
+• 请帮我分析这个用户的能力，给一些建议。
+• 他在 AI 基础上比较弱，分数是 45。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+工程型Prompt
+• # 角色
+• 你是一位资深 AI 产品经理面试官。
+•  
+• # 任务
+• 基于用户的能力测评数据，生成针对【AI 基础认知】维度的诊断报告。
+•  
+• # 输入数据
+• 你会拿到：维度名、分数、用户在这个维度答过的所有题（题号、考察点、难
+度、答对还是答错）。
+•  
+• # 输出要求
+• 输出包含四个部分：一句话总结、薄弱点列表、正向鼓励、信心分。
+• 薄弱点必须引用具体题号，鼓励必须基于答对的题目。
+•  
+• # 约束
+• 1. 不允许说「你在 X 方面有潜力但缺乏深度」这类废话
+• 2. 不允许只说「建议多学习」，必须给可执行的动作
+• 3. 不允许凭空推测原因，必须基于答错题目的数据
+• 4. 鼓励必须具体到答对的题目，不能空泛 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+核心的差别是什么
+• 工程型 prompt 有明确的结构
+• 工程型 prompt 有具体的约束
+• 工程型 prompt 让 AI 知道什么不该做
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+工程型prompt的五段结构
+段落 作用
+1. 角色（Role） 告诉 AI 它是谁、带着什么视角看问题。"你是资
+深 AI PM 面试官"
+2. 任务（Task） 告诉 AI 要完成的具体动作，一句话说清楚
+3. 输入（Input）告诉 AI 会拿到什么数据、数据的结构是怎样的
+4. 输出
+（Output）
+告诉 AI 要输出什么、格式是什么
+5. 约束
+（Constraints）
+明确禁止什么、必须做什么。这是质量保证的核
+心。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+AI输出可信度的产品控制
+• LLM 不是 100% 可靠
+• 它会乱说话、会编造、会失败
+• AI 产品经理的核心能力，就是用产品手段
+兜底 AI 的不确定性
+• 不是修复 LLM
+• LLM 改不了，那是大模型公司的事
+• 是设计产品
+• 让 AI 出错时，产品依然能给用户一个像样的体
+验。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+强制结构化输出
+• 让 LLM 输出结构化的内容
+• 标题段
+• 正文段
+• 列表段
+• 不要让它自由发挥 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+证据引用
+• 在 prompt 里强制要求
+• 「必须引用具体题目」
+• 把引用的题号做成可点击链接
+• 让用户可以验证「AI 说的是真的吗」
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+可解释性
+• 诊断结果旁边显示
+• 「为什么这么说」
+• 让用户看到 LLM 的推理依据
+• 用户更愿意相信能看到推理过程的判断
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+降级方案
+• LLM API 失败时怎么办？
+• 准备一套 fallback 文本
+• 按维度+分数区间预写的话
+• 让产品在 LLM 挂掉时仍然能给出基础诊断
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+做一个比喻
+• 把 LLM 想象成一个很聪明但偶尔会出错的实习生
+• 如果你只是跟他闲聊，他出错没关系。
+• 但你要把他放进产品里、让真实用户依赖他，
+• 就必须给他立规矩、设流程、留兜底。
+• 强制结构化 = 让他按表格填
+• 强制证据引用 = 让他附上他的依据
+• 可解释性展示 = 让他公开他的思路
+• 降级方案 = 他病假时谁来顶班
+• 这四件事不是技术问题，是管理问题
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词-背景
+• 我现在的产品已经能让用户答完 15 道题，看到一个雷达图。
+• 但用户看完雷达图之后，心里其实是迷茫的——
+• 他知道自己"AI 基础认知 45 分"，但不知道这意味着什么、
+• 该怎么办。
+•  
+• 所以我想加一个"弱点诊断"功能。
+•  
+• 【这个功能想要给用户什么】
+•  
+• 用户答完测评，看到雷达图的同时，每个维度下面要有一段
+• 针对他个人的诊断。不是套话，是真的能让他点头说
+• "对，我就是这个问题"那种。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词2：维度描述
+• 每个维度的诊断要让用户清楚知道四件事：
+• 第一，一句话总结他在这个维度的水平。
+• 就一句话，30 字以内，要犀利不要圆滑。
+• 比如不要说"你在 AI 基础上还有提升空间"，而要说"你对大模型选型
+缺乏判断框架"。
+• 第二，他具体在哪里出了问题。
+• 要引用他实际答错的那几道题，告诉他："你在第 3 题、第 7 题都搞
+错了 RAG 和 Fine-tuning的适用场景"。
+• 这种引用很关键——只有这样用户才会信任 AI 真的在看他的数据，
+不是在算命。
+• 第三，AI 推测他为什么会错。
+• 基于他答错题的特征，推测背后的原因。
+• 比如："你可能没有实际做过 RAG 系统的经验，所以对召回率和生
+成质量这两个指标的关系理解不深。"
+• 第四，他下一步该做什么。
+• 必须是一个具体的、立刻能开始的动作。
+• 不要说"建议多学习"，要说"建议先读 OpenAI 官方的Evaluation 
+Guide 文档，特别是第 3 章"。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词3：鼓励
+• 除了上面四件事，还要给他一段鼓励。
+• 但不要空泛地说"你很努力"，要基于他答
+对的具体题目说，
+• 比如："你在第 5 题判断 Token 成本权衡
+的时候答得很好，
+• 说明你已经有产品权衡的思维。"
+• 这种基于事实的鼓励才有力量 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词4：调用AI命令
+• 调用 AI 时给它的指令要写得严谨，不能让它自由发挥。
+• 指令里至少要包含这几件事：
+•  
+• 告诉 AI 它扮演的角色：一位有 8 年经验的资深 AI 产品经理
+• 面试官，看了无数候选人的表现，知道什么是好答案、什么是
+• 有缺陷的答案。
+•  
+• 告诉 AI 它的任务：根据用户在某个维度的答题数据，
+• 生成针对性的诊断报告。
+•  
+• 告诉 AI 它会收到什么数据：维度名、维度得分、用户在这个
+• 维度答过的所有题（包括题号、考察点、难度、答对还是答错）。
+•  
+• 告诉 AI 要输出什么：上面提到的"四件事 + 一段鼓励"。
+• 让 AI 用结构化的中文段落输出，不要用 JSON、不要用代码格式，
+• 就是一段段的自然语言，方便后面在前端展示。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词5：限定
+• 告诉 AI 几条死规矩：
+• 不许说"你在 X 方面有潜力但缺乏深度"这
+类废话；
+• 不许只说"建议多学习"，必须给可执行的
+具体动作；
+• 不许凭空推测原因，必须基于用户答错的
+题来推测；
+• 鼓励必须引用用户答对的具体题目，不能
+空洞。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词6：降级策略
+• 【AI 失败时怎么办】
+•  
+• 调用大模型有可能失败——网络问题、API 限流、密钥过期、
+• 或者 AI 返回了奇怪的格式。这种情况不能让产品崩溃。
+•  
+• 失败后的处理：
+• - 第一次失败，等 1 秒重试
+• - 第二次还失败，等 3 秒重试
+• - 第三次还失败，启用降级方案
+•  
+• 降级方案是事先准备好的一批"通用诊断文本"。
+• 按维度和分数段分类，每个维度至少准备 4 段：
+• 0-40 分一段、40-60 分一段、60-80 分一段、80-100 分一段。
+• 六个维度乘四档，一共 24 段降级文本。
+•  
+• 这些文本提前写好放在产品里，AI 挂了就用这些托底。
+• 当然，没有引用具体题号是它的弱点，但至少能让用户
+• 看到一个像样的内容，不至于看到一个错误页面。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词7：降级处理
+• 显示降级文本时，在卡片角落用很小的字
+标一句
+• "（基础诊断）"，让用户知道这是通用诊
+断、不是个人定制的。
+• 但不要太显眼，避免让用户觉得"产品出问
+题了"。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词8：样式描述
+• 【这个功能长什么样】
+• 在测评结果页，雷达图下面，每个维度展示一个诊断卡片。
+• 卡片的结构：
+• 顶部是维度名和分数。
+• 比如"AI 基础认知 · 45 分"。维度名加粗，分数用大字号。
+• 分数低于 60 用橙色，60-80 用主色，80 以上用绿色。
+• 下面是那句话总结，用大字号显示，主色。
+• 让用户一眼看到核心判断。
+• 再下面是薄弱点列表。可能有 1-3 个薄弱点，每个薄弱点
+• 作为一个小区块展示。
+•  
+• 每个薄弱点的展示分三层：
+• 最上面是考察点的标题，加粗。
+• 中间是答错的证据。用浅灰背景的小框框起来，
+• 里面写"在第 X 题、第 Y 题上"，配上简短的题干摘要。
+• 下面是 AI 推测的原因，正常段落文字。
+• 最下面是建议的下一步，用一个 → 图标开头，主色加粗，
+• 让用户的视线被这条建议吸引。
+• 卡片底部单独展示鼓励语。
+• 用一个绿色的细边框框起来，内容是基于答对题目的肯定。
+• 让用户的情绪结束在正向上。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFl

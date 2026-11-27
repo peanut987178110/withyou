@@ -22,18 +22,24 @@ Design rules encoded here, with the doc section they come from:
 * R-4.7  CallSession is the record; every field the detail page needs lives on
          it, including the billing breakdown.
 
-Everything is deterministic and offline: the "audio" is a mock script, the
-speech-to-text is assumed to have produced `content` on the client, and no
-network leaves this process.
+Everything is deterministic and offline by default. Since v2.2 the audio is
+real: the device records and plays, `voice_engine` can render speech (a
+deterministic WAV when no provider is configured, an OpenAI-compatible endpoint
+when one is), and a call turn can carry an audio clip and the memories it
+leaned on. What is still simulated is *understanding* — when no recogniser is
+configured the transcript is whatever the user typed, and `/voice/capabilities`
+says so out loud rather than letting the UI pretend.
 """
 from __future__ import annotations
 
+import base64
+import binascii
 import json
 import sqlite3
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from . import content, locales, mock_ai
+from . import audio_store, content, locales, mock_ai, voice_engine
 from .core import (
     ApiError, connect, new_id, utcnow,
 )
@@ -657,16 +663,53 @@ def answer_call(conn: sqlite3.Connection, user: dict[str, Any], session_id: str)
         raise ApiError(409, "CALL_MISSED", "The call ended. They left you a note.")
     conn.execute("UPDATE call_sessions SET status='active', answered_at=? WHERE id=?",
                  (_iso(_now()), session_id))
-    opener = _opener_for(row, user)
-    _append_turn(conn, session_id, "assistant", opener, 0)
+    opener, used = _opener_for(conn, row, user, _companion(conn, user))
+    _append_turn(conn, session_id, "assistant", opener, 0, memory_ids=used)
     return {"session": session_json(dict(call_row(conn, user, session_id))), "opener": opener}
 
 
-def _opener_for(row: Any, user: dict[str, Any]) -> str:
-    """The first line. R-4.4 forbids a bare "你好呀": it must be specific."""
+def _opener_for(conn: sqlite3.Connection, row: Any, user: dict[str, Any],
+                companion: Any = None) -> tuple[str, list[str]]:
+    """The first line. R-4.4 forbids a bare "你好呀": it must be specific.
+
+    If the user has confirmed a memory, the opener leads with it. A companion
+    that calls you and then says something generic has answered the phone but
+    not the question of why it dialled.
+    """
     pk = locales.pack(user.get("locale"))
+    key = f"{row['id']}:{row['trigger_id'] or ''}"
+
+    memories: list[dict[str, Any]] = []
+    if companion is not None:
+        try:
+            rows = conn.execute(
+                "SELECT id,text FROM memories WHERE user_id=? AND status='confirmed'"
+                " AND deleted_at IS NULL ORDER BY created_at DESC LIMIT 3",
+                (user["id"],),
+            ).fetchall()
+            memories = [{"id": r["id"], "text": r["text"]} for r in rows]
+        except sqlite3.Error:
+            memories = []
+
+    memory_lines = pk.get("call_memory_openers") or []
+    if memories and memory_lines:
+        pick = memories[_stable_hash(key) % len(memories)]
+        text = _memory_clause(pick["text"])
+        line = memory_lines[_stable_hash(key) % len(memory_lines)]
+        return line.replace("{memory}", text), [pick["id"]]
+
     lines = pk.get("call_openers") or ["Hey — I was just thinking about that thing you said earlier."]
-    return lines[_stable_hash(f"{row['id']}:{row['trigger_id'] or ''}") % len(lines)]
+    return lines[_stable_hash(key) % len(lines)], []
+
+
+def _memory_clause(text: str) -> str:
+    """Make a stored memory safe to say in the middle of a spoken sentence."""
+    cleaned = " ".join(str(text or "").split())
+    # A memory is written as a standalone statement. Dropping the final period
+    # keeps the opener from having two full stops in a row, which reads like a
+    # bug when it is spoken aloud.
+    cleaned = cleaned.rstrip(".。！!？? ")
+    return cleaned[:120]
 
 
 def _stable_hash(text: str) -> int:
@@ -725,14 +768,69 @@ def voicemail_json(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def _append_turn(conn: sqlite3.Connection, session_id: str, role: str, content_text: str,
-                 at_ms: int, kind: str = "speech") -> dict[str, Any]:
+                 at_ms: int, kind: str = "speech", *, audio_key: str | None = None,
+                 duration_ms: int = 0, interrupted: bool = False,
+                 memory_ids: list[str] | None = None) -> dict[str, Any]:
     tid = new_id("turn")
     conn.execute(
-        "INSERT INTO call_turns(id,session_id,role,content,at_ms,kind,created_at)"
-        " VALUES (?,?,?,?,?,?,?)",
-        (tid, session_id, role, content_text, int(at_ms), kind, _iso(_now())),
+        "INSERT INTO call_turns(id,session_id,role,content,at_ms,kind,created_at,"
+        "audio_key,duration_ms,interrupted,memory_ids) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        (tid, session_id, role, content_text, int(at_ms), kind, _iso(_now()),
+         audio_key, int(duration_ms or 0), 1 if interrupted else 0,
+         json.dumps(memory_ids or [], ensure_ascii=False)),
     )
-    return {"id": tid, "role": role, "content": content_text, "at_ms": int(at_ms), "kind": kind}
+    return {"id": tid, "role": role, "content": content_text, "at_ms": int(at_ms),
+            "kind": kind, "interrupted": bool(interrupted)}
+
+
+def _level_for(xp: int) -> int:
+    level = 1
+    for item in content.LEVELS:
+        if int(xp or 0) >= int(item["xp"]):
+            level = int(item["level"])
+    return level
+
+
+def _call_context(conn: sqlite3.Connection, user: dict[str, Any],
+                  companion: Any) -> dict[str, Any]:
+    """What the companion is allowed to remember *while speaking*.
+
+    A call is long, and a companion that forgets what was said ten minutes ago
+    is not a companion. So the same confirmed memories the text chat uses are
+    handed to the call, plus the last few messages, plus the relationship
+    level — all of it scoped to this user, none of it from proposals.
+    """
+    try:
+        mem_rows = conn.execute(
+            "SELECT id,text,category,created_at FROM memories"
+            " WHERE user_id=? AND status='confirmed' AND deleted_at IS NULL"
+            " ORDER BY created_at DESC LIMIT 5", (user["id"],),
+        ).fetchall()
+    except sqlite3.Error:
+        mem_rows = []
+    memories = [{"id": r["id"], "text": r["text"], "category": r["category"]} for r in mem_rows]
+
+    try:
+        hist_rows = conn.execute(
+            "SELECT role, content FROM messages WHERE user_id=? AND companion_id=?"
+            " ORDER BY created_at DESC LIMIT 6",
+            (user["id"], companion["id"]),
+        ).fetchall()
+    except sqlite3.Error:
+        hist_rows = []
+    history = [{"role": r["role"], "content": r["content"][:400]} for r in reversed(hist_rows)]
+
+    xp = 0
+    row = conn.execute("SELECT xp FROM users WHERE id=?", (user["id"],)).fetchone()
+    if row:
+        xp = int(row["xp"] or 0)
+
+    settings = conn.execute("SELECT * FROM voice_settings WHERE user_id=?",
+                            (user["id"],)).fetchone()
+    retrieval = bool(settings["captions_enabled"]) if settings else False
+
+    return {"memories": memories, "history": history, "level": _level_for(xp),
+            "retrieval_enabled": retrieval}
 
 
 def say(conn: sqlite3.Connection, user: dict[str, Any], session_id: str,
@@ -740,8 +838,12 @@ def say(conn: sqlite3.Connection, user: dict[str, Any], session_id: str,
     """One turn of the live call: store what the user said, reply, bill.
 
     This is the whole in-call loop, kept server-side so the quota, the safety
-    check and the transcript cannot be skipped by a modified client. Audio I/O
-    stays on the device; only text crosses the wire.
+    check and the transcript cannot be skipped by a modified client.
+
+    The user's side may arrive as text (typed, or produced by speech
+    recognition on the device) and optionally as a clip. Keeping the clip is
+    what makes "I said something and it did not hear me" an honest state rather
+    than a lost sentence.
     """
     row = call_row(conn, user, session_id)
     if row["status"] != "active":
@@ -749,7 +851,14 @@ def say(conn: sqlite3.Connection, user: dict[str, Any], session_id: str,
     text = str(payload.get("text") or "").strip()
     at_ms = int(payload.get("at_ms") or 0)
     silence = int(payload.get("silence_ms") or 0)
+    interrupted = bool(payload.get("interrupted"))
+    spoken_ms = int(payload.get("duration_ms") or 0)
     spoke = bool(text)
+
+    audio_key = None
+    clip = payload.get("audio")
+    if isinstance(clip, str) and clip:
+        audio_key = _store_base64_audio(user, clip, str(payload.get("mime") or "audio/webm"))
 
     if spoke:
         verdict = mock_ai.classify(text)
@@ -759,30 +868,62 @@ def say(conn: sqlite3.Connection, user: dict[str, Any], session_id: str,
             safety = mock_ai.crisis_reply(verdict["category"], user.get("region"),
                                           user.get("locale"))
             reply = safety["reply_text"]
-            _append_turn(conn, session_id, "user", text, at_ms)
+            _append_turn(conn, session_id, "user", text, at_ms, audio_key=audio_key,
+                         duration_ms=spoken_ms)
             _append_turn(conn, session_id, "assistant", reply, at_ms, "system")
             return {"reply": reply, "blocked": True, "resources": safety.get("resources", []),
-                    "safety_level": verdict["level"], "session": session_json(dict(call_row(conn, user, session_id)))}
+                    "safety_level": verdict["level"], "memory_used": [],
+                    "session": session_json(dict(call_row(conn, user, session_id)))}
         companion = _companion(conn, user)
+        ctx = _call_context(conn, user, companion)
         result = mock_ai.compose_reply(
             user_text=text, name=companion["name"],
             traits=json.loads(companion["traits"] or "[]"),
             relationship_type=companion["relationship_type"],
-            level=1, memories=[], retrieval_enabled=False, history=[],
+            level=ctx["level"], memories=ctx["memories"],
+            retrieval_enabled=True, history=ctx["history"],
             region=user.get("region"), locale=user.get("locale"),
         )
         reply = _voice_safe(result["reply_text"])
-        _append_turn(conn, session_id, "user", text, at_ms)
+        used = [m["id"] for m in ctx["memories"] if m["text"] and m["text"][:24] in reply]
+        _append_turn(conn, session_id, "user", text, at_ms, audio_key=audio_key,
+                     duration_ms=spoken_ms)
     else:
         reply = _silence_nudge(conn, user, row, silence)
+        used = []
         _append_turn(conn, session_id, "assistant", reply, at_ms, "nudge")
 
     if spoke:
-        _append_turn(conn, session_id, "assistant", reply, at_ms)
+        _append_turn(conn, session_id, "assistant", reply, at_ms,
+                     interrupted=interrupted, memory_ids=used)
     _turn_effect(conn, user, row, duration_seconds=int(payload.get("elapsed_seconds") or 0),
                  silence_seconds=silence // 1000 if silence else 0)
-    return {"reply": reply, "blocked": False,
+    return {"reply": reply, "blocked": False, "memory_used": used,
             "session": session_json(dict(call_row(conn, user, session_id)))}
+
+
+def _store_base64_audio(user: dict[str, Any], clip: str, mime: str) -> str | None:
+    """Accept either a bare base64 body or a data URL, store it, return the key.
+
+    Oversize or malformed clips are dropped rather than failing the turn: a
+    call that cannot keep the audio should still keep the words.
+    """
+    raw = clip
+    if clip.startswith("data:"):
+        head, _, raw = clip.partition(",")
+        if ";base64" not in head:
+            return None
+        mime = head[5:].split(";")[0] or mime
+    try:
+        data = base64.b64decode(raw, validate=False)
+    except (binascii.Error, ValueError):
+        return None
+    if not data:
+        return None
+    try:
+        return audio_store.save(user["id"], data, mime)["key"]
+    except ValueError:
+        return None
 
 
 def _voice_safe(text: str) -> str:
@@ -916,26 +1057,69 @@ def _post_call_note(conn: sqlite3.Connection, user: dict[str, Any], session_id: 
     mid = new_id("msg")
     pk = locales.pack(user.get("locale"))
     prefix = pk.get("post_call_prefix") or "About before — "
+    line = prefix + text
     conn.execute(
         "INSERT INTO messages(id,conversation_id,user_id,role,content,status,created_at)"
         " VALUES (?,?,?,'assistant',?,'completed',?)",
-        (mid, conv["id"], user["id"], prefix + text, _iso(_now())),
+        (mid, conv["id"], user["id"], line, _iso(_now())),
     )
+
+    # It is a *voice* note, so it has to have a voice. The old build wrote
+    # mime='audio/mock' with no audio at all: the bubble could not play and the
+    # chat did not even render it. Render with the caller's own voice profile.
+    audio_key = None
+    audio_bytes = 0
+    mime = "audio/wav"
+    duration_ms = 12000
+    try:
+        raw_profile = companion["voice_profile"] if "voice_profile" in companion.keys() else None
+        profile = voice_engine.normalise_profile(
+            _load_json(raw_profile),
+            json.loads(companion["traits"] or "[]"), user.get("locale") or "en")
+        data, mime = voice_engine.synthesize(line, profile["voice_id"],
+                                             profile["rate"], profile["pitch"])
+        stored = audio_store.save(user["id"], data, mime)
+        audio_key = stored["key"]
+        audio_bytes = stored["bytes"]
+        duration_ms = int(max(0.5, len(text) * 0.075) * 1000)
+    except (voice_engine.VoiceEngineError, ValueError, KeyError):
+        # No engine, or the bytes were refused: keep the words and let the
+        # bubble fall back to the transcript rather than to a dead player.
+        audio_key = None
+        mime = "text/plain"
+
     nid = new_id("vn")
     conn.execute(
         "INSERT INTO voice_notes(id,user_id,conversation_id,message_id,direction,duration_ms,"
-        "mime,audio,transcript,created_at,expires_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-        (nid, user["id"], conv["id"], mid, "assistant", 12000, "audio/mock", None,
-         text, _iso(_now()), _iso(_now() + timedelta(days=30))),
+        "mime,audio,transcript,created_at,expires_at,audio_key,audio_bytes)"
+        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        (nid, user["id"], conv["id"], mid, "assistant", duration_ms, mime, None,
+         text, _iso(_now()), _iso(_now() + timedelta(days=30)), audio_key, audio_bytes),
     )
-    return {"id": nid, "message_id": mid, "transcript": text}
+    return {"id": nid, "message_id": mid, "transcript": text,
+            "has_audio": bool(audio_key), "duration_ms": duration_ms}
+
+
+def _load_json(raw: Any) -> Any:
+    if isinstance(raw, str) and raw:
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            return None
+    return raw
 
 
 # ------------------------------------------------------------- voice notes
 
 def create_note(conn: sqlite3.Connection, user: dict[str, Any],
                 payload: dict[str, Any]) -> dict[str, Any]:
-    """T4: a user voice message. Transcription is best-effort; audio is kept."""
+    """T4: a user voice message. Transcription is best-effort; audio is kept.
+
+    The clip goes to disk (`audio_store`), the row keeps a key and the waveform
+    peaks. Peaks are computed by the client while it still has the samples in
+    memory — the chat list can then draw a real waveform without decoding any
+    audio, which is the difference between a voice note and a grey bar.
+    """
     duration_ms = int(payload.get("duration_ms") or 0)
     if duration_ms <= 0 or duration_ms > 300000:
         raise ApiError(400, "VALIDATION_ERROR", "Voice notes must be between 1s and 5 minutes.")
@@ -944,10 +1128,34 @@ def create_note(conn: sqlite3.Connection, user: dict[str, Any],
                         (conversation_id, user["id"])).fetchone()
     if not conv:
         raise ApiError(404, "NOT_FOUND", "Conversation not found.")
-    audio = payload.get("audio")
-    if audio is not None and (not isinstance(audio, str) or len(audio) > 4_000_000):
-        raise ApiError(400, "VALIDATION_ERROR", "Audio payload is too large.")
+
+    audio_key = None
+    audio_bytes = 0
+    legacy_audio = None
+    raw_audio = payload.get("audio")
+    if isinstance(raw_audio, str) and raw_audio:
+        try:
+            stored = _store_base64_audio(user, raw_audio,
+                                         str(payload.get("mime") or "audio/webm"))
+        except ApiError:
+            stored = None
+        if stored:
+            audio_key = stored
+            audio_bytes = len(raw_audio) * 3 // 4
+        elif len(raw_audio) > 4_000_000:
+            raise ApiError(413, "AUDIO_TOO_LARGE", "That recording is too large to keep.")
+        else:
+            # Unparseable but small: keep the legacy path rather than losing it.
+            legacy_audio = raw_audio
+
+    peaks = payload.get("peaks")
+    if not isinstance(peaks, list):
+        peaks = []
+    peaks = [round(float(p), 3) for p in peaks[:64] if isinstance(p, (int, float))]
+
     transcript = str(payload.get("transcript") or "").strip()
+    if not transcript and payload.get("client_transcript"):
+        transcript = str(payload.get("client_transcript") or "").strip()
     message_id = payload.get("message_id")
     if message_id:
         # The chat renders a voice bubble *instead of* the text bubble, so the
@@ -960,11 +1168,12 @@ def create_note(conn: sqlite3.Connection, user: dict[str, Any],
     nid = new_id("vn")
     conn.execute(
         "INSERT INTO voice_notes(id,user_id,conversation_id,message_id,direction,duration_ms,"
-        "mime,audio,transcript,created_at,expires_at)"
-        " VALUES (?,?,?,?,'user',?,?,?,?,?,?)",
+        "mime,audio,transcript,created_at,expires_at,audio_key,audio_bytes,peaks)"
+        " VALUES (?,?,?,?,'user',?,?,?,?,?,?,?,?,?)",
         (nid, user["id"], conversation_id, message_id, duration_ms,
-         str(payload.get("mime") or "audio/webm")[:60], audio, transcript,
-         _iso(_now()), _iso(_now() + timedelta(days=30))),
+         str(payload.get("mime") or "audio/webm")[:60], legacy_audio, transcript,
+         _iso(_now()), _iso(_now() + timedelta(days=30)), audio_key, audio_bytes,
+         json.dumps(peaks)),
     )
     row = conn.execute("SELECT * FROM voice_notes WHERE id=?", (nid,)).fetchone()
     return note_json(dict(row))
@@ -981,6 +1190,14 @@ def link_note(conn: sqlite3.Connection, user: dict[str, Any], note_id: str,
                  (message_id, note_id, user["id"]))
 
 
+def _peaks_of(row: dict[str, Any]) -> list[float]:
+    try:
+        value = json.loads(row.get("peaks") or "[]")
+        return [float(x) for x in value][:64] if isinstance(value, list) else []
+    except (json.JSONDecodeError, TypeError, ValueError):
+        return []
+
+
 def note_json(row: dict[str, Any], *, with_audio: bool = False) -> dict[str, Any]:
     out = {
         "id": row["id"], "conversation_id": row.get("conversation_id"),
@@ -988,6 +1205,9 @@ def note_json(row: dict[str, Any], *, with_audio: bool = False) -> dict[str, Any
         "duration_ms": int(row.get("duration_ms") or 0), "mime": row.get("mime"),
         "transcript": row.get("transcript") or "", "created_at": row["created_at"],
         "deleted": bool(row.get("deleted_at")),
+        "peaks": _peaks_of(row),
+        "bytes": int(row.get("audio_bytes") or 0),
+        "has_audio": bool(row.get("audio_key") or row.get("audio")),
     }
     if with_audio:
         out["audio"] = row.get("audio")
@@ -1010,16 +1230,27 @@ def list_notes(conn: sqlite3.Connection, user: dict[str, Any],
 
 
 def note_audio(conn: sqlite3.Connection, user: dict[str, Any], note_id: str) -> dict[str, Any]:
-    """The recording itself, for playback. The client stores a data URL."""
+    """The recording itself, for playback.
+
+    New rows read from disk; rows written before v2.2 still carry a data URL in
+    the `audio` column and are returned as they are. Both shapes reach the
+    client through one route, so nothing had to be migrated.
+    """
     row = conn.execute(
-        "SELECT audio, mime, deleted_at FROM voice_notes WHERE id=? AND user_id=?",
+        "SELECT audio, mime, deleted_at, audio_key FROM voice_notes WHERE id=? AND user_id=?",
         (note_id, user["id"]),
     ).fetchone()
     if not row or row["deleted_at"]:
         raise ApiError(404, "NOT_FOUND", "Voice note not found.")
+    mime = row["mime"] or "audio/webm"
+    if row["audio_key"]:
+        data = audio_store.open_bytes(row["audio_key"])
+        if data is None:
+            raise ApiError(404, "NOT_FOUND", "This note has no audio.")
+        return {"id": note_id, "mime": mime, "audio_bytes": data, "encoding": "binary"}
     if not row["audio"]:
         raise ApiError(404, "NOT_FOUND", "This note has no audio.")
-    return {"id": note_id, "mime": row["mime"] or "audio/webm", "audio": row["audio"]}
+    return {"id": note_id, "mime": mime, "audio": row["audio"], "encoding": "data-url"}
 
 
 def delete_note(conn: sqlite3.Connection, user: dict[str, Any], note_id: str) -> dict[str, Any]:
@@ -1027,9 +1258,37 @@ def delete_note(conn: sqlite3.Connection, user: dict[str, Any], note_id: str) ->
                        (note_id, user["id"])).fetchone()
     if not row:
         raise ApiError(404, "NOT_FOUND", "Voice note not found.")
-    conn.execute("UPDATE voice_notes SET deleted_at=?, audio=NULL WHERE id=?",
-                 (_iso(_now()), note_id))
+    if row["audio_key"]:
+        audio_store.delete(row["audio_key"])
+    conn.execute(
+        "UPDATE voice_notes SET deleted_at=?, audio=NULL, audio_key=NULL, audio_bytes=0 WHERE id=?",
+        (_iso(_now()), note_id))
     return {"id": note_id, "deleted": True}
+
+
+def sweep_expired(conn: sqlite3.Connection, user: dict[str, Any] | None = None) -> dict[str, int]:
+    """Delete the audio of expired notes. Rows stay; the words stay.
+
+    Nothing did this before, so `expires_at` was decoration and a user who
+    asked for 30-day retention kept everything forever. Cheap to run on every
+    voice-screen load: the index makes it a scan of a handful of rows.
+    """
+    sql = ("SELECT id, audio_key, audio FROM voice_notes"
+           " WHERE deleted_at IS NULL AND expires_at IS NOT NULL AND expires_at < ?")
+    params: list[Any] = [_iso(_now())]
+    if user is not None:
+        sql += " AND user_id=?"
+        params.append(user["id"])
+    rows = conn.execute(sql, params).fetchall()
+    removed = 0
+    for row in rows:
+        if row["audio_key"]:
+            audio_store.delete(row["audio_key"])
+            removed += 1
+        conn.execute(
+            "UPDATE voice_notes SET audio_key=NULL, audio=NULL, audio_bytes=0, deleted_at=?"
+            " WHERE id=?", (_iso(_now()), row["id"]))
+    return {"expired": len(rows), "audio_removed": removed}
 
 
 # -------------------------------------------------------------- transcripts

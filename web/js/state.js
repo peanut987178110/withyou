@@ -11,6 +11,10 @@ export const state = {
   wallet: null,
   memorySettings: null,
   subscription: null,
+  // Read by the call screen for the captions default. It had been referenced
+  // there since 2.1 but never assigned anywhere, so captions always started
+  // off no matter what the account had saved.
+  voiceSettings: null,
   screens: [],
   route: null,
   online: navigator.onLine !== false,

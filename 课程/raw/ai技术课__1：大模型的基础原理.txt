@@ -1,0 +1,727 @@
+<!-- PAGE 1 -->
+炒 饭 会 大 模 型 基 础 认 知|
+管理的意义和价值
+开 篇
+第一节：大模型的原理
+大模型为什么什么都会
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+炒 饭 会 大 模 型 基 础 认 知|
+• 为什么大模型“什么都懂”？
+• 大模型的原理是什么？
+• 深度学习、强化学习是什么意思？
+• 为什么大模型值得如此关注？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+为什么大模型什么都懂？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|ChatGPT面市
+2022年11月30日，
+ChatGPT发布
+2022年12月5日，
+OpenAI创始人兼CEO
+阿尔特曼在社交媒体上
+宣布，ChatGPT上线短
+短5天，用户注册人数
+已经突破了100万
+全网都在“跪求”教
+程，希望体验一把
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型给人的震撼
+• 从对话中似乎感觉是和一个“真人”在聊天
+• 而且这个“真人”似乎什么都知道
+• 为什么大模型什么都懂？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|搜索引擎
+• 大模型的知识来源和搜索引擎类
+似
+• 通过抓取，覆盖了几乎所有领域
+的基础常识和大量专业知识片段
+• “看过”所有人类公开的知识和
+表达
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|和搜索引擎的差别是什么
+• 搜索引擎是搜索到一个网页或内容，跳转
+• 而大语言模型是把看到的内容“学习”继而重新生成
+• 类似给出建议、创作故事
+• 并且可以风格化，按照特定结构化生成
+• 这是什么原理？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+大模型的原理是什么？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|用一个简单的逻辑说
+海量阅读 学习搭配 生成回答
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|学习搭配
+• 大模型学习和人类学习的差异
+• 人类学习：理解内容本身
+• 例如：苹果是什么？
+• 是一种水果，圆形的，红色、黄色、绿色，多汁，酸甜，好吃
+• 有时也可以是手机和电脑的牌子
+• 大模型学习：统计文字间的搭配关系、上下文关系、表达方式
+• 例如：天空是     的
+• 大模型发现从海量的学习内容中，最长出现的是“蓝”，但并不理解什么是蓝
+• 例如：牛顿 
+• 大模型发现相关性最高的有“万有引力”、“物理学家”、“苹果”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|所以
+• 大模型的脑子里是什么？
+• 不是百科全书的目录结构
+• 而是一张巨大无比且错综复杂的网
+• 标识着每个词之间的关系强度
+• 所谓的神经网络
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|常见的连接模式
+• 词语之间的关联
+• （“苹果”常和“吃”、“水果”、“公司”一起出现）
+• 语法规则
+• （主谓宾结构）
+• 逻辑推理
+• （“因为...所以...”的模式）
+• 事实性关联
+• （“巴黎是法国的首都”）
+• 写作风格
+• （诗歌、代码、新闻的不同套路）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|生成回答
+• 巨型文字拼读
+• 根据输入的问题（提示词）
+• 从大模型记忆库（统计模型）
+• 海量文字碎片中，找到概率上最可能连贯在一起的文字序列
+• 然后一个字一个字“拼”出来
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|问题
+• 大模型并不知道答案的“对与错”
+• 只是
+• 这样组合文字最像人类对这个问题的回答
+• 所以，就会产生大模型幻觉
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+深度学习和强化学习
+是什么？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|深度学习
+• 教小孩子认识“球”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|怎么教
+• 你给ta看成百上千张不同球的图片
+• 足球、篮球、网球、塑料球、红球、白球...
+• 每看一张图片，你就告诉ta
+• “这是球” 或者 “这不是球”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|学习过程
+• 孩子的神经网络分析这些图片
+• 颜色？形状？纹理？大小？
+• 一层层提取特征
+• 第一层可能是边缘、颜色
+• 第二层可能是形状
+• 最后确认“这些符合了球的特征”
+• 通过看海量带标签的图片，调整内部“神经元连接强度”（权重）
+• 最终学会了“什么样的特征组合起来代表球”
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|强化学习
+• 教孩子把球扔到框里
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|关键点
+• 不直接告诉孩子每一步怎么做和要求
+• 拿起球、瞄准、走过去、放下
+• 而是把孩子带到一个有框有球的房间
+• 让孩子自己尝试动作
+• 然后根据孩子的行为结果给出反馈
+• 放到了框里，给鼓掌、零食（正反馈）
+• 把球扔飞了：不给反馈或者批评（负反馈或者零奖励）
+• 最终孩子明白，扔球进框有奖励
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|换成AI
+• Agent，在环境（environment)中尝试动作（action)
+• 观察动作带来的结果（State）
+• 以及获得的反馈（Reward）
+• 神经网络建立一个策略（prolicy）
+• 在什么状态下（state），采取什么动作（action)，能获得最大的长期
+奖励（Long-term Reward）
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|区别
+特点 深度学习 (Deep Learning) 强化学习 (Reinforcement Learning)
+核心目标 识别模式 (是什么？) 学习决策 (怎么做？)
+学习方式 从带标签数据中学习 (监督为主) 在环境交互中通过试错+奖励学习
+数据需求 需要大量静态、标注数据 需要与动态环境交互产生数据流
+反馈形式 明确的标签 (对/错， 类别) 延迟的、稀疏的奖励信号 (好/坏结果)
+擅长任务 感知类 (图像识别、语音识别、翻译) 决策类 (游戏、控制、规划、优化)
+比喻 看图识字、听歌识曲 玩游戏通关、学骑自行车 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+为什么大模型值得如此关注？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型的本质差异
+预训练方
+案
+自监督
+学习
+出现理
+解能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型的本质差异
+预训练方
+案
+自监督
+学习
+出现理
+解能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|预训练方案
+• 和LLM相比，传统AI类似于手工
+作坊
+• 而LLM的预训练方案
+• 有效地从大量标记和未标记的数
+据中捕获知识
+• 通过将知识存储到大量的参数中
+并对特定任务进行微调
+• 极大地扩展了模型的泛化能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|简单一句话
+• AI能切实的提高生产力
+• 但之前的问题是训练成本成为了广泛使用的门槛
+• 当大模型做了预训练，意味着门槛降得足够低
+• 形象一点说
+• 以前企业想用大学生，需要从小学开始自建
+• 现在国家把基础教育做了，大学生直接雇佣就可以
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型的本质差异
+预训练方
+案
+自监督
+学习
+出现理
+解能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|自监督学习
+• 可以减少数据标注，在一定程度上解决了人工标注成本高、周
+期长、准确度不高的问题
+• 2018年Bert首次提出，便一举击败 11 个 NLP 任务的 State-
+of-the-art 结果，成为了 NLP 界新的里程碑
+• 数据标注依赖于昂贵的人工成本，而在互联网和移动互联网时
+代，大量的未标注数据却很容易获得
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|大模型的本质差异
+预训练方
+案
+自监督
+学习
+出现理
+解能力
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|出现理解能力
+• Mobile时代
+• Location
+• Touch
+• Camera
+• Audio
+• Video
+• Text
+• User behavior data
+• LLM时代
+• 理解能力：
+• 采集更多非结构化数据
+• 交互方式多元化
+• 自然语言取代编程语言
+• 生成能力
+• 推理能力
+• X能力？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|LLM最终带来什么？
+• 无限供给的20美元/月的大学生
+• 多模态是眼睛、耳朵
+• LLM是大脑
+• 操作系统和APP是身体
+• 下一步是Action
+• 给大模型脑子继续装手
+• OpenAI Plugin
+• 会重新组织SaaS生态
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|在这个逻辑下，应用会被颠覆
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 34 -->
+LLMBKH
+炒 饭 会 大 模 型 基 础 认 知|总结来说
+• 由于大模型的能力足够强
+• 且成本降低，门槛降低
+• 会成为新的生产引擎
+• 所有我们熟悉的产品和业务都可能被大模型重新做一遍
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 35 -->
+Thanks for having you all the way
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

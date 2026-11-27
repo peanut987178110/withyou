@@ -1,0 +1,795 @@
+<!-- PAGE 1 -->
+从合同审查初筛到可用产品
+实操带练
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+输入 → 三路处理 → 四类输出
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+先看测试合同里三个能被验证的问题
+合同原文事实
+• 01  知识产权转移条件前后冲突
+• 02  时长、格式、验收、时间等交付标准缺失
+• 03  仍引用《中华人民共和国合同法》
+验收锚点
+• 能定位到原文
+• 能解释为什么值得关注
+• 能给出可执行修改建议
+• 不能用问题数量代替关键问题覆盖
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+用户真正要完成的不是“让 AI 看看”
+• 提交合同 → 设置合同类型、审查立场与重点 → 完成问题初筛 → 阅读分区结果 → 进入人工复核与修改
+• 产品经理先问四件事：目标是什么、能力边界在哪里、知识和数据从哪里来、失败以后怎么兜底。
+把模糊愿望改写成可执行、可验收的用户任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+产品承诺
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+内部 AI 产品的价值不能只写“降本增效”
+• 质量：关键问题覆盖、原文定位、无证据不下结论
+• 效率：初筛耗时、人工复核耗时、补充信息次数
+• 使用：提交成功、报告打开、建议采纳与驳回
+• 成本与风险：单次调用、插件失败、人工接管、敏感信息处理
+• 先建立人工基线，再用标注测试集试点对比。
+没有基线、测试集和复核记录，“降本增效”只是四个字
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+大模型负责理解与表达；插件负责外部事实；条件节点负责确定性分流；代码负
+责稳定拼装；飞书负责协作交付；人工负责最终判断。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+关键取舍
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+后台跑通以后，为什么还必须做页面
+• 输入区：约束用户任务与参数
+• 过程状态：减少等待焦虑，但不伪造节点进度
+• 结果区：组织多路输出与阅读层级
+• 错误状态：告诉用户发生了什么、下一步怎么办
+页面把后台能力翻译成业务用户可以完成的任务
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+对话、工作流、工作流加页面，分别适合什么情况
+• 对话
+• 临时探索、需求多变、专家自用
+• 只有工作流
+• 路径稳定、搭建者调试、API 接入
+• 工作流 + 页面
+• 重复使用、固定输入、多路结果、非搭建者操作
+• 选择最小但完整的交付形态，不把“有页面”误当成“更高级”。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+输入、理解与分流
+• 开始节点：定义 wenjian 与 xuqiu 的调用契约
+• 文件读取：DOCX → 文本，只负责标准化输入
+• 大模型：常规审查 / 旧法初筛 / 标题与公司提取
+• 条件节点：只判断是否识别到合作方公司名称
+条件节点处理“明确的是或否”，不替代专业判断
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+外部数据、汇总与交付
+• 睿查得：查询纳税信用 A 级信息与经营异常
+• 企业总结：只解释插件实际返回字段
+• 代码节点：确定性拼装固定 Markdown
+• 飞书：协作交付与复核
+• 结束节点：返回 output / output1 / output2 / url
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+四个问题
+• 01  页面传了 xuqiu，模型节点却没有引用
+• 02  某一路企业查询为空，就推断企业不存在
+• 03  Markdown 格式变化，页面把解析失败显示为 0 个问题
+• 04  飞书需要授权，页面仍然显示审查成功
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+完整工作流全貌
+• wenjian + xuqiu
+• → 文件读取
+• → 三路并行：常规审查｜旧法引用初筛｜合作方提取
+• → company 非空？
+• → 纳税信用 A 级查询 → 经营异常查询 → 企业信息总结
+• → 代码汇总 → 飞书写入
+• → output / output1 / output2 / url
+先建立全局地图，再按真实顺序逐节点带练
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+开始节点：先定义 wenjian 和 xuqiu
+• wenjian｜文件引用｜必填
+• xuqiu｜文本｜必填
+• 检查：字段名、类型、必填状态与页面调用完全一致。
+• 常见错误：页面发 reviewRequirement，工作流却只认 xuqiu。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+文件读取：先拿到可验证的合同正文
+• 输入：开始节点.wenjian
+• 输出：合同正文文本
+• 本步只解决输入标准化，不判断风险。
+• 局部运行：正文中应能搜索到“知识产权”和“中华人民共和国合同法”。
+• 小成功点：Word 文件已经成为下游可引用的数据。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+常规审查：让审查要求真实影响结果
+• 输入：合同正文 + xuqiu
+• 输出：问题 / 原文位置 / 风险分析 / 修改建议
+• Prompt 边界：基于原文，不虚构条款；不确定时提示人工复核。
+• 对照运行：甲方立场 ↔ 乙方立场，检查关注点是否合理变化。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+旧法引用初筛：名字必须和能力一致
+• 能力：按预设法律名称在合同正文中执行初筛
+• 能发现：《中华人民共和国合同法》
+• 不能完成：权威法规库查询、效力核验、版本与生效日期证明
+• 输出必须写：疑似旧法引用，请专业人员复核。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+合作方提取：审查立场决定查询谁
+• 甲方立场 → 查询乙方
+• 乙方立场 → 查询甲方
+• 中立立场 → 按本课规则优先查询乙方
+• 输入：合同正文 + xuqiu
+• 输出：contract_title + company
+• 公司名称为空时，后续插件不得被无效调用。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+条件节点：只拦截空公司名称
+• company 非空
+• → 继续两类企业信息查询
+• company 为空
+• → 输出“未识别到合作方公司名称，请检查合同或重新上传”
+• 不要用纳税信用结果为空判断企业是否存在。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+两类数据连续查询，不能互相替代
+• 输入：company
+• 查询 1：纳税信用 A 级信息
+• 查询 2：经营异常信息
+• 第一项为空，也必须继续查询第二项。
+• 记录真实输入与真实返回结构，禁止用样例数据冒充插件结果。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+企业信息总结：空数据也要产生诚实结果
+• 状态 A｜有公司名称 + 有数据：只总结实际返回字段
+• 状态 B｜有公司名称 + 无数据：当前数据源未取得有效信息
+• 状态 C｜未识别公司名称：提示检查合同或重新上传
+• 缺少数据 ≠ 企业不存在 ≠ 企业没有风险
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+代码汇总：确定性任务不要再交给模型
+• 输入：常规审查 + 旧法初筛 + 企业信息
+• 处理：按固定标题拼装 Markdown，统一空值和分支结果
+• 输出：稳定报告正文 + 统一 enterprise 字段
+• 为什么用代码：格式稳定、成本更低、错误更容易定位。
+模型负责语义判断，代码负责确定性拼装
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+飞书与结束节点：定义页面真正拿到什么
+• 飞书文档：承载完整报告、转发、评论与复核
+• 结束节点：固定返回四个字段
+• output  常规审查
+• output1  旧法引用初筛
+• output2  统一后的企业信息
+• url  飞书文档地址
+• 授权中断时不得返回假成功。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+完整运行
+• 正文完整 → 常规审查覆盖关键问题 → 旧法初筛命中 → 合作方与立场一致 → 两项插件都执行 → 空数据文案守边界 → 三路
+汇总完整 → 飞书可打开 → 四个字段齐全
+• 再切换一次甲方 / 乙方立场，验证 xuqiu、company 与结果真实变化。
+从第一个异常节点开始排查：输入 → 变量 → 输出 → 分支
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+为什么拆成合同类型、审查立场和重点审查
+• 合同类型 → 决定审查上下文
+• 审查立场 → 决定风险方向与查询对象
+• 重点审查 → 决定本次任务优先级
+• 补充要求 → 承接不可枚举的个性化内容
+• 结构化选择 + 自由补充，再按固定模板组合为 xuqiu。
+高频、影响规则、需要校验与统计的字段，应考虑独立控件
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+页面生成提示词是一份压缩后的产品需求
+• 01 产品目标与输入控件
+• 02 真实 Coze 调用顺序：上传文件 → file_id → wenjian + xuqiu
+• 03 四个输出字段
+• 04 错误、授权与演示模式
+• 05 验收标准
+• 视觉要求只能控制外观，功能与数据契约决定产品能不能运行。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+生成完成后，先做功能验收
+• 01  输入：上传 / 粘贴、合同类型、审查立场、重点审查、补充要求
+• 02  提交约束：内容与必填配置不完整时禁止调用 Coze
+• 03  过程状态：只展示真实状态或明确的静态等待提示
+• 04  结果：问题卡片、旧法初筛、企业信息、飞书入口、原始输出兜底
+• 05  移动端：上传、选项、按钮与结果卡片仍然可操作
+• 验收顺序：功能与数据链路优先，颜色与圆角最后处理。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+检查服务端调用链：Token、文件和响应都不能猜
+• 浏览器
+• → 本站服务端 /api/review
+• → 校验文件与审查配置
+• → Coze 文件上传，取得 file_id
+• → 组合 xuqiu，调用工作流
+• → 解包 output / output1 / output2 / url
+• → 浏览器展示或进入明确错误状态
+• HTTP 200 不等于业务成功；还要检查空结果、错误信息与 interrupt_data。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+换一次立场或重点审查并回归
+• 任选一项：
+• 甲方 → 乙方，检查 xuqiu、合作方与风险解释
+• 交付 / 知识产权 → 付款 / 违约，检查关注点变化
+• 优化错误提示或增加复制建议按钮
+• 回归：上传、输入校验、工作流调用、四个结果字段、错误提示、飞书链接。
+• 只看到新功能出现，不做回归，不算完成。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+一条完整产品链路
+• 定义用户任务与产品边界
+• → 拆分语义判断、外部事实与确定性处理
+• → 逐节点搭建、检查变量与异常
+• → 用工作台承载输入、状态、结果与错误恢复
+• → 端到端运行并完成一次增量回归
+• 最终能力：换到供应商准入、标书检查、发票审核或简历诊断，重新选择产品形态、输入字段、处理职责与验收指标。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂

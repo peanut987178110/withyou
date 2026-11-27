@@ -15,11 +15,18 @@
  * message was sent, which is exactly what the screen used to show.
  */
 
-import { api, streamMessage } from '../api.js';
+import { api, streamMessage, fetchBlob } from '../api.js';
 import { html, raw, icon, toast, clockTime, shortDate, openSheet } from '../dom.js';
 import { state, route, go, loadSession } from '../state.js';
 import { tabbar, loadingBlock } from '../ui.js';
 import { t } from '../i18n.js';
+import {
+  startRecording as startAudioRecording,
+  playAudio,
+  caps as audioCaps,
+  transcribe,
+  recordingSupported,
+} from '../audio.js';
 
 /** Dictionary keys, resolved at paint time so a language switch re-labels them. */
 const SUGGESTION_KEYS = ['chat.suggest1', 'chat.suggest2', 'chat.suggest3', 'chat.suggest4'];
@@ -84,14 +91,25 @@ function messageNode(msg) {
 }
 
 /**
- * A playable voice note. The duration comes from the server, not from the
- * media element, so the label is right before the audio has loaded.
+ * A playable voice note.
+ *
+ * The duration comes from the server, not from the media element, so the label
+ * is right before the audio has loaded. The bars are the peaks the recorder
+ * captured: a note whose waveform is flat is visibly different from one that
+ * has speech in it, which a uniform "in progress" line can never show.
  */
 function voiceBubble(note) {
   const secs = Math.max(1, Math.round((note.duration_ms || 0) / 1000));
+  const peaks = Array.isArray(note.peaks) && note.peaks.length
+    ? note.peaks
+    : [0.25, 0.5, 0.35, 0.6, 0.3];
+  const bars = peaks.slice(0, 40).map((p) => {
+    const h = Math.max(12, Math.min(100, Math.round((Number(p) || 0) * 130)));
+    return `<i style="height:${h}%"></i>`;
+  }).join('');
   return `<div class="voice-note" data-note="${note.id}">
     <button class="play" type="button" data-note-play="${note.id}" aria-label="${t('voice.notePlay')}">${icon('play')}</button>
-    <span class="track"><i></i></span>
+    <span class="track"><span class="peaks" aria-hidden="true">${bars}</span><i class="progress"></i></span>
     <span class="dur">${t('voice.minutesShort', { s: secs })}</span>
     <button class="del" type="button" data-note-del="${note.id}" aria-label="${t('voice.noteDelete')}">${icon('close')}</button>
   </div>${note.transcript
@@ -290,55 +308,26 @@ function scrollBottom() {
 let recorder = null;
 
 /**
- * Start recording, if this browser allows it.
+ * Start recording, if this device allows it.
  *
- * Returns null when it does not — the caller falls back to sending text rather
- * than silently doing nothing, because a mic button that does nothing is worse
- * than one that tells you it is unavailable.
+ * The capture itself lives in `audio.js` so the call screen and this composer
+ * share one implementation. What that file does *not* decide is the fallback:
+ * returning null here is the honest answer when there is no microphone, and
+ * the caller turns it into a visible message instead of a dead button.
  */
-async function startRecording() {
-  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
-    return null;
-  }
-  let stream;
-  try {
-    stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-  } catch (e) {
-    return null;   // denied, or no device
-  }
-  const chunks = [];
-  const mime = MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported('audio/webm')
-    ? 'audio/webm' : '';
-  const rec = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
-  rec.addEventListener('dataavailable', (ev) => { if (ev.data && ev.data.size) chunks.push(ev.data); });
-  const done = new Promise((resolve) => {
-    rec.addEventListener('stop', () => {
-      stream.getTracks().forEach((tr) => { try { tr.stop(); } catch (e) { /* gone */ } });
-      const type = rec.mimeType || 'audio/webm';
-      resolve({ blob: new Blob(chunks, { type }), mime: type, ms: Date.now() - startedAt });
-    });
-  });
-  const startedAt = Date.now();
-  rec.start();
-  recorder = { rec, done, startedAt };
-  return recorder;
+async function startRecording(onLevel) {
+  if (!recordingSupported()) return null;
+  const rec = await startAudioRecording({ onLevel });
+  if (!rec) return null;
+  recorder = rec;
+  return rec;
 }
 
 function stopRecording() {
   if (!recorder) return null;
-  try { recorder.rec.stop(); } catch (e) { /* already stopped */ }
-  const pending = recorder.done;
+  const pending = recorder.stop();
   recorder = null;
   return pending;
-}
-
-function blobToDataUrl(blob) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(String(reader.result || ''));
-    reader.onerror = () => reject(reader.error || new Error('read failed'));
-    reader.readAsDataURL(blob);
-  });
 }
 
 /** The longest note the server will take; stopping here beats a 400. */
@@ -582,7 +571,9 @@ function mountChat(root) {
     micBtn.classList.toggle('recording', on);
     micBtn.setAttribute('aria-label', on ? t('voice.noteStop') : t('voice.noteRecord'));
     hint.innerHTML = on
-      ? `${icon('mic')} <span id="rec-elapsed">0:00</span> · ${t('voice.noteHeld')}`
+      ? `${icon('mic')} <span id="rec-elapsed">0:00</span>
+         <span id="rec-level" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+         · ${t('voice.noteHeld')}`
       : `${icon('info')} ${t('chat.aiNote', { name: state.companion ? state.companion.name : '' })}`;
   };
 
@@ -602,7 +593,15 @@ function mountChat(root) {
         toast(t('voice.noteDraftFirst'), 'error');
         return;
       }
-      const rec = await startRecording();
+      const rec = await startRecording((level) => {
+        // The level bar is the only feedback that the mic is actually open.
+        // Without it "recording" is indistinguishable from "frozen".
+        const bars = document.querySelectorAll('#rec-level i');
+        bars.forEach((bar, i) => {
+          const wobble = 0.35 + Math.abs(Math.sin((Date.now() / 120) + i)) * 0.65;
+          bar.style.transform = `scaleY(${Math.max(0.15, Math.min(1, level * 24 * wobble))})`;
+        });
+      });
       if (!rec) {
         toast(t('voice.noteUnavailable'), 'error');
         return;
@@ -618,13 +617,17 @@ function mountChat(root) {
     const pending = stopRecording();
     setArmed(false);
     if (!pending) return;
-    const { blob, mime, ms } = await pending;
+    const { blob, mime, ms, peaks } = await pending;
     if (ms < 400 || !blob.size) {
       toast(t('voice.noteTooShort'), 'error');
       return;
     }
-    const transcript = await askTranscript();
-    await sendNote(blob, mime, ms, transcript);
+    // If the deployment can listen, it transcribes and the user never sees the
+    // sheet. If it cannot, asking is honest — but the wording has to say the
+    // device could not hear, not pretend this is a normal step.
+    let transcript = await transcribe(blob, { mime, locale: state.locale });
+    if (transcript === null) transcript = await askTranscript();
+    await sendNote(blob, mime, ms, transcript, peaks);
   });
 
   /**
@@ -632,12 +635,14 @@ function mountChat(root) {
    *
    * `transcript` is what lets the companion answer: a voice note is a turn, so
    * without words there is nothing to reply to and the note becomes a dead end.
-   * It is typed by the user rather than guessed — claiming to transcribe audio
-   * we have not heard would be a lie the bubble repeats back.
+   * When nothing can transcribe, it is typed by the user — claiming to have
+   * heard audio we cannot hear would be a lie the bubble repeats back.
+   *
+   * The clip is uploaded as bytes rather than as a data URL: base64 costs 33%
+   * and the JSON parser then holds the whole recording as a string.
    */
-  async function sendNote(blob, mime, ms, transcript) {
+  async function sendNote(blob, mime, ms, transcript, peaks) {
     const clientId = (crypto.randomUUID ? crypto.randomUUID() : 'c_' + Date.now() + Math.random());
-    const audio = await blobToDataUrl(blob).catch(() => null);
     const node = document.createElement('div');
     node.className = 'msg me';
     node.dataset.mid = clientId;
@@ -650,16 +655,22 @@ function mountChat(root) {
     follow(true);
 
     try {
-      const res = await api.post('/voice-notes', {
+      const query = new URLSearchParams({
         conversation_id: state.conversationId,
-        duration_ms: ms,
-        mime: mime,
-        audio: audio,
+        duration_ms: String(ms),
         transcript: transcript || '',
         client_message_id: clientId,
       });
+      if (peaks && peaks.length) {
+        query.set('peaks', peaks.slice(0, 64).map((p) => Number(p).toFixed(3)).join(','));
+      }
+      const res = await api.upload(`/voice-notes/blob?${query.toString()}`, blob, {
+        contentType: mime || 'audio/webm',
+        expect: 'json',
+      });
       const note = res.note || res;
       note.duration_ms = ms;
+      note.peaks = note.peaks && note.peaks.length ? note.peaks : (peaks || []);
       const reply = res.reply || null;
       const userMid = (reply && reply.user_message_id) || clientId;
       notes.set(userMid, note);
@@ -738,21 +749,24 @@ function mountChat(root) {
     stopPlayback();
     const btn = body.querySelector(`[data-note-play="${id}"]`);
     try {
-      const data = await api.get(`/voice-notes/${id}/audio`);
-      audioEl = new Audio(data.audio);
-      playingId = id;
-      const bar = btn.closest('.voice-note').querySelector('.track i');
+      // The route answers with bytes for new notes and with a data URL for old
+      // ones; `fetchBlob` normalises both so playback has one shape to handle.
+      const src = await fetchBlob(`/voice-notes/${id}/audio`);
+      const bar = btn && btn.closest('.voice-note')
+        ? btn.closest('.voice-note').querySelector('.progress') : null;
       if (btn) btn.innerHTML = icon('pause').value;
-      audioEl.addEventListener('timeupdate', () => {
-        if (bar && audioEl && audioEl.duration) {
-          bar.style.width = `${Math.min(100, (audioEl.currentTime / audioEl.duration) * 100)}%`;
-        }
+      playingId = id;
+      audioEl = playAudio(src, {
+        onTime: ({ current, duration }) => {
+          if (bar && duration) {
+            bar.style.width = `${Math.min(100, (current / duration) * 100)}%`;
+          }
+        },
+        onEnd: () => {
+          if (bar) bar.style.width = '0';
+          stopPlayback();
+        },
       });
-      audioEl.addEventListener('ended', () => {
-        if (bar) bar.style.width = '0';
-        stopPlayback();
-      });
-      await audioEl.play();
     } catch (err) {
       toast(err.display || err.message || t('voice.notePlayFail'), 'error');
       stopPlayback();

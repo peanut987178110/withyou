@@ -1,0 +1,1010 @@
+<!-- PAGE 1 -->
+实战
+搭建一个产品经理面试
+题库系统（5）
+功能闭环
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 2 -->
+上节回顾
+2
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 3 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品级别控制手段
+强制结构化
+输出
+强制证据引
+用
+可解释性展
+示
+降级方案
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 4 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+本节课
+•人的复测
+•系统的测试
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 5 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+人的复测
+测试
+推荐
+资料
+学习复测
+提升
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 6 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品的目标
+• 功能不是目标
+• 用户价值才是目标
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 7 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+PMF
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 8 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品要围绕的核心
+• 产品能够成立，能够生存，并不是有多么
+强大的功能
+• 而是满足了目标用户没有被充分满足的需
+求
+• 对这部分需求提供了足够的价值
+• 功能要围着用户价值展开
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 9 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+对于刷题产品用户的价值是什么
+• 做题不是需求
+• 成长才是
+• 如何能成长
+• 针对性学习
+• 成长如何能感知
+• 结果外化——复测
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 10 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+注意这一点
+• 给用户的价值
+• 要让用户感知到
+• 用户难以感知的价值
+• 或者说无法第一时间感知到的价值
+• 都有较大的流失风险
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 11 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+复测
+• 我想给产品加上"复测对比"功能。
+•  
+• 【为什么要做这个功能】
+•  
+• 用户答完一次测评看到雷达图，得到诊断和推荐资
+源——
+• 然后呢？他学了一段时间，怎么知道自己有没有进步？
+•  
+• 学习最强的动力是"看到自己在变强"。
+• 没有这个反馈，用户学几天就会放弃。
+•  
+• 所以我要让用户可以再来一次测评，看到本次和上次
+的对比，
+• 直观地知道："我这周确实变强了。"
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 12 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第二段
+• 【这个功能要实现什么】
+•  
+• 第一，每次用户完成完整测评（答了至少 10 题），
+• 就把这次测评的结果保存为一个"能力快照"。
+•  
+• 每个快照里包含：
+• - 这次测评的日期
+• - 六个维度各自的得分
+• - 总分
+• - 这次答了多少题、对了多少题
+• - 用 localStorage 保存，按时间顺序累积起来
+•  
+• 第二，用户主页（也就是登录后看到的页面）要根据快照
+• 数量显示不同内容。
+•  
+• 如果只有 1 个快照：
+• 显示当前的雷达图，下方写一句话提示：
+• "完成下一次测评后，你可以看到自己的进步对比。"
+• 旁边一个"立即复测"按钮，鼓励他再测一次。
+•  
+• 如果有 2 个或以上快照：
+• 显示一张"对比雷达图"——把最近两次的快照叠加在同一张图上。
+• 最近一次用主色实线、半透明填充，让用户的视线聚焦在"现在的我"。
+• 上一次用浅灰色虚线、不填充，让用户看到"上次的我"。
+•  
+• 两个雷达图叠在一起，每个维度的进步或退步一目了然。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 13 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第三段
+• 雷达图下方再显示三个关键数字：
+• - 总分变化："上次 65 分 → 本次 78 分（+13）
+"
+• - 提升最大的维度："AI 基础认知 提升了 18 分
+"
+• - 仍需加强的维度（如果有维度退步或停滞）：
+•   "评估与迭代 仍是你的弱项"
+•  
+• 如果有 3 次以上快照，再提供一个"查看完整
+成长曲线"链接，
+• 点开后看到一个时间轴视图，每个快照一个节
+点，
+• 可以看到每个维度的得分随时间变化的趋势。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 14 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第四段-增加入口描述
+• 【"立即复测"入口】
+•  
+• 用户主页右上角放一个"立即复测"按钮。
+•  
+• 这个按钮根据距离上次测评的时间，呈现不同状态：
+•  
+• 距离上次少于 3 天：
+• 按钮变浅色（弱化），下面一行小字："建议再过几天复测，
+• 让学习有时间发挥作用。"
+•  
+• 距离上次 3-7 天：
+• 按钮正常显示，下面一行小字："距离上次测评 X 天，
+• 来复测一次看看进步。"
+•  
+• 距离上次超过 14 天：
+• 按钮高亮显示，下面一行小字："已经 X 天没测评了，
+• 回来看看自己的水平吧。"
+•  
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 15 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第五段-详细处理
+• 【复测时的特殊处理】
+•  
+• 复测的时候要尽量避开用户上次答过的
+题——
+• 否则用户记住了答案，分数虚高，不是真
+实的进步。
+•  
+• 实现的时候让 CAT 抽题逻辑加一层过滤：
+• 优先抽用户从来没答过的题；
+• 如果某个维度的"未答过题库"不够，再放
+开限制使用旧题。
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 16 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第六段-反馈处理
+• 【复测完成后的反馈】
+•  
+• 用户做完复测进入结果页，根据进步情况显示不同反馈。
+•  
+• 情况一：总分提升 10 分以上
+• 在结果页顶部加一个庆祝卡片：
+• "你在 X 天里提升了 Y 分！"
+• 用主色背景配白字，简洁明确。
+• 不要做撒花、放烟花这种夸张动画——
+• 我们是严肃的学习产品，不是游戏。
+•  
+• 情况二：某个维度单项提升 15 分以上（即使总分变化不大）
+• 单独庆祝这个维度的突破：
+• "你的【AI 基础认知】维度突破了！"
+• 强调具体维度的进步比总分更有意义。
+•  
+• 情况三：总分下降
+• 这是个敏感场景，处理不好用户会感到挫败。
+• 用建设性话术，不要回避也不要刺激：
+• "今天的表现可能不在最佳状态。
+• 我们一起回顾这次答错的题，看看是哪里出了问题。"
+• 下面提供一个"查看本次错题"的入口。
+• 颜色用橙色，不要用红色。
+•  
+• 情况四：总分基本持平（变化 5 分以内）
+• 温和的反馈："本次表现稳定。建议针对【最弱维度】
+• 做专项练习，下次会有突破。"
+•  
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 17 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+提示词第七段-细节处理
+• 【一些细节】
+•  
+• 雷达图叠加时两个多边形不要"打架"。
+• 半透明填充的透明度控制在 0.3 左右；
+• 两个多边形的边线粗细一致；
+• 维度标签字号统一。
+•  
+• 数字变化用颜色区分：
+• - 提升用绿色
+• - 下降用橙色（不用红色，红色会让用户感到被批评）
+• - 数字要明显，但不要做"跳动动画"等夸张效果
+•  
+• 如果用户从来没复测过（只有 1 个快照），
+• 不要硬展示叠加雷达图——没有对比就是没有对比，
+• 直接告诉用户"做完下次测评就能看到对比"。 
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 18 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+说一下提示词的结构
+要做什么，目
+标
+实现的功能描
+述（包含规则）
+功能的位置和
+流程
+特殊处理
+细节处理
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 19 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+到目前为止
+• 产品完成了闭环功能
+• 我们从需求分析
+• 竞品分析
+• 挖掘了产品特质
+• 完善了产品功能
+• 留存了用户数据
+• 还需要什么
+• 产品测试
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 20 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+产品实际的问题
+• 用户乱答会怎样？
+• 网络断了会怎样？
+• AI 评分被用户质疑了怎么办？
+• 用户中途关闭浏览器，下次回来数据还在
+吗？
+• 题库里某些题特别难，所有用户都答错怎
+么办？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 21 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+我们需要
+• 主动找产品的崩溃边界，把所有可能出问
+题的地方列出来
+• 用产品手段（不是技术手段）兜底，让产
+品在异常时降级，但依然可以使用
+• 加上「间隔重复」机制，让产品具备长期
+价值
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 22 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+AI产品的特点
+• AI产品的不确定性需要用产品手段处理
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 23 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+可能的问题
+# 破坏操作 通常会发生什么
+1 每道题都选 A 分数可能算出 0，雷达图变成一个
+点或不显示
+2 中途关闭浏览器，再打开 进度可能丢失，回到落地页
+3 把 Wi-Fi 断掉，做完测评 AI 调用挂掉，诊断生成失败或卡住
+4 一道题点选项后立刻点下一题 可能保存不及时，答案丢失
+5 快速连续点击「提交」按钮 可能重复提交、生成多份诊断
+6 打开浏览器控制台清空 
+localStorage
+所有快照、答题记录消失
+7 用手机访问，看是不是能用 布局错乱、字号太小、按钮难点
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 24 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+三类核心问题
+常规流
+程
+异常流
+程
+恶意流
+程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 25 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+三类核心问题
+常规流
+程
+异常流
+程
+恶意流
+程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 26 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+常规流程
+• 正常走流程可能遇到的问题
+• 例如
+• 从落地页到完成测评，全程是否顺畅？
+• 数据是否持久化？刷新页面会丢失吗？
+• 移动端打开是什么样？
+• 不同浏览器（Chrome/Safari/Firefox）表现一
+致吗？
+• 加载时间是否在用户能接受的范围内？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 27 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+三类核心问题
+常规流
+程
+异常流
+程
+恶意流
+程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 28 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+异常流程
+• 用户没有按照预设的路径走
+• 例如：
+• 网络断了会怎样？API 挂了会怎样？
+• 用户半途关闭浏览器，下次来续不续？
+• 数据库里只有 5 道题怎么办？
+• LLM 返回了奇怪的格式怎么办？
+• 用户的某维度只答了 1 道题怎么诊断？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 29 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+三类核心问题
+常规流
+程
+异常流
+程
+恶意流
+程
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 30 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+恶意流程
+• 用户在故意搞事精，找麻烦，你的系统健
+壮度够不够
+• 例如：
+• 用户故意乱答想骗高分怎么办？
+• 用户在情景题里写一堆乱码怎么办？
+• 用户在 URL 里改参数（比如直接访问结果页）
+会怎样？
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 31 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+注意
+• 产品决策不是修复所有问题
+• 而是在有限的资源中取舍决策
+分类 判断标准 在这案例中
+必须处理 影响核心流程、影响数
+据、影响信任
+LLM 调用失败、数据丢
+失、雷达图为空
+可以容忍 不阻塞使用、能用产品
+提示兜底
+LLM 评分有争议、难度
+标注偶尔偏差
+主动规避 不做某些功能，避免引
+入问题
+不做打卡天数、不做积
+分商城、不做 PK 排行
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 32 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+主动规避
+• 功能看起来挺好，但做起来反而有可能有
+反效果
+• 例如：
+• 不做连续打卡
+• 打卡奖励出勤率，而不是学习效果
+• 不做积分商城
+• 完全没意义
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+知乎知学堂
+NeuralFlow AI课堂
+
+<!-- PAGE 33 -->
+VCP
+V i b e  c o d i n g 产 品 实 战
+所以我们要解决什么
+• 必须处理的边界问题
+• 做兜底方案
+• 需

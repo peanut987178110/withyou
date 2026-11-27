@@ -21,6 +21,14 @@ POLICY_VERSION = "2026-11-18.1"
 def _companion_json(row) -> dict[str, Any]:
     data = dict(row)
     data["traits"] = json.loads(data.get("traits") or "[]")
+    # The client should not have to parse a JSON string inside a JSON response
+    # to find out which voice it is holding.
+    raw = data.get("voice_profile")
+    if isinstance(raw, str):
+        try:
+            data["voice_profile"] = json.loads(raw) if raw else {}
+        except json.JSONDecodeError:
+            data["voice_profile"] = {}
     return data
 
 
@@ -95,6 +103,12 @@ async def patch_companion(request: Request, companion_id: str):
         for field in ("energy", "intent", "wardrobe_item", "room_id"):
             if field in payload:
                 updates[field] = payload[field]
+        if "voice_profile" in payload:
+            from .. import voice_engine
+            traits_now = json.loads(updates.get("traits", row["traits"]) or "[]")
+            profile = voice_engine.normalise_profile(
+                payload["voice_profile"], traits_now, user.get("locale") or "en")
+            updates["voice_profile"] = json.dumps(profile, ensure_ascii=False)
         if not updates:
             raise ApiError(400, "VALIDATION_ERROR", "Nothing to update.")
         sets = ", ".join(f"{k}=?" for k in updates)

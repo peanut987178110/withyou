@@ -81,7 +81,79 @@ export const api = {
   post: (p, b, o) => request('POST', p, b === undefined ? {} : b, o),
   patch: (p, b, o) => request('PATCH', p, b, o),
   del: (p, o) => request('DELETE', p, undefined, o),
+  upload,
 };
+
+/**
+ * A request whose body or response is not JSON.
+ *
+ * Two shapes are needed by the voice layer and nothing else:
+ *
+ * - `json: true, expect: 'blob'` — send text, receive audio (`POST /voice/tts`).
+ * - `expect: 'json'` with a Blob body — send audio, receive metadata
+ *   (`POST /voice-notes/blob`), which avoids base64 inflating a clip by a third.
+ *
+ * Errors still come back in the normal envelope, so failure handling is shared
+ * with `request()` rather than duplicated.
+ */
+export async function upload(path, body, opts = {}) {
+  const init = { method: opts.method || 'POST', headers: headers(opts.headers) };
+  if (opts.json) {
+    init.headers['Content-Type'] = 'application/json';
+    init.body = JSON.stringify(body === undefined ? {} : body);
+  } else {
+    init.headers['Content-Type'] = opts.contentType || 'application/octet-stream';
+    init.body = body;
+  }
+
+  let res;
+  try {
+    res = await fetch(`${API}${path}`, init);
+  } catch (err) {
+    throw new ApiFailure(0, 'NETWORK_ERROR',
+      'You appear to be offline. Your draft is saved.', { retryable: true });
+  }
+
+  if (!res.ok) {
+    let payload = null;
+    try { payload = await res.json(); } catch (e) { payload = null; }
+    const err = payload || {};
+    if (res.status === 401 && token) {
+      setToken(null);
+      window.dispatchEvent(new CustomEvent('wy:signed-out'));
+    }
+    const failure = new ApiFailure(res.status, err.code || 'HTTP_' + res.status,
+      err.message || 'Something went wrong.', err.data);
+    failure.serverMessage = failure.message;
+    failure.display = apiErrorText(failure);
+    throw failure;
+  }
+
+  if (opts.expect === 'blob') return res.blob();
+  if (opts.expect === 'response') return res;
+  let payload = null;
+  try { payload = await res.json(); } catch (e) { payload = null; }
+  return payload ? payload.data : null;
+}
+
+/** Raw bytes for a note's audio, without going through the JSON envelope. */
+export async function fetchBlob(path) {
+  const res = await fetch(`${API}${path}`, { headers: headers() });
+  if (!res.ok) {
+    let payload = null;
+    try { payload = await res.json(); } catch (e) { payload = null; }
+    const err = payload || {};
+    throw new ApiFailure(res.status, err.code || 'HTTP_' + res.status,
+      err.message || 'Something went wrong.', err.data);
+  }
+  const type = res.headers.get('content-type') || '';
+  if (type.includes('application/json')) {
+    // Legacy rows still answer with a data URL inside the envelope.
+    const payload = await res.json();
+    return payload.data;
+  }
+  return res.blob();
+}
 
 export function idempotentPost(path, body) {
   return request('POST', path, body === undefined ? {} : body,

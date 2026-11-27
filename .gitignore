@@ -25,6 +25,9 @@ app-shell/android/app/src/main/assets/capacitor-cordova-android-plugins/
 backend/data/*.db
 backend/data/*.db-journal
 backend/data/*.db-wal
+# 语音条与通话片段的落盘目录。里面是本机录过的声音，属于用户数据，
+# 和数据库一样只在本地，不进仓库。
+backend/data/audio/
 
 # ---- 测试产物 -------------------------------------------------------------
 e2e/report.json

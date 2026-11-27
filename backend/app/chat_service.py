@@ -109,11 +109,20 @@ def _create(conn: sqlite3.Connection, user: dict[str, Any],
         return {"companion": comp, "conversation": conv, "created": False}
 
     comp_id = new_id("cmp")
+    # The voice is derived from the personality at creation time, so a call
+    # already sounds like the character before anyone opens a settings page.
+    try:
+        from . import voice_engine
+        profile = voice_engine.default_profile(traits, user.get("locale") or "en")
+    except Exception:
+        profile = {}
     conn.execute(
         "INSERT INTO companions(id,user_id,name,traits,relationship_type,energy,intent,"
-        "wardrobe_item,room_id,version,created_at) VALUES (?,?,?,?,?,?,?,?,?,1,?)",
+        "wardrobe_item,room_id,version,created_at,voice_profile)"
+        " VALUES (?,?,?,?,?,?,?,?,?,1,?,?)",
         (comp_id, user["id"], name, json.dumps(traits), relationship,
-         int(payload.get("energy", 60)), payload.get("intent"), "linen_soft", "sunlit", now_iso()),
+         int(payload.get("energy", 60)), payload.get("intent"), "linen_soft", "sunlit",
+         now_iso(), json.dumps(profile, ensure_ascii=False)),
     )
     conn.execute("UPDATE users SET onboarded=1 WHERE id=?", (user["id"],))
     comp = dict(conn.execute("SELECT * FROM companions WHERE id=?", (comp_id,)).fetchone())

@@ -865,8 +865,19 @@
   border: 0; display: grid; place-items: center;
   background: rgba(255,255,255,.28); color: inherit;
 }
-.voice-note .track { position: relative; flex: 1; height: 3px; border-radius: 2px; background: rgba(255,255,255,.38); }
-.voice-note .track i { position: absolute; inset-inline-start: 0; top: 0; bottom: 0; width: 0; border-radius: 2px; background: currentColor; }
+.voice-note .track {
+  position: relative; flex: 1; height: 24px; border-radius: 2px;
+  display: flex; align-items: center; gap: 2px;
+}
+/* The bars are the peaks captured while recording. A flat waveform and one
+   with speech in it look different, which a 3px progress line could never
+   show. */
+.voice-note .peaks { display: flex; align-items: center; gap: 2px; flex: 1; height: 100%; }
+.voice-note .peaks i { flex: 1; min-width: 2px; border-radius: 2px; background: rgba(255,255,255,.55); }
+.voice-note .progress {
+  position: absolute; inset-inline-start: 0; top: 0; bottom: 0; width: 0;
+  border-radius: 2px; background: rgba(255,255,255,.26); pointer-events: none;
+}
 .voice-note .dur { font-size: 11px; font-variant-numeric: tabular-nums; opacity: .9; }
 .voice-note .del { border: 0; background: none; color: inherit; opacity: .55; padding: 2px; display: grid; place-items: center; }
 
@@ -1032,4 +1043,53 @@
   position: sticky; top: 0; z-index: 40;
   background: #8f2f37; color: #fff;
   font-size: 12px; text-align: center; padding: 7px 12px;
+}
+/* ------------------------------------------------- live call: real audio */
+
+/* The notice is where the call admits a limitation (no mic, no voice, no
+   recogniser). It sits above the caption log so it cannot be mistaken for
+   something the companion said. */
+.call-notice {
+  margin: 10px 20px 0;
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(214,216,255,.14);
+  font-size: 12.5px; line-height: 1.5;
+  color: rgba(232,233,255,.92);
+  text-align: center;
+}
+
+/* Mic level while recording a note. Without a moving element the recorder is
+   indistinguishable from a frozen screen. */
+#rec-level { display: inline-flex; align-items: center; gap: 2px; height: 12px; vertical-align: middle; }
+#rec-level i {
+  width: 2px; height: 12px; border-radius: 2px;
+  background: currentColor; opacity: .7;
+  transform: scaleY(.2); transform-origin: center;
+  transition: transform .08s linear;
+}
+
+/* Phase-driven stage. `speaking` pulses faster than `listening`, and
+   `thinking` goes quiet — the same shape language the captions use. */
+.call-stage .wave.speaking i { animation-duration: .8s; }
+.call-stage .wave.thinking i { animation-duration: 2.4s; opacity: .45; }
+.call-stage .wave.loud i { background: rgba(255,255,255,.95); }
+
+/* Voice picker on the settings screen. */
+.voice-list { display: grid; gap: 8px; }
+.voice-option {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%; padding: 12px 14px;
+  border-radius: 16px; border: 1px solid var(--line-soft);
+  background: var(--surface); color: inherit; text-align: start;
+  font: inherit;
+}
+.voice-option[aria-pressed="true"] { border-color: var(--accent); }
+.voice-option .name { flex: 1; font-weight: 600; }
+.voice-option .tags { font-size: 11px; opacity: .6; }
+.voice-option .audition {
+  border: 0; background: var(--accent-soft, rgba(89,104,239,.12));
+  color: var(--accent); border-radius: 999px; padding: 6px 12px;
+  font-size: 12px; font-weight: 600;
 }
